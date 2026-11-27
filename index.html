@@ -445,7 +445,6 @@ footer b{color:var(--on-navy)}
 .ind-cic-text p+p{margin-top:14px}
 .ind-cic-text b{color:#fff}
 .ind-cic-cap{margin-top:12px;font-size:13.5px;color:#C9B9A6}
-.ind-cic-partners{background:#fff;padding:44px 0 56px;border-bottom:1px solid #E1E7EC}
 
 /* conference in hk style */
 .conf-hero{background:linear-gradient(180deg,#0C1A2D 0%,#0C1A2D 30%,#0D2A4D 55%,#16508F 80%,#2F7FD8 100%)!important}
@@ -510,7 +509,7 @@ footer b{color:var(--on-navy)}
 .cf-cta{background:linear-gradient(90deg,#1E4F7E,#3094FF)!important}
 .cf-cta p span{color:#DCEBFA}
 .ind-cic{padding:0}
-.cf-hosts img,.ind-cic-partners img{mix-blend-mode:multiply}
+.cf-hosts img{mix-blend-mode:multiply}
 
 /* industry day: about, maps, gallery */
 .ind-gov{margin-top:14px}
@@ -595,18 +594,6 @@ footer b{color:var(--on-navy)}
 @media (max-width:520px){.org{grid-template-columns:72px 1fr}.org-lg img{max-width:72px}}
 
 /* CIC credits */
-.cic-credits{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:30px 44px}
-.cr{padding-left:18px;border-left:3px solid #C9761B}
-.cr-k{font-size:12.5px;font-weight:700;font-stretch:125%;letter-spacing:.08em;text-transform:uppercase;color:#9A5B0B}
-.cr-lg{height:64px;display:flex;align-items:center;margin-top:12px}
-.cr-lg img{width:auto;max-width:200px;mix-blend-mode:multiply}
-.cr-n{margin-top:8px;font-size:17px;font-weight:800;font-stretch:110%;color:#0C1A2D}
-.cr-person{display:flex;gap:16px;align-items:flex-start;margin-top:12px}
-.cr-ph{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:center 20%;flex:none}
-.cr-d{margin-top:4px;font-size:14.5px;line-height:1.45;color:#3C4957}
-.cr-acic{width:auto;margin-top:10px;mix-blend-mode:multiply}
-@media (max-width:860px){.cic-credits{grid-template-columns:1fr 1fr}.cr-p{grid-column:1/-1}}
-@media (max-width:520px){.cic-credits{grid-template-columns:1fr}}
 
 /* conference: SDG ring background */
 .cf-about{position:relative;overflow:hidden}
@@ -767,6 +754,19 @@ footer b{color:var(--on-navy)}
   #intro.play .intro-col,#intro.skip .intro-col{animation-name:intro-col-left!important}
 }
 @media (prefers-reduced-motion:reduce){#intro{display:none!important}}
+
+/* CIC credits in the dark block */
+.cic-cr{display:grid;grid-template-columns:1fr 1fr;gap:26px 30px;margin-top:34px}
+.cc{padding-left:16px;border-left:2px solid rgba(255,178,92,.6)}
+.cc-p{grid-column:1/-1}
+.cc-k{margin:0!important;font-size:12px!important;font-weight:700;font-stretch:125%;letter-spacing:.1em;text-transform:uppercase;color:#FFB25C!important;line-height:1.3!important}
+.cc>img{display:block;width:auto;max-width:100%;margin-top:12px}
+.cc-person{display:flex;gap:16px;align-items:flex-start;margin-top:12px}
+.cc-ph{width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:center 20%;flex:none}
+.cc-n{margin:0!important;font-size:17px!important;font-weight:800;font-stretch:110%;color:#fff!important}
+.cc-d{margin-top:4px!important;font-size:14.5px!important;line-height:1.45!important;color:#D9E2EA!important}
+.cc-acic{display:block;width:auto;max-width:100%;margin-top:12px}
+@media (max-width:420px){.cic-cr{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1091,6 +1091,11 @@ footer b{color:var(--on-navy)}
             <p>On 2 February the foundation stone is laid for the TechGuard Cyber Innovation Centre: the first of its kind, a state-of-the-art Israel–India AI, cyber and data centre to be built in Coimbatore, Tamil Nadu. It will serve as a centre of excellence for cybersecurity innovation.</p>
             
             <p class="ind-cic-quote">Built for India.<br>Battle-tested cyber defence.</p>
+            <div class="cic-cr">
+              <div class="cc"><p class="cc-k">Future HQ:</p><img src="assets/techguard-light.png" alt="TechGuard Labs Foundation" style="height:40px"></div>
+              <div class="cc"><p class="cc-k">Designed by:</p><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:48px"></div>
+              <div class="cc cc-p"><p class="cc-k">Scientific curator:</p><div class="cc-person"><img class="cc-ph" src="assets/dvir.jpg" alt="Prof. Amit Dvir"><div><p class="cc-n">Prof. Amit Dvir</p><p class="cc-d">Founder and head of the Ariel Cyber Innovation Center</p><img class="cc-acic" src="assets/acic-light.png" alt="Ariel Cyber Innovation Center" style="height:40px"></div></div></div>
+            </div>
           </div>
         </div>
         <div class="gal" data-gal>
@@ -1103,26 +1108,6 @@ footer b{color:var(--on-navy)}
           <div class="gal-thumbs"><button type="button" data-i="0" data-src="assets/cic-aerial.jpg" data-cap="Aerial view of the campus" aria-current="true" aria-label="Show: Aerial view of the campus"><img src="assets/cic-aerial.jpg" alt="" loading="lazy"></button><button type="button" data-i="1" data-src="assets/cic-entrance.jpg" data-cap="TechGuard main entrance" aria-label="Show: TechGuard main entrance"><img src="assets/cic-entrance.jpg" alt="" loading="lazy"></button><button type="button" data-i="2" data-src="assets/cic-entrance-2.jpg" data-cap="TechGuard entrance and façade" aria-label="Show: TechGuard entrance and façade"><img src="assets/cic-entrance-2.jpg" alt="" loading="lazy"></button><button type="button" data-i="3" data-src="assets/cic-techpark.jpg" data-cap="Tech Park entrance" aria-label="Show: Tech Park entrance"><img src="assets/cic-techpark.jpg" alt="" loading="lazy"></button><button type="button" data-i="4" data-src="assets/cic-techpark-2.jpg" data-cap="Tech Park entry" aria-label="Show: Tech Park entry"><img src="assets/cic-techpark-2.jpg" alt="" loading="lazy"></button><button type="button" data-i="5" data-src="assets/cic-int-training.jpg" data-cap="Training hall" aria-label="Show: Training hall"><img src="assets/cic-int-training.jpg" alt="" loading="lazy"></button><button type="button" data-i="6" data-src="assets/cic-int-soc.jpg" data-cap="War room / SOC" aria-label="Show: War room / SOC"><img src="assets/cic-int-soc.jpg" alt="" loading="lazy"></button><button type="button" data-i="7" data-src="assets/cic-int-ai-lab.jpg" data-cap="AI security lab" aria-label="Show: AI security lab"><img src="assets/cic-int-ai-lab.jpg" alt="" loading="lazy"></button><button type="button" data-i="8" data-src="assets/cic-int-server-hall.jpg" data-cap="Server hall" aria-label="Show: Server hall"><img src="assets/cic-int-server-hall.jpg" alt="" loading="lazy"></button><button type="button" data-i="9" data-src="assets/cic-int-ai-racks.jpg" data-cap="AI racks with liquid cooling" aria-label="Show: AI racks with liquid cooling"><img src="assets/cic-int-ai-racks.jpg" alt="" loading="lazy"></button></div>
         </div>
         <p class="ind-cic-cap">Architectural concept visualisations.</p>
-      </div>
-    </div>
-    <div class="ind-cic-partners">
-      <div class="wrap">
-        <div class="cic-credits">
-          <div class="cr">
-            <p class="cr-k">(Future) headquarters of</p>
-            <div class="cr-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:54px"></div>
-            <p class="cr-n">TechGuard Labs Foundation</p>
-          </div>
-          <div class="cr">
-            <p class="cr-k">Designed by</p>
-            <div class="cr-lg"><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:54px"></div>
-            <p class="cr-n">Biopharmax India</p>
-          </div>
-          <div class="cr cr-p">
-            <p class="cr-k">Scientific curator</p>
-            <div class="cr-person"><img class="cr-ph" src="assets/dvir.jpg" alt="Prof. Amit Dvir"><div><p class="cr-n" style="margin-top:0">Prof. Amit Dvir</p><p class="cr-d">Founder and head of the Ariel Cyber Innovation Center</p><img class="cr-acic" src="assets/acic.png" alt="Ariel Cyber Innovation Center" style="height:50px"></div></div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
