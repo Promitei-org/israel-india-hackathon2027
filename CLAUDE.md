@@ -5,7 +5,7 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 
 ## Structure
 - `index.html` — the whole site in one file: CSS in `<style>`, small router script at the end, inline SVG artwork.
-- `assets/` — images and logos (flyer logos are `fl_*.png`, English Ariel logo is `ariel_en.png`). Innovation Centre renders are `cic-*.jpg` (cut from the CIC deck with the Biopharmax watermark band cropped off); `era.png` is the ERA IT Consulting logo from the same deck.
+- `assets/` — images and logos (flyer logos are `fl_*.png`, English Ariel logo is `ariel_en.png`). Innovation Centre renders are `cic-*.jpg` (cut from the CIC deck with the Biopharmax watermark band cropped off); `era.png` is the ERA IT Consulting logo from the same deck. Interior stills `cic-int-*.jpg` are frames from the CIC flythrough video (WhatsApp video, 18 Nov 2026, 480p), cropped above the on-screen captions and Biopharmax logo; the video itself is not in the repo.
 - The CIC deck (`Cyber_Innovation_Center_PPT.pdf`) is NOT stored in the repo: the repo is public and the deck contains the budget, cost breakdown and Biopharmax markup. Never publish budget, costs, schedule or floor programme from it.
 - Views are switched by the URL hash (plain `#name` only):
   - `#` (empty) — start screen with three parallel banners
@@ -35,7 +35,6 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 
 ## Open items
 - Industry Day: registration link, speakers, participants and sponsors (Biopharmax India confirmed), sponsorship packages and company participation fees (draft tiers proposed, not yet approved; legal entity for invoicing to be decided).
-- Innovation Centre: interior visualisations (SOC, server room, classrooms) wanted for the gallery; none in the deck yet.
 - Chamber of Commerce: founding members, membership, how to join, dedicated contact.
 - Hackathon: prize amounts, mentors and jury list, rules and FAQ answers marked "Info available soon".
 - Google Form confirmation message still says mark@promitei.com (change in the form settings).
