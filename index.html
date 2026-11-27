@@ -476,6 +476,18 @@ footer b{color:var(--on-navy)}
 .ind-part{display:flex;align-items:center;gap:18px;margin-top:18px;padding-left:18px;border-left:3px solid #C9761B}
 .ind-part b{font-weight:800;font-stretch:110%;color:#0C1A2D;font-size:17px}
 .ind-part p{margin-top:2px;font-size:15px;color:#3C4957}
+.ind-link{font:inherit;color:#9A5B0B;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.ind-ways{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px}
+.ind-ways>div{padding-left:18px;border-left:3px solid #C9761B}
+.ind-ways h3{margin-top:0;font-size:22px;font-weight:800;font-stretch:125%;color:#0C1A2D}
+.ind-ways p{margin-top:6px;font-size:16px;line-height:1.55;color:#3C4957}
+.ind-ways .ind-way-s{margin-top:12px;font-size:15px;color:#26323F}
+@media (max-width:700px){.ind-ways{grid-template-columns:1fr;gap:22px}}
+.ind-why{margin:34px 0 12px;font-size:14px;font-weight:700;font-stretch:125%;letter-spacing:.06em;text-transform:uppercase;color:#0C1A2D}
+.pg-ind .hk-ticks2 li::before{border-color:#C9761B}
+.ind-ask{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:30px;padding-top:22px;border-top:1px solid #D5DDE3}
+.ind-ask p{font-size:16px;color:#26323F}
+.ind-ask a:not(.hk-btn){color:#9A5B0B}
 </style>
 </head>
 <body>
@@ -740,11 +752,42 @@ footer b{color:var(--on-navy)}
   <section class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Partners</p><h2 class="hk-h">Participants and sponsors</h2></div>
-      <div class="hk-prose"><p>Companies, start-ups and institutions from Israel and Tamil Nadu.</p><div class="ind-part"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:56px"><div><b>Biopharmax India</b><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities</p></div></div><p style="margin-top:14px">More participants and sponsors: <span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Interested in participating or sponsoring? Write to <a href="mailto:mark@promitei.com">mark@promitei.com</a></p></div>
+      <div class="hk-prose"><p>Companies, start-ups and institutions from Israel and Tamil Nadu.</p><div class="ind-part"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:56px"><div><b>Biopharmax India</b><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities</p></div></div><p style="margin-top:14px">More participants and sponsors: <span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Interested in participating or sponsoring? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p></div>
     </div>
   </section>
 
-  <section class="hk-sec tint">
+  <section id="ind-sponsor" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2></div>
+      <div>
+        <p class="hk-prose-p" style="margin-top:0">Industry Day is open to companies, start-ups and institutions from Israel and India that want to support the day as sponsors or take part as participating companies.</p>
+        <div class="ind-ways">
+          <div>
+            <h3>Sponsorship</h3>
+            <p>Support Industry Day and be visible to industry, government, academia and start-ups from Israel and Tamil Nadu.</p>
+            <p class="ind-way-s">Packages and benefits: <span class="hk-soon">Info available soon</span></p>
+          </div>
+          <div>
+            <h3>Company participation</h3>
+            <p>Take part in the workshops and networking sessions and meet companies, researchers, start-ups and students.</p>
+            <p class="ind-way-s">Participation fees: <span class="hk-soon">Info available soon</span></p>
+          </div>
+        </div>
+        <p class="ind-why">Be part of the day when</p>
+        <ul class="hk-ticks2">
+          <li>the <b>Israel–Tamil Nadu Chamber of Commerce</b> is opened</li>
+          <li>the foundation stone of the <b>first AI, Data and Cyber Innovation Centre in Tamil Nadu</b> is laid</li>
+          <li>leaders from Israel and India meet in <b>plenary discussions</b> on technology, innovation and partnership</li>
+        </ul>
+        <div class="ind-ask">
+          <p>To discuss sponsorship or participation, write to <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
+          <a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Industry%20Day%202%20February%202027%20%E2%80%93%20Sponsorship%20and%20participation">Send an inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Israel–India</p><h2 class="hk-h">Building on Bengaluru Tech Summit 2026</h2></div>
       <div>
@@ -756,7 +799,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec">
+  <section class="hk-sec tint">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Venue</p><h2 class="hk-h">Hosted at SREC SPARK</h2></div>
       <div class="ind-venue">
@@ -773,7 +816,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec tint">
+  <section class="hk-sec">
     <div class="wrap">
       <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Organised by</h2>
       <div class="hk-logos"><figure class="hk-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:56px"></figure><figure class="hk-lg"><img src="assets/srec-spark-logo.png" alt="SREC SPARK" style="height:64px"></figure><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:52px"></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:58px"></figure><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:62px"></figure></div>
