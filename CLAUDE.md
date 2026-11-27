@@ -13,6 +13,8 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
   - `#industry-day` — 2 Feb, Industry Day (venue SREC SPARK)
   - `#conference` — 3 Feb, International Scientific Conference (SRCW with Ariel University)
 - All three event pages share the `hk` style (`class="pg-… hk"`): hero with the brand lockup and a Chakra Petch title, sticky `.hk-subnav`, `hk-sec` sections alternating white/tint, `hk-cta` band at the end. Per-day colour overrides live under `.pg-ind` / `.pg-conf`.
+- Image galleries use `[data-gal]` (thumbnails, arrows, swipe, full-screen `.lb` lightbox with Esc/arrow keys). Images never open in a new tab. To add an image, add a thumbnail `<button data-src data-cap>` to `.gal-thumbs`.
+- Chamber section background: tinted Israel and Tamil Nadu outlines (inline SVG, simplified from public GeoJSON: datasets/geo-countries, geohacker/india).
 - In-page navigation uses `<button data-go="section-id">` (smooth scroll), never `#section` links, because the hash is used for routing.
 
 ## Design rules
@@ -33,6 +35,7 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 
 ## Open items
 - Industry Day: registration link, speakers, participants and sponsors (Biopharmax India confirmed), sponsorship packages and company participation fees (draft tiers proposed, not yet approved; legal entity for invoicing to be decided).
+- Innovation Centre: interior visualisations (SOC, server room, classrooms) wanted for the gallery; none in the deck yet.
 - Chamber of Commerce: founding members, membership, how to join, dedicated contact.
 - Hackathon: prize amounts, mentors and jury list, rules and FAQ answers marked "Info available soon".
 - Google Form confirmation message still says mark@promitei.com (change in the form settings).
