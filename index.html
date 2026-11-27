@@ -400,6 +400,18 @@ footer b{color:var(--on-navy)}
 /* header on phones */
 @media (max-width:560px){.brand .b-x{display:none}}
 .brand{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.top .brand{font-family:"Archivo",sans-serif;font-weight:300;font-stretch:125%;font-size:15px;letter-spacing:.04em;display:flex;align-items:center;gap:0 .45em}
+.top .brand b{font-weight:800}
+.b-dots{display:inline-flex;gap:4px}
+.b-dots i{width:8px;height:8px;border-radius:50%;display:block}
+.top .brand:hover{color:#FFB25C}
+@media (max-width:720px){.top .brand{font-size:13.5px}}
+.tabs a{white-space:nowrap}
+@media (max-width:380px){.b-dots{display:none}}
+@media (max-width:1120px){.b-c{display:none}}
+@media (max-width:980px){.brand .b-x{display:none}}
+@media (max-width:340px){.top .wrap{padding:0 12px}.tabs a{padding:6px 5px;font-size:12.5px}.top .brand{font-size:11px;letter-spacing:0}.tabs{gap:0}}
+@media (max-width:560px){.top .wrap{gap:8px}.top .brand{font-size:12px;letter-spacing:.02em;gap:0 .35em}.b-dots{gap:3px}.b-dots i{width:6px;height:6px}.tabs a{padding:7px 7px;font-size:13px}}
 
 /* per-day accents for shared hk components */
 .pg-ind .hk-subnav button:hover{background:#FBEBD3;color:#9A5B0B}
@@ -573,7 +585,7 @@ footer b{color:var(--on-navy)}
 .ind-wh .ind-why{margin-top:0}
 
 /* organisation lists with logo + description */
-.orgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:26px 40px;margin-top:18px}
+.orgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:26px 40px;margin-top:18px}
 .org{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:start;padding-left:16px;border-left:3px solid #C9761B}
 .org-lg{height:58px;display:flex;align-items:center}
 .org-lg img{width:auto;max-width:96px;object-fit:contain;mix-blend-mode:multiply}
@@ -594,12 +606,21 @@ footer b{color:var(--on-navy)}
 .cr-acic{width:auto;margin-top:10px;mix-blend-mode:multiply}
 @media (max-width:860px){.cic-credits{grid-template-columns:1fr 1fr}.cr-p{grid-column:1/-1}}
 @media (max-width:520px){.cic-credits{grid-template-columns:1fr}}
+
+/* conference: SDG ring background */
+.cf-about{position:relative;overflow:hidden}
+.cf-about>.wrap{position:relative;z-index:1}
+.cf-sdg{position:absolute;right:max(-230px,calc(50% - 880px));top:-150px;width:520px;opacity:.13;pointer-events:none}
+.cf-sdg svg{width:100%;height:auto;display:block;animation:sdgspin 120s linear infinite}
+@keyframes sdgspin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.cf-sdg svg{animation:none}}
+@media (max-width:860px){.cf-sdg{width:340px;right:-170px;top:-120px;opacity:.11}}
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#"><span class="b-x">Israel–India </span>Innovation Week<span class="b-x"> · Coimbatore 2027</span> <span class="all" style="font-weight:600;color:var(--on-navy-muted);font-size:14px">· all events</span></a>
+    <a class="brand" href="#" aria-label="Israel–India Innovation Week, Coimbatore 2027: all events"><b class="b-x">ISRAEL–INDIA</b> <span class="b-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> INNOVATION WEEK<span class="b-c"> · <b>COIMBATORE</b> 2027</span></a>
     <nav class="tabs" aria-label="Events">
       <a href="#hackathon" data-v="hackathon">1 Feb<span> · Hackathon</span></a>
       <a href="#industry-day" data-v="industry-day">2 Feb<span> · Industry Day</span></a>
@@ -1051,7 +1072,8 @@ footer b{color:var(--on-navy)}
     <button data-go="cf-about">About</button><button data-go="cf-plenary">Plenary sessions</button><button data-go="cf-themes">Sub-themes</button><button data-go="cf-guide">Guidelines and fees</button><button data-go="cf-board">Advisory board</button><button data-go="cf-hosts">Hosts</button><button data-go="cf-contact">Contact</button>
   </div></nav>
 
-  <section id="cf-about" class="hk-sec">
+  <section id="cf-about" class="hk-sec cf-about">
+    <div class="cf-sdg" aria-hidden="true"><svg viewBox="0 0 420 420"><path d="M212.1,10.0A200,200 0 0 1 280.3,22.8L255.0,90.2A128,128 0 0 0 211.3,82.0Z" fill="#E5243B"/><path d="M284.2,24.3A200,200 0 0 1 343.2,60.8L295.2,114.5A128,128 0 0 0 257.5,91.1Z" fill="#DDA63A"/><path d="M346.3,63.6A200,200 0 0 1 388.1,119.0L324.0,151.7A128,128 0 0 0 297.2,116.3Z" fill="#4C9F38"/><path d="M390.0,122.7A200,200 0 0 1 408.9,189.5L337.3,196.9A128,128 0 0 0 325.2,154.1Z" fill="#C5192D"/><path d="M409.3,193.6A200,200 0 0 1 402.9,262.7L333.5,243.7A128,128 0 0 0 337.6,199.5Z" fill="#FF3A21"/><path d="M401.8,266.7A200,200 0 0 1 370.9,328.8L312.9,286.1A128,128 0 0 0 332.7,246.3Z" fill="#26BDE2"/><path d="M368.3,332.2A200,200 0 0 1 317.1,378.9L278.5,318.1A128,128 0 0 0 311.3,288.2Z" fill="#FCC30B"/><path d="M313.5,381.1A200,200 0 0 1 248.8,406.2L234.8,335.6A128,128 0 0 0 276.2,319.5Z" fill="#A21942"/><path d="M244.7,407.0A200,200 0 0 1 175.3,407.0L187.8,336.1A128,128 0 0 0 232.2,336.1Z" fill="#FD6925"/><path d="M171.2,406.2A200,200 0 0 1 106.5,381.1L143.8,319.5A128,128 0 0 0 185.2,335.6Z" fill="#DD1367"/><path d="M102.9,378.9A200,200 0 0 1 51.7,332.2L108.7,288.2A128,128 0 0 0 141.5,318.1Z" fill="#FD9D24"/><path d="M49.1,328.8A200,200 0 0 1 18.2,266.7L87.3,246.3A128,128 0 0 0 107.1,286.1Z" fill="#BF8B2E"/><path d="M17.1,262.7A200,200 0 0 1 10.7,193.6L82.4,199.5A128,128 0 0 0 86.5,243.7Z" fill="#3F7E44"/><path d="M11.1,189.5A200,200 0 0 1 30.0,122.7L94.8,154.1A128,128 0 0 0 82.7,196.9Z" fill="#0A97D9"/><path d="M31.9,119.0A200,200 0 0 1 73.7,63.6L122.8,116.3A128,128 0 0 0 96.0,151.7Z" fill="#56C02B"/><path d="M76.8,60.8A200,200 0 0 1 135.8,24.3L162.5,91.1A128,128 0 0 0 124.8,114.5Z" fill="#00689D"/><path d="M139.7,22.8A200,200 0 0 1 207.9,10.0L208.7,82.0A128,128 0 0 0 165.0,90.2Z" fill="#19486A"/></svg></div>
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> About the conference</p><h2 class="hk-h">Where intelligent computing meets life science</h2></div>
       <div class="hk-prose">

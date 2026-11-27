@@ -15,6 +15,8 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 - All three event pages share the `hk` style (`class="pg-… hk"`): hero with the brand lockup and a Chakra Petch title, sticky `.hk-subnav`, `hk-sec` sections alternating white/tint, `hk-cta` band at the end. Per-day colour overrides live under `.pg-ind` / `.pg-conf`.
 - Image galleries use `[data-gal]` (thumbnails, arrows, swipe, full-screen `.lb` lightbox with Esc/arrow keys). Images never open in a new tab. To add an image, add a thumbnail `<button data-src data-cap>` to `.gal-thumbs`.
 - Chamber section background: tinted Israel and Tamil Nadu outlines (inline SVG, simplified from public GeoJSON: Natural Earth 10m for Israel, geohacker/india for Tamil Nadu). By Mark's decision the Israel outline includes the West Bank, the Gaza Strip and the Golan Heights.
+- Top bar: brand lockup in Archivo caps with the four colour dots ("ISRAEL–INDIA ●●●● INNOVATION WEEK · COIMBATORE 2027"), shortening on narrower screens (`.b-c`, `.b-x`, `.b-dots` hidden by breakpoint).
+- Conference "About" section has a faint rotating ring in the 17 UN SDG colours in the background (`.cf-sdg`, inline SVG; no official SDG logo or icons, which have usage rules).
 - In-page navigation uses `<button data-go="section-id">` (smooth scroll), never `#section` links, because the hash is used for routing.
 
 ## Design rules
