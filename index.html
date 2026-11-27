@@ -433,6 +433,24 @@ footer b{color:var(--on-navy)}
 .hk-addr{margin-top:20px;padding-left:18px;border-left:3px solid #0B9E78}
 .hk-addr p{margin-top:6px;font-size:16px;line-height:1.55;color:#26323F}
 .hk-addr a{color:#0B6E56;font-weight:600}
+
+.ind-hero{background:linear-gradient(180deg,#0C1A2D 0%,#0C1A2D 30%,#2A2A2C 55%,#7A4A16 80%,#C9761B 100%)!important}
+.hk2-tag.ind span{color:#FFB25C}
+.ind-hero .hk2-open,.ind-hero .hk2-open a{color:#0C1A2D}
+.ind-prog{list-style:none;counter-reset:p;margin:0;padding:0;display:grid;gap:20px}
+.ind-prog li{counter-increment:p;position:relative;padding-left:58px;font-size:17px;color:#26323F}
+.ind-prog li::before{content:counter(p,decimal-leading-zero);position:absolute;left:0;top:-4px;font-weight:300;font-stretch:125%;font-size:34px;color:#C9761B;line-height:1}
+.ind-prog b{font-weight:800;font-stretch:110%;color:#0C1A2D;font-size:18px}
+.ind-prog p{margin-top:4px;color:#3C4957;line-height:1.5}
+.ind-photos{display:grid;grid-template-columns:1.4fr 1fr;gap:16px}
+.ind-photos figure{margin:0}
+.ind-photos img{width:100%;height:320px;object-fit:cover;display:block}
+.ind-photos figcaption{margin-top:8px;font-size:13.5px;color:#5B6877}
+@media (max-width:700px){.ind-photos{grid-template-columns:1fr}.ind-photos img{height:240px}}
+.ind-venue{display:grid;grid-template-columns:minmax(200px,0.8fr) 1.2fr;gap:24px;align-items:start}
+.ind-venue img{width:100%;height:auto;display:block}
+@media (max-width:700px){.ind-venue{grid-template-columns:1fr}}
+.pane-ind{cursor:pointer}
 </style>
 </head>
 <body>
@@ -441,7 +459,7 @@ footer b{color:var(--on-navy)}
     <a class="brand" href="#">Israel–India · Coimbatore 2027 <span class="all" style="font-weight:600;color:var(--on-navy-muted);font-size:14px">· all events</span></a>
     <nav class="tabs" aria-label="Events">
       <a href="#hackathon" data-v="hackathon">1 Feb<span> · Hackathon</span></a>
-      <span class="tab-soon">2 Feb<span> · Industry Day · soon</span></span>
+      <a href="#industry-day" data-v="industry-day">2 Feb<span> · Industry Day</span></a>
       <a href="#conference" data-v="conference">3 Feb<span> · Conference</span></a>
     </nav>
   </div>
@@ -463,15 +481,15 @@ footer b{color:var(--on-navy)}
         </div>
       </div>
     </div>
-    <div class="pane pane-ind" aria-label="Industry Day, coming soon">
+    <a class="pane pane-ind" href="#industry-day">
       <div class="pane-grid" aria-hidden="true"></div>
       <div class="pane-in">
         <p class="pane-day">Tuesday · 2 February 2027</p>
         <h2 class="pane-title">INDUSTRY DAY</h2>
-        <p class="pane-sub">Health-tech and medical-AI companies meet researchers and young talent</p>
-        <p class="pane-soon">Coming soon</p>
+        <p class="pane-sub">Israel–Tamil Nadu Chamber of Commerce, foundation stone of the AI, Data and Cyber Innovation Centre, workshops and plenaries · SREC SPARK</p>
+        <p class="pane-go">Explore Industry Day</p>
       </div>
-    </div>
+    </a>
     <a class="pane pane-conf" href="#conference">
       <div class="pane-photo" style="background-image:url(assets/hero.jpg)" aria-hidden="true"></div>
       <div class="pane-in">
@@ -642,7 +660,7 @@ footer b{color:var(--on-navy)}
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Around the hackathon</p><h2 class="hk-h">1–3 February in Coimbatore</h2></div>
       <div class="hk-around">
-        <div><b>2 Feb · Industry Day</b><p>Workshops and meetings with health-tech and medical-AI companies. Coming soon.</p></div>
+        <a href="#industry-day"><b>2 Feb · Industry Day</b><p>Israel–Tamil Nadu Chamber of Commerce, foundation stone of the AI, Data and Cyber Innovation Centre, workshops and plenaries at SREC SPARK. See Industry Day</p></a>
         <a href="#conference"><b>3 Feb · International Scientific Conference</b><p>AI-Driven Innovations in Computing and Life Science for Sustainable Development, at SRCW with Ariel University. See the conference</p></a>
       </div>
     </div>
@@ -657,46 +675,95 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 </div>
-<div id="v-industry-day" class="pg-ind" data-view hidden>
-  <div class="ihero">
-    <div class="pane-grid" aria-hidden="true"></div>
-    <div class="wrap" style="position:relative;z-index:1">
-      <p class="eyeline">Tuesday 2 February 2027 · SRCW, Coimbatore</p>
-      <h1>Industry Day</h1>
-      <p class="motto">Where research meets the health-tech industry</p>
-      <p class="status">Programme to be announced</p>
+<div id="v-industry-day" class="pg-ind hk" data-view hidden>
+  <div class="hk-hero hk2 ind-hero">
+    <div class="hk-bokeh"><svg class="bokeh" viewBox="0 0 560 1200" aria-hidden="true" preserveAspectRatio="xMidYMin meet"><defs><filter id="bhf" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter></defs><g filter="url(#bhf)"><rect x="82" y="2" width="167" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="116" cy="30" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="119" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="122" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="156" cy="30" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="178" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="215" cy="30" r="28" fill="#00C6A7" opacity="0.85"/><rect x="57" y="49" width="121" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="113" cy="77" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="74" y="101" width="304" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="150" cy="125" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="158" cy="125" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="190" cy="125" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="194" cy="125" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="255" cy="125" r="24" fill="#00C6A7" opacity="0.70"/><rect x="119" y="153" width="322" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="237" cy="179" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="269" cy="179" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="272" cy="179" r="26" fill="#00C6A7" opacity="0.70"/><rect x="73" y="215" width="127" height="44" rx="22" fill="#00C6A7" opacity="0.16"/><circle cx="114" cy="237" r="22" fill="#00C6A7" opacity="0.85"/><circle cx="116" cy="237" r="22" fill="#F2F5F4" opacity="0.95"/><circle cx="138" cy="237" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="148" cy="237" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="157" cy="237" r="22" fill="#00C6A7" opacity="0.85"/><rect x="17" y="269" width="137" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="50" cy="295" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="51" cy="295" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="82" cy="295" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="128" cy="295" r="26" fill="#00C6A7" opacity="0.70"/><rect x="43" y="322" width="149" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="98" cy="350" r="28" fill="#00C6A7" opacity="0.55"/><rect x="101" y="373" width="290" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="171" cy="401" r="28" fill="#00C6A7" opacity="0.85"/><rect x="35" y="427" width="310" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="103" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="138" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="179" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="244" cy="453" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="255" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="273" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><rect x="107" y="475" width="363" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="160" cy="501" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="197" cy="501" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="296" cy="501" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="396" cy="501" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="422" cy="501" r="26" fill="#00C6A7" opacity="0.55"/><rect x="17" y="523" width="196" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="73" cy="551" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="132" cy="551" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="137" y="573" width="141" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="166" cy="599" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="172" cy="599" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="189" cy="599" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="211" cy="599" r="26" fill="#00C6A7" opacity="0.55"/><circle cx="241" cy="599" r="26" fill="#00C6A7" opacity="0.70"/><rect x="123" y="636" width="249" height="44" rx="22" fill="#00C6A7" opacity="0.16"/><circle cx="171" cy="658" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="336" cy="658" r="22" fill="#00C6A7" opacity="0.85"/><rect x="132" y="683" width="101" height="48" rx="24" fill="#00C6A7" opacity="0.07"/><circle cx="157" cy="707" r="24" fill="#00C6A7" opacity="0.33"/><circle cx="165" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><circle cx="179" cy="707" r="24" fill="#00C6A7" opacity="0.33"/><circle cx="190" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><circle cx="200" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><rect x="138" y="742" width="347" height="52" rx="26" fill="#00C6A7" opacity="0.07"/><circle cx="263" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="266" cy="768" r="26" fill="#00C6A7" opacity="0.24"/><circle cx="278" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="280" cy="768" r="26" fill="#F2F5F4" opacity="0.41"/><circle cx="286" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="369" cy="768" r="26" fill="#00C6A7" opacity="0.36"/><rect x="93" y="799" width="131" height="48" rx="24" fill="#00C6A7" opacity="0.06"/><circle cx="146" cy="823" r="24" fill="#00C6A7" opacity="0.27"/><rect x="123" y="845" width="90" height="56" rx="28" fill="#00C6A7" opacity="0.06"/><circle cx="156" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="158" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="173" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="175" cy="873" r="28" fill="#F2F5F4" opacity="0.33"/><circle cx="176" cy="873" r="28" fill="#00C6A7" opacity="0.29"/><circle cx="185" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><rect x="185" y="895" width="171" height="48" rx="24" fill="#00C6A7" opacity="0.05"/><circle cx="212" cy="919" r="24" fill="#00C6A7" opacity="0.21"/><circle cx="228" cy="919" r="24" fill="#00C6A7" opacity="0.17"/><rect x="168" y="954" width="269" height="48" rx="24" fill="#00C6A7" opacity="0.04"/><circle cx="195" cy="978" r="24" fill="#00C6A7" opacity="0.22"/><circle cx="197" cy="978" r="24" fill="#F2F5F4" opacity="0.25"/><circle cx="225" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><circle cx="332" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><circle cx="396" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><rect x="64" y="996" width="198" height="52" rx="26" fill="#00C6A7" opacity="0.04"/><circle cx="151" cy="1022" r="26" fill="#00C6A7" opacity="0.12"/><circle cx="156" cy="1022" r="26" fill="#00C6A7" opacity="0.16"/><circle cx="173" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><circle cx="197" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><circle cx="229" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><rect x="136" y="1048" width="167" height="44" rx="22" fill="#00C6A7" opacity="0.03"/><circle cx="158" cy="1070" r="22" fill="#00C6A7" opacity="0.10"/><circle cx="181" cy="1070" r="22" fill="#F2F5F4" opacity="0.17"/><circle cx="235" cy="1070" r="22" fill="#00C6A7" opacity="0.15"/><circle cx="257" cy="1070" r="22" fill="#F2F5F4" opacity="0.17"/><rect x="83" y="1087" width="355" height="56" rx="28" fill="#00C6A7" opacity="0.02"/><circle cx="397" cy="1115" r="28" fill="#F2F5F4" opacity="0.14"/></g></svg></div>
+    <div class="wrap hk2-in">
+      <p class="hk-brand"><b>ISRAEL–INDIA</b> <span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span><br>INNOVATION WEEK<br><b>COIMBATORE</b> 2027</p>
+      <h1 class="hk-lld sm">INDUSTRY DAY</h1>
+      <p class="hk2-tag ind"><span>2 February 2027</span> · SREC SPARK, Coimbatore</p>
+      <p class="hk2-lead">A day bringing together Israeli and Tamil Nadu industry, government, academia and start-ups: a new chamber of commerce, a new innovation centre, workshops and plenary discussions.</p>
+      <div class="cta-row">
+        <a class="hk-btn" href="#industry-day" aria-disabled="true" role="link">Registration opens soon</a>
+        <p class="hk2-open">Participation inquiries: <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
+      </div>
     </div>
   </div>
-  <section>
-    <div class="wrap">
-      <p class="kicker">What to expect</p>
-      <h2>A day with the industry</h2>
-      <div class="grid3" style="margin-top:22px">
-        <div class="card"><h3>Workshops</h3><p class="muted" style="margin-top:8px">Hands-on sessions on medical data, AI, cybersecurity and health innovation, led by industry and academic experts.</p></div>
-        <div class="card"><h3>Meet the companies</h3><p class="muted" style="margin-top:8px">Health-tech, medical-AI and life-science companies from India, Israel, the US, Europe and Singapore.</p></div>
-        <div class="card"><h3>Talks by Ariel University</h3><p class="muted" style="margin-top:8px">Sessions with the visiting Ariel University delegation for students, researchers and faculty.</p></div>
+
+  <section class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Programme</p><h2 class="hk-h">What happens on 2 February</h2></div>
+      <div>
+        <ol class="ind-prog">
+          <li><b>Opening of the Israel–Tamil Nadu Chamber of Commerce</b><p>Launch of a new platform for business cooperation between Israel and Tamil Nadu.</p></li>
+          <li><b>Foundation stone ceremony</b><p>Laying the foundation stone for the first AI, Data and Cyber Innovation Centre in Tamil Nadu.</p></li>
+          <li><b>Workshops and networking sessions</b><p>Hands-on sessions and meetings between companies, researchers, start-ups and students.</p></li>
+          <li><b>Plenary discussions</b><p>Leaders from Israel and India on technology, innovation and partnership.</p></li>
+        </ol>
+        <p class="hk-note" style="margin-top:18px">Detailed schedule: <span class="hk-soon">Info available soon</span></p>
       </div>
     </div>
   </section>
-  <section class="band">
-    <div class="wrap">
-      <p class="kicker">Partners and speakers</p>
-      <h2>Who will be there <span class="soon" style="color:var(--ind-text)">To be confirmed</span></h2>
-      <div class="pgrid"><div class="pcard"><p class="pinit" aria-hidden="true">SR</p><div><h3>Sri Ramakrishna Hospital</h3><p class="pwho">Hospital partner, Coimbatore</p><p class="muted">Clinical practice and real-world hospital data</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">TL</p><div><h3>TechGuard Labs Foundation</h3><p class="pwho">Israel–India cybersecurity centre, Coimbatore</p><p class="muted">Cybersecurity for health data, internships</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">PD</p><div><h3>Promitei Data</h3><p class="pwho">Medical data for research and AI</p><p class="muted">Preparing real-world data for clinical research</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">S</p><div><h3>Smartomica</h3><p class="pwho">Health-tech company</p><p class="muted">AI and data for personalised medicine</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">G</p><div><h3>GetData</h3><p class="pwho">Medical data for AI</p><p class="muted">Datasets for training medical AI models</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">F</p><div><h3>Frekil</h3><p class="pwho">AI for real-world evidence</p><p class="muted">From real-world data to clinical evidence</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">LA</p><div><h3>Lancaster AI</h3><p class="pwho">Medical imaging AI</p><p class="muted">Imaging data for diagnostic AI</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">4B</p><div><h3>4miZyme Bioscience</h3><p class="pwho">Probiotics manufacturer, Coimbatore</p><p class="muted">Probiotics and gut health products</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">BI</p><div><h3>Biopharmax India</h3><p class="pwho">Pharmaceutical company, India</p><p class="muted">Pharma innovation and market access</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">JH</p><div><h3>Jeff Hoffman</h3><p class="pwho">Invited speaker</p><p class="muted">Topic to be announced</p></div></div></div>
+
+  <section class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People</p><h2 class="hk-h">Speakers</h2></div>
+      <div class="hk-prose"><p>Speakers from government, industry and academia in Israel and India.</p><p style="margin-top:10px"><span class="hk-soon">Info available soon</span></p></div>
     </div>
   </section>
-  <section>
-    <div class="wrap">
-      <p class="kicker">Coming soon</p>
-      <div class="grid3" style="margin-top:14px">
-        <div class="card"><h3>Programme <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Session schedule and speakers.</p></div>
-        <div class="card"><h3>Open opportunities <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Internships, projects and collaborations offered by partners.</p></div>
-        <div class="card"><h3>Who can attend <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Registration details for students, researchers and companies.</p></div>
+
+  <section class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Partners</p><h2 class="hk-h">Participants and sponsors</h2></div>
+      <div class="hk-prose"><p>Companies, start-ups and institutions from Israel and Tamil Nadu.</p><p style="margin-top:10px"><span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Interested in participating or sponsoring? Write to <a href="mailto:mark@promitei.com">mark@promitei.com</a></p></div>
+    </div>
+  </section>
+
+  <section class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Israel–India</p><h2 class="hk-h">Building on Bengaluru Tech Summit 2026</h2></div>
+      <div>
+        <div class="ind-photos">
+          <figure><img src="assets/bts-pavilion.jpg" alt="Israel Pavilion at Bengaluru Tech Summit 2026" loading="lazy"><figcaption>Israel Pavilion, Bengaluru Tech Summit 2026</figcaption></figure>
+          <figure><img src="assets/bts-techguard.jpg" alt="TechGuard Labs Foundation at Bengaluru Tech Summit 2026" loading="lazy"><figcaption>TechGuard Labs Foundation at the Israel Pavilion</figcaption></figure>
+        </div>
       </div>
-      <p class="muted" style="margin-top:22px">Companies interested in taking part: <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
+    </div>
+  </section>
+
+  <section class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Venue</p><h2 class="hk-h">Hosted at SREC SPARK</h2></div>
+      <div class="ind-venue">
+        <img src="assets/srec-spark.jpg" alt="Sri Ramakrishna Engineering College campus, Coimbatore" loading="lazy">
+        <div>
+          <p class="hk-prose-p" style="margin-top:0">SREC SPARK Incubation Foundation is the start-up incubation and innovation centre of <b>Sri Ramakrishna Engineering College</b>, one of the institutions of SNR Sons Charitable Trust in Coimbatore.</p>
+          <div class="hk-addr">
+            <p class="hk-phase hk-dk">ADDRESS</p>
+            <p>SREC SPARK, Sri Ramakrishna Engineering College Campus<br>Vattamalaipalayam, N.G.G.O. Colony Post<br>Coimbatore, Tamil Nadu 641022, India</p>
+            <p><a href="https://www.google.com/maps/search/?api=1&query=Sri+Ramakrishna+Engineering+College+Coimbatore" target="_blank" rel="noopener">Open in Google Maps</a> · <a href="https://srecspark.org/" target="_blank" rel="noopener">srecspark.org</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hk-sec tint">
+    <div class="wrap">
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Organised by</h2>
+      <div class="hk-logos"><figure class="hk-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:56px"></figure><figure class="hk-lg"><img src="assets/srec-spark-logo.png" alt="SREC SPARK" style="height:64px"></figure><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:52px"></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:58px"></figure><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:62px"></figure></div>
+      <div class="hk-logos" style="margin-top:30px"><figure class="hk-lg"><img src="assets/fl_moe.png" alt="Israel Economic and Trade Mission, Ministry of Economy and Industry" style="height:50px"><span class="cap">Israel Economic and Trade Mission, Bengaluru</span></figure><figure class="hk-lg"><img src="assets/fl_il_consulate.png" alt="Consulate General of Israel to South India" style="height:50px"></figure><figure class="hk-lg"><img src="assets/fl_mashav.png" alt="MASHAV" style="height:50px"></figure></div>
+    </div>
+  </section>
+
+  <section class="hk-cta">
+    <div class="wrap hk-cta-in">
+      <p><b>INDUSTRY DAY · 2 FEBRUARY 2027</b><br><span>Registration link coming soon · inquiries: mark@promitei.com</span></p>
+      <a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Industry%20Day%202%20February%202027">Contact us</a>
     </div>
   </section>
 </div>
+
 <div id="v-conference" class="pg-conf" data-view hidden>
   <div class="chero">
     <div class="chero-bg" style="background-image:url(assets/hero.jpg)" aria-hidden="true"></div>
