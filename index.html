@@ -301,6 +301,84 @@ footer b{color:var(--on-navy)}
 .pane-soon{margin-top:8px;font-weight:700;font-size:15px;padding:10px 16px;border-radius:999px;border:1.5px solid rgba(255,255,255,.6);width:fit-content;letter-spacing:.04em;text-transform:uppercase}
 .pane-ind{cursor:default}
 .tabs .tab-soon{color:var(--on-navy-muted);opacity:.55;font-size:14px;font-weight:600;padding:7px 12px}
+
+/* hackathon v2: flyer accents, fuller content */
+.hk2{padding-bottom:0}
+.hk2-in{position:relative;z-index:1;padding-top:44px;padding-bottom:56px}
+.hk2-in .hk-brand{margin-top:0;font-size:clamp(17px,2vw,24px)}
+.hk-lld.sm{font-size:clamp(54px,9vw,120px);line-height:.95;margin-top:18px}
+.hk2-tag{margin-top:14px;font-weight:800;font-stretch:125%;font-size:clamp(17px,2.2vw,26px);text-transform:uppercase;letter-spacing:.02em;color:#fff}
+.hk2-tag span{color:#0C1A2D}
+.hk2-lead{margin-top:16px;max-width:60ch;font-size:clamp(16px,1.6vw,19px);line-height:1.5;color:#E6F4EF}
+.hk2-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.hk2-chips span{background:rgba(12,26,45,.55);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:10px 14px;font-size:14px;color:#D6EAE3;backdrop-filter:blur(2px)}
+.hk2-chips b{display:block;color:#fff;font-size:17px;font-stretch:115%}
+.hk2-chips span.or{background:#C9761B;border-color:#C9761B;color:#fff}
+.hk2-open{color:#0C1A2D;font-size:15px;font-weight:600}
+.hk2-open b{font-weight:800}
+.hk-subnav{position:sticky;top:calc(60px + env(safe-area-inset-top,0px));z-index:15;background:#fff;border-bottom:1px solid #DCE2E8}
+.hk-subnav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-top:8px;padding-bottom:8px}
+.hk-subnav button{flex:none;background:none;border:0;font:600 14px/1 "Archivo",sans-serif;font-stretch:110%;color:#33414F;padding:9px 12px;border-radius:999px;cursor:pointer}
+.hk-subnav button:hover{background:#E5F4EF;color:#0B6E56}
+.hk-sec{background:#fff;color:#1A2633;padding:64px 0}
+.hk-sec.tint{background:#F2F6F4}
+.hk-2col{display:grid;grid-template-columns:minmax(220px,0.8fr) 1.6fr;gap:36px;align-items:start}
+@media (max-width:860px){.hk-2col{grid-template-columns:1fr;gap:18px}}
+.hk-kick{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:700;font-stretch:125%;letter-spacing:.08em;text-transform:uppercase;color:#0B6E56}
+.hk-kick .hk-dots{margin-left:0;font-size:12px}
+.hk-kick.light{color:#BFE9DA}
+.hk-h{margin-top:10px;font-weight:300!important;font-stretch:125%;font-size:clamp(28px,3.6vw,44px)!important;line-height:1.08!important;color:#0C1A2D!important}
+.hk-prose p{font-size:17px;line-height:1.65;color:#26323F}
+.hk-prose p+p{margin-top:14px}
+.hk2-tracks{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+@media (max-width:860px){.hk2-tracks{grid-template-columns:1fr}}
+.hk2-tracks article{background:#fff;border-radius:20px;padding:28px;border-top:6px solid #0B9E78;box-shadow:0 1px 0 #DCE2E8}
+.hk2-tracks article.t2{border-top-color:#C9761B}
+.hk2-tracks h3{margin-top:8px;font-size:clamp(22px,2.4vw,30px);font-weight:800;font-stretch:125%;color:#0C1A2D}
+.hk2-tracks article.t1 h3 em{font-style:normal;color:#0B9E78}
+.hk2-tracks article.t2 h3 em{font-style:normal;color:#C9761B}
+.hk2-tracks article>p:not(.hk-tn):not(.hk-for){margin-top:8px;font-size:16.5px;line-height:1.55}
+.hk-mini{list-style:none;padding:14px 0 0;margin:16px 0 0;border-top:1px solid #E3E8EC;display:grid;gap:6px;font-size:15px;color:#3C4957}
+.hk-mini b{color:#0C1A2D}
+.hk-journey .hk-thin{margin-top:10px}
+.hk-facts3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+@media (max-width:640px){.hk-facts3{grid-template-columns:1fr}}
+.hk-facts3>div{background:#F2F6F4;border-radius:16px;padding:18px;border-left:4px solid #0B9E78}
+.hk-facts3>div:last-child{border-left-color:#C9761B}
+.hk-facts3 b{font-size:24px;font-weight:800;font-stretch:120%;color:#0C1A2D}
+.hk-facts3 p{margin-top:4px;font-size:15px;color:#3C4957}
+.hk-ticks2{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.hk-ticks2 li{position:relative;padding-left:30px;font-size:17px;line-height:1.5;color:#26323F}
+.hk-ticks2 li::before{content:"";position:absolute;left:2px;top:7px;width:12px;height:7px;border-left:2.5px solid #0B9E78;border-bottom:2.5px solid #0B9E78;transform:rotate(-45deg)}
+.hk-ticks2.plain li{padding-left:0}.hk-ticks2.plain li::before{display:none}
+.hk-ticks2 a,.hk-around a,.hk-q a{color:#0B6E56}
+.hk-soon{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.02em;color:#9A5B0B;background:#FBEBD3;border-radius:999px;padding:3px 11px;vertical-align:1px}
+.hk-ph{margin-top:16px;border:1.5px dashed #B8C6D2;border-radius:16px;padding:22px;text-align:center}
+.hk-cta{background:linear-gradient(90deg,#CA761A,#FC9732);padding:30px 0}
+.hk-cta-in{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px}
+.hk-cta p{color:#fff;font-stretch:125%;font-size:clamp(17px,2vw,24px);line-height:1.3}
+.hk-cta p b{font-weight:800}
+.hk-cta p span{color:#0C1A2D;font-weight:700;font-size:.8em}
+.hk-orgs2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+@media (max-width:860px){.hk-orgs2{grid-template-columns:1fr}}
+.hk-org{display:flex;gap:18px;align-items:flex-start;background:#F2F6F4;border-radius:18px;padding:20px}
+.hk-org .lg{flex:none;width:120px;height:64px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px}
+.hk-org .lg img{max-height:48px;max-width:104px;width:auto}
+.hk-org h3{font-size:17px;font-weight:800;font-stretch:110%;color:#0C1A2D}
+.hk-orgrole{font-size:13.5px;font-weight:700;color:#0B6E56;margin-top:2px}
+.hk-org p:last-child{margin-top:6px;font-size:15px;line-height:1.5;color:#3C4957}
+.hk-faq{background:#fff;border-radius:14px;margin-bottom:10px;border:1px solid #E1E7EC}
+.hk-faq summary{cursor:pointer;list-style:none;padding:16px 46px 16px 18px;font-weight:700;font-size:16.5px;color:#0C1A2D;position:relative}
+.hk-faq summary::-webkit-details-marker{display:none}
+.hk-faq summary::after{content:"+";position:absolute;right:18px;top:12px;font-size:24px;font-weight:400;color:#0B9E78}
+.hk-faq[open] summary::after{content:"–"}
+.hk-faq div{padding:0 18px 16px;font-size:16px;line-height:1.55;color:#3C4957}
+.hk-around{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.hk-around{grid-template-columns:1fr}}
+.hk-around>*{display:block;background:#F2F6F4;border-radius:16px;padding:18px;text-decoration:none;color:#26323F}
+.hk-around b{font-weight:800;color:#0C1A2D;font-size:16.5px}
+.hk-around p{margin-top:6px;font-size:15px}
+.hk-around a{border:1.5px solid #0B9E78}
 </style>
 </head>
 <body>
@@ -358,105 +436,173 @@ footer b{color:var(--on-navy)}
   </div>
 </div>
 <div id="v-hackathon" class="pg-hack hk" data-view hidden>
-  <div class="hk-hero">
+  <div class="hk-hero hk2">
     <div class="hk-bokeh"><svg class="bokeh" viewBox="0 0 560 1200" aria-hidden="true" preserveAspectRatio="xMidYMin meet"><defs><filter id="bhf" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter></defs><g filter="url(#bhf)"><rect x="82" y="2" width="167" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="116" cy="30" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="119" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="122" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="156" cy="30" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="178" cy="30" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="215" cy="30" r="28" fill="#00C6A7" opacity="0.85"/><rect x="57" y="49" width="121" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="113" cy="77" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="74" y="101" width="304" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="150" cy="125" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="158" cy="125" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="190" cy="125" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="194" cy="125" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="255" cy="125" r="24" fill="#00C6A7" opacity="0.70"/><rect x="119" y="153" width="322" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="237" cy="179" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="269" cy="179" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="272" cy="179" r="26" fill="#00C6A7" opacity="0.70"/><rect x="73" y="215" width="127" height="44" rx="22" fill="#00C6A7" opacity="0.16"/><circle cx="114" cy="237" r="22" fill="#00C6A7" opacity="0.85"/><circle cx="116" cy="237" r="22" fill="#F2F5F4" opacity="0.95"/><circle cx="138" cy="237" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="148" cy="237" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="157" cy="237" r="22" fill="#00C6A7" opacity="0.85"/><rect x="17" y="269" width="137" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="50" cy="295" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="51" cy="295" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="82" cy="295" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="128" cy="295" r="26" fill="#00C6A7" opacity="0.70"/><rect x="43" y="322" width="149" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="98" cy="350" r="28" fill="#00C6A7" opacity="0.55"/><rect x="101" y="373" width="290" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="171" cy="401" r="28" fill="#00C6A7" opacity="0.85"/><rect x="35" y="427" width="310" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="103" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="138" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="179" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="244" cy="453" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="255" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="273" cy="453" r="26" fill="#F2F5F4" opacity="0.95"/><rect x="107" y="475" width="363" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="160" cy="501" r="26" fill="#00C6A7" opacity="0.85"/><circle cx="197" cy="501" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="296" cy="501" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="396" cy="501" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="422" cy="501" r="26" fill="#00C6A7" opacity="0.55"/><rect x="17" y="523" width="196" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="73" cy="551" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="132" cy="551" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="137" y="573" width="141" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="166" cy="599" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="172" cy="599" r="26" fill="#F2F5F4" opacity="0.95"/><circle cx="189" cy="599" r="26" fill="#00C6A7" opacity="0.70"/><circle cx="211" cy="599" r="26" fill="#00C6A7" opacity="0.55"/><circle cx="241" cy="599" r="26" fill="#00C6A7" opacity="0.70"/><rect x="123" y="636" width="249" height="44" rx="22" fill="#00C6A7" opacity="0.16"/><circle cx="171" cy="658" r="22" fill="#00C6A7" opacity="0.70"/><circle cx="336" cy="658" r="22" fill="#00C6A7" opacity="0.85"/><rect x="132" y="683" width="101" height="48" rx="24" fill="#00C6A7" opacity="0.07"/><circle cx="157" cy="707" r="24" fill="#00C6A7" opacity="0.33"/><circle cx="165" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><circle cx="179" cy="707" r="24" fill="#00C6A7" opacity="0.33"/><circle cx="190" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><circle cx="200" cy="707" r="24" fill="#00C6A7" opacity="0.26"/><rect x="138" y="742" width="347" height="52" rx="26" fill="#00C6A7" opacity="0.07"/><circle cx="263" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="266" cy="768" r="26" fill="#00C6A7" opacity="0.24"/><circle cx="278" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="280" cy="768" r="26" fill="#F2F5F4" opacity="0.41"/><circle cx="286" cy="768" r="26" fill="#00C6A7" opacity="0.30"/><circle cx="369" cy="768" r="26" fill="#00C6A7" opacity="0.36"/><rect x="93" y="799" width="131" height="48" rx="24" fill="#00C6A7" opacity="0.06"/><circle cx="146" cy="823" r="24" fill="#00C6A7" opacity="0.27"/><rect x="123" y="845" width="90" height="56" rx="28" fill="#00C6A7" opacity="0.06"/><circle cx="156" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="158" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="173" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><circle cx="175" cy="873" r="28" fill="#F2F5F4" opacity="0.33"/><circle cx="176" cy="873" r="28" fill="#00C6A7" opacity="0.29"/><circle cx="185" cy="873" r="28" fill="#00C6A7" opacity="0.24"/><rect x="185" y="895" width="171" height="48" rx="24" fill="#00C6A7" opacity="0.05"/><circle cx="212" cy="919" r="24" fill="#00C6A7" opacity="0.21"/><circle cx="228" cy="919" r="24" fill="#00C6A7" opacity="0.17"/><rect x="168" y="954" width="269" height="48" rx="24" fill="#00C6A7" opacity="0.04"/><circle cx="195" cy="978" r="24" fill="#00C6A7" opacity="0.22"/><circle cx="197" cy="978" r="24" fill="#F2F5F4" opacity="0.25"/><circle cx="225" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><circle cx="332" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><circle cx="396" cy="978" r="24" fill="#00C6A7" opacity="0.14"/><rect x="64" y="996" width="198" height="52" rx="26" fill="#00C6A7" opacity="0.04"/><circle cx="151" cy="1022" r="26" fill="#00C6A7" opacity="0.12"/><circle cx="156" cy="1022" r="26" fill="#00C6A7" opacity="0.16"/><circle cx="173" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><circle cx="197" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><circle cx="229" cy="1022" r="26" fill="#00C6A7" opacity="0.19"/><rect x="136" y="1048" width="167" height="44" rx="22" fill="#00C6A7" opacity="0.03"/><circle cx="158" cy="1070" r="22" fill="#00C6A7" opacity="0.10"/><circle cx="181" cy="1070" r="22" fill="#F2F5F4" opacity="0.17"/><circle cx="235" cy="1070" r="22" fill="#00C6A7" opacity="0.15"/><circle cx="257" cy="1070" r="22" fill="#F2F5F4" opacity="0.17"/><rect x="83" y="1087" width="355" height="56" rx="28" fill="#00C6A7" opacity="0.02"/><circle cx="397" cy="1115" r="28" fill="#F2F5F4" opacity="0.14"/></g></svg></div>
-    <div class="wrap hk-hero-in">
-      <div class="hk-flags" aria-hidden="true"><svg viewBox="0 0 90 120"><defs><linearGradient id="fsh" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".18"/><stop offset=".5" stop-color="#fff" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity=".2"/></linearGradient></defs><path d="M0 0H90V104L45 120L0 104Z" fill="#fff"/><path d="M0 0H90V36H0Z" fill="#FF9933"/><path d="M0 72H90V104L45 120L0 104Z" fill="#138808"/><circle cx="45" cy="54" r="12" fill="none" stroke="#000080" stroke-width="2"/><circle cx="45" cy="54" r="2" fill="#000080"/><g stroke="#000080" stroke-width="1"><line x1="45" y1="54" x2="57.0" y2="54.0"/><line x1="45" y1="54" x2="56.6" y2="57.1"/><line x1="45" y1="54" x2="55.4" y2="60.0"/><line x1="45" y1="54" x2="53.5" y2="62.5"/><line x1="45" y1="54" x2="51.0" y2="64.4"/><line x1="45" y1="54" x2="48.1" y2="65.6"/><line x1="45" y1="54" x2="45.0" y2="66.0"/><line x1="45" y1="54" x2="41.9" y2="65.6"/><line x1="45" y1="54" x2="39.0" y2="64.4"/><line x1="45" y1="54" x2="36.5" y2="62.5"/><line x1="45" y1="54" x2="34.6" y2="60.0"/><line x1="45" y1="54" x2="33.4" y2="57.1"/><line x1="45" y1="54" x2="33.0" y2="54.0"/><line x1="45" y1="54" x2="33.4" y2="50.9"/><line x1="45" y1="54" x2="34.6" y2="48.0"/><line x1="45" y1="54" x2="36.5" y2="45.5"/><line x1="45" y1="54" x2="39.0" y2="43.6"/><line x1="45" y1="54" x2="41.9" y2="42.4"/><line x1="45" y1="54" x2="45.0" y2="42.0"/><line x1="45" y1="54" x2="48.1" y2="42.4"/><line x1="45" y1="54" x2="51.0" y2="43.6"/><line x1="45" y1="54" x2="53.5" y2="45.5"/><line x1="45" y1="54" x2="55.4" y2="48.0"/><line x1="45" y1="54" x2="56.6" y2="50.9"/></g><path d="M0 0H90V104L45 120L0 104Z" fill="url(#fsh)"/></svg><svg viewBox="0 0 90 120"><path d="M0 0H90V104L45 120L0 104Z" fill="#fff"/><path d="M0 10H90V24H0Z" fill="#0038B8"/><path d="M0 80H90V94H0Z" fill="#0038B8"/><g fill="none" stroke="#0038B8" stroke-width="3.2"><path d="M45 35L60 61H30Z"/><path d="M45 69L30 43H60Z"/></g><path d="M0 0H90V104L45 120L0 104Z" fill="url(#fsh)"/></svg></div>
+    <div class="wrap hk2-in">
       <p class="hk-brand"><b>ISRAEL–INDIA</b> <span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span><br>GLOBAL INNOVATORS<br><b>HACKATHON</b> 2027</p>
-      <h1 class="hk-lld">LONG<br>LIVE<br>DATA</h1>
-      <p class="hk-tag"><span>FROM HEALTH RECORDS</span> TO RECORD HEALTH</p>
-      <div class="hk-facts">
-        <div><p>Submit project proposal</p><b>Before Jan 11</b></div>
-        <div><p>Online hackathon</p><b>17–31 Jan 2027</b></div>
-        <div><p>Final defense<br>SRCW, Coimbatore</p><b>1 Feb 2027</b></div>
+      <h1 class="hk-lld sm">LONG LIVE DATA</h1>
+      <p class="hk2-tag"><span>From health records</span> to record health</p>
+      <p class="hk2-lead">A two-track hackathon for young data, AI and life-science talent from Israel and India: turn real-world health data into research-ready data and evidence for healthy longevity.</p>
+      <div class="hk2-chips">
+        <span><b>1 Dec – 7 Jan</b>Registration</span>
+        <span><b>17–31 Jan</b>Online hackathon</span>
+        <span class="or"><b>1 Feb 2027</b>Final defense · SRCW, Coimbatore</span>
+      </div>
+      <div class="cta-row">
+        <a class="hk-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScEMz4rVoQZzacMbOktG83VV28Fr87YQ7xnI-uB3hmg0mNEqA/viewform" target="_blank" rel="noopener">Register your team</a>
+        <p class="hk2-open">Registration opens <b>1 December</b> · closes <b>7 January 2027</b></p>
       </div>
     </div>
   </div>
-  <div class="hk-bar">
-    <div class="wrap hk-bar-in">
-      <p><b>REGISTRATION OPENS DECEMBER 1ST</b> <span>· REGISTER YOUR TEAM BY 7 JANUARY 2027</span></p>
-      <a class="hk-btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLScEMz4rVoQZzacMbOktG83VV28Fr87YQ7xnI-uB3hmg0mNEqA/viewform" target="_blank" rel="noopener">Register your team</a>
-    </div>
-  </div>
+  <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
+    <button data-go="hk-about">About</button><button data-go="hk-tracks">Tracks</button><button data-go="hk-how">How it works</button><button data-go="hk-final">Final day</button><button data-go="hk-prizes">Prizes</button><button data-go="hk-who">Who can apply</button><button data-go="hk-mentors">Mentors and jury</button><button data-go="hk-orgs">Organisers</button><button data-go="hk-faq">FAQ</button>
+  </div></nav>
 
-  <section class="hk-journey">
-    <div class="hk-bokeh small"><svg class="bokeh" viewBox="0 0 560 600" aria-hidden="true" preserveAspectRatio="xMidYMin meet"><defs><filter id="bjf" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter></defs><g filter="url(#bjf)"><rect x="213" y="6" width="98" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="238" cy="30" r="24" fill="#F2F5F4" opacity="0.95"/><rect x="26" y="57" width="282" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="58" cy="85" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="66" cy="85" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="190" cy="85" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="214" cy="85" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="228" cy="85" r="28" fill="#00C6A7" opacity="0.55"/><rect x="16" y="119" width="332" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="177" cy="145" r="26" fill="#F2F5F4" opacity="0.95"/><rect x="59" y="167" width="325" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="110" cy="195" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="126" cy="195" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="234" cy="195" r="28" fill="#00C6A7" opacity="0.70"/><circle cx="332" cy="195" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="159" y="224" width="380" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="429" cy="248" r="24" fill="#F2F5F4" opacity="0.95"/><rect x="172" y="276" width="140" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="232" cy="300" r="24" fill="#00C6A7" opacity="0.55"/><circle cx="233" cy="300" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="255" cy="300" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="258" cy="300" r="24" fill="#00C6A7" opacity="0.70"/><circle cx="262" cy="300" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="286" cy="300" r="24" fill="#00C6A7" opacity="0.85"/><rect x="68" y="334" width="288" height="48" rx="24" fill="#00C6A7" opacity="0.07"/><circle cx="111" cy="358" r="24" fill="#F2F5F4" opacity="0.44"/><circle cx="240" cy="358" r="24" fill="#00C6A7" opacity="0.32"/><rect x="33" y="387" width="350" height="52" rx="26" fill="#00C6A7" opacity="0.06"/><circle cx="245" cy="413" r="26" fill="#F2F5F4" opacity="0.35"/><rect x="100" y="448" width="102" height="48" rx="24" fill="#00C6A7" opacity="0.04"/><circle cx="155" cy="472" r="24" fill="#00C6A7" opacity="0.20"/><rect x="186" y="497" width="162" height="56" rx="28" fill="#00C6A7" opacity="0.03"/><circle cx="229" cy="525" r="28" fill="#00C6A7" opacity="0.10"/><circle cx="254" cy="525" r="28" fill="#00C6A7" opacity="0.13"/><circle cx="262" cy="525" r="28" fill="#00C6A7" opacity="0.10"/></g></svg></div>
-    <div class="wrap" style="position:relative;z-index:1">
-      <div class="hk-jhead">
-        <p class="hk-brand"><b>ISRAEL–INDIA</b> <span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span><br>GLOBAL INNOVATORS<br><b>HACKATHON</b> 2027</p>
-        <h2 class="hk-thin">PARTICIPANT<br>JOURNEY</h2>
-      </div>
-      <div class="hk-jcols">
-        <div>
-          <p class="hk-phase">REGISTRATION</p>
-          <div class="hk-step"><b>1 Dec</b><p>Registration opens<br>Teams of 3–4 pick one track</p></div>
-          <div class="hk-step"><b>7 Jan</b><p>Registration closes<br>Challenges revealed</p></div>
-        </div>
-        <div>
-          <p class="hk-phase">PRE-HACKATHON</p>
-          <div class="hk-step"><b>By 11 Jan</b><p>Submit your project proposal</p></div>
-          <div class="hk-step"><b>12–15 Jan</b><p>Evaluation and shortlisting, 20 teams per track. Shortlisted teams are invited to the hackathon</p></div>
-        </div>
-        <div>
-          <p class="hk-phase">HACKATHON</p>
-          <div class="hk-step"><b>17–31 Jan</b><p>Hackathon online: develop your project with an international board of experts from Israel and India</p></div>
-          <div class="hk-step"><b class="hk-badge">1 Feb</b><p>Project defense on site before an international jury. Coimbatore, Tamil Nadu, India</p></div>
-        </div>
+  <section id="hk-about" class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> About the hackathon</p><h2 class="hk-h">Why real-world health data</h2></div>
+      <div class="hk-prose">
+        <p>Hospitals and clinics generate enormous amounts of health data every day, yet most of it never reaches research: it is scattered across systems, inconsistent and too sensitive to share as it is.</p>
+        <p>The <b>Israel–India Global Innovators Hackathon 2027</b> brings young talent from both countries together around one idea: <b>Long Live Data</b>. In the first track, teams make clinical records clean, safe and ready for AI and research. In the second, they use real-world data to explore what keeps people healthy for longer.</p>
+        <p>Teams work online with mentors from Israel and India and present their projects to an international jury in Coimbatore, alongside an Industry Day and an International Scientific Conference.</p>
       </div>
     </div>
   </section>
 
-  <section class="hk-white">
+  <section id="hk-tracks" class="hk-sec tint">
     <div class="wrap">
-      <div class="hk-tracks">
-        <article>
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Two tracks</p><h2 class="hk-h">Choose the track that fits you</h2>
+      <div class="hk2-tracks">
+        <article class="t1">
           <p class="hk-tn t1">TRACK 01</p>
-          <h3>FROM HEALTH RECORDS</h3>
-          <p class="hk-for t1">For young AI, IT and data professionals.</p>
+          <h3>FROM HEALTH <em>RECORDS</em></h3>
+          <p class="hk-for t1">For young AI, IT and data professionals</p>
           <p>Work with real clinical records and turn them into data that research can actually use. Build the tools that make health data clean, safe and ready for AI and clinical research.</p>
+          <ul class="hk-mini"><li><b>Typical skills:</b> Python, data engineering, machine learning, data privacy</li><li><b>Challenge and dataset:</b> released to registered teams on 7 January</li></ul>
         </article>
-        <article>
+        <article class="t2">
           <p class="hk-tn t2">TRACK 02</p>
-          <h3>TO RECORD HEALTH</h3>
+          <h3>TO RECORD <em>HEALTH</em></h3>
           <p class="hk-for t2">For early-career biotech and life-science researchers</p>
           <p>Use real-world health data to discover what keeps people healthy for longer. Explore longevity and anti-ageing science, and turn data into evidence for the next breakthroughs in health research.</p>
+          <ul class="hk-mini"><li><b>Typical skills:</b> molecular biology, microbiome, ageing biology, clinical research</li><li><b>Challenge and dataset:</b> released to registered teams on 7 January</li></ul>
         </article>
       </div>
-      <div class="hk-get">
-        <h2 class="hk-thin teal">WHAT<br>YOU<br>GET</h2>
-        <ul>
-          <li><b class="tealb">Cash prizes</b> for the winner and runner-up teams</li>
-          <li><b>Internship opportunities</b> at TechGuard Labs and Promitei Data</li>
-          <li>Develop your project directly with <b>top Israeli, Indian and global experts</b></li>
-          <li>Opportunity to join the <b>Israel–India International Research Group on Longevity and Healthy Ageing</b></li>
-        </ul>
-      </div>
-      <p class="hk-note">Each track has its own dataset and jury. Full challenges are released to registered teams on 7 January.</p>
+      <p class="hk-note">Problem statements are kept general so that participants from different backgrounds can relate to them. Detailed challenges are developed by the organisers together with industry partners.</p>
     </div>
   </section>
 
-  <section class="hk-navy">
-    <div class="wrap">
-      <div class="hk-get">
-        <h2 class="hk-thin teal">WHO<br>CAN<br>APPLY</h2>
-        <ul>
-          <li>Teams of 3–4</li>
+  <section id="hk-how" class="hk-journey">
+    <div class="hk-bokeh small"><svg class="bokeh" viewBox="0 0 560 600" aria-hidden="true" preserveAspectRatio="xMidYMin meet"><defs><filter id="bjf" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.2"/></filter></defs><g filter="url(#bjf)"><rect x="213" y="6" width="98" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="238" cy="30" r="24" fill="#F2F5F4" opacity="0.95"/><rect x="26" y="57" width="282" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="58" cy="85" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="66" cy="85" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="190" cy="85" r="28" fill="#00C6A7" opacity="0.55"/><circle cx="214" cy="85" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="228" cy="85" r="28" fill="#00C6A7" opacity="0.55"/><rect x="16" y="119" width="332" height="52" rx="26" fill="#00C6A7" opacity="0.16"/><circle cx="177" cy="145" r="26" fill="#F2F5F4" opacity="0.95"/><rect x="59" y="167" width="325" height="56" rx="28" fill="#00C6A7" opacity="0.16"/><circle cx="110" cy="195" r="28" fill="#00C6A7" opacity="0.85"/><circle cx="126" cy="195" r="28" fill="#F2F5F4" opacity="0.95"/><circle cx="234" cy="195" r="28" fill="#00C6A7" opacity="0.70"/><circle cx="332" cy="195" r="28" fill="#F2F5F4" opacity="0.95"/><rect x="159" y="224" width="380" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="429" cy="248" r="24" fill="#F2F5F4" opacity="0.95"/><rect x="172" y="276" width="140" height="48" rx="24" fill="#00C6A7" opacity="0.16"/><circle cx="232" cy="300" r="24" fill="#00C6A7" opacity="0.55"/><circle cx="233" cy="300" r="24" fill="#00C6A7" opacity="0.85"/><circle cx="255" cy="300" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="258" cy="300" r="24" fill="#00C6A7" opacity="0.70"/><circle cx="262" cy="300" r="24" fill="#F2F5F4" opacity="0.95"/><circle cx="286" cy="300" r="24" fill="#00C6A7" opacity="0.85"/><rect x="68" y="334" width="288" height="48" rx="24" fill="#00C6A7" opacity="0.07"/><circle cx="111" cy="358" r="24" fill="#F2F5F4" opacity="0.44"/><circle cx="240" cy="358" r="24" fill="#00C6A7" opacity="0.32"/><rect x="33" y="387" width="350" height="52" rx="26" fill="#00C6A7" opacity="0.06"/><circle cx="245" cy="413" r="26" fill="#F2F5F4" opacity="0.35"/><rect x="100" y="448" width="102" height="48" rx="24" fill="#00C6A7" opacity="0.04"/><circle cx="155" cy="472" r="24" fill="#00C6A7" opacity="0.20"/><rect x="186" y="497" width="162" height="56" rx="28" fill="#00C6A7" opacity="0.03"/><circle cx="229" cy="525" r="28" fill="#00C6A7" opacity="0.10"/><circle cx="254" cy="525" r="28" fill="#00C6A7" opacity="0.13"/><circle cx="262" cy="525" r="28" fill="#00C6A7" opacity="0.10"/></g></svg></div>
+    <div class="wrap" style="position:relative;z-index:1">
+      <p class="hk-kick light"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> How it works</p>
+      <h2 class="hk-thin">PARTICIPANT JOURNEY</h2>
+      <div class="hk-jcols">
+        <div><p class="hk-phase">REGISTRATION</p>
+          <div class="hk-step"><b>1 Dec</b><p>Registration opens. Teams of 3–4 pick one track.</p></div>
+          <div class="hk-step"><b>7 Jan</b><p>Registration closes. Challenges revealed.</p></div></div>
+        <div><p class="hk-phase">PRE-HACKATHON</p>
+          <div class="hk-step"><b>By 11 Jan</b><p>Submit your project proposal.</p></div>
+          <div class="hk-step"><b>12–15 Jan</b><p>Evaluation and shortlisting, 20 teams per track. Shortlisted teams are invited to the hackathon.</p></div></div>
+        <div><p class="hk-phase">HACKATHON</p>
+          <div class="hk-step"><b>17–31 Jan</b><p>Hackathon online: develop your project with an international board of experts from Israel and India.</p></div>
+          <div class="hk-step"><b class="hk-badge">1 Feb</b><p>Project defense on site before an international jury. Coimbatore, Tamil Nadu, India.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hk-final" class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> 1 February 2027</p><h2 class="hk-h">Final day at SRCW, Coimbatore</h2></div>
+      <div>
+        <div class="hk-facts3">
+          <div><b>20 min</b><p>per team: 10 minutes presentation, 10 minutes questions</p></div>
+          <div><b>2 juries</b><p>in parallel, one for each track</p></div>
+          <div><b>Evening</b><p>awards and closing ceremony</p></div>
+        </div>
+        <p class="hk-note" style="margin-top:18px">Detailed schedule, venue logistics and jury members: <span class="hk-soon">Info available soon</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hk-prizes" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Prizes</p><h2 class="hk-h">What you get</h2></div>
+      <ul class="hk-ticks2">
+        <li><b>Cash prizes</b> for the winner and runner-up teams in each track. Prize amounts: <span class="hk-soon">Info available soon</span></li>
+        <li>Develop your project directly with <b>top Israeli, Indian and global experts</b></li>
+        <li><b>Internship opportunities</b> at TechGuard Labs and Promitei Data</li>
+        <li>Opportunity to join the <b>Israel–India International Research Group on Longevity and Healthy Ageing</b></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hk-who" class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Eligibility</p><h2 class="hk-h">Who can apply</h2></div>
+      <div>
+        <ul class="hk-ticks2">
           <li>Final-year BSc students, graduates, young professionals and early-career researchers</li>
+          <li>Teams of 3–4, registered by the team lead</li>
           <li>Work online in January, defend in Coimbatore on 1 February</li>
-          <li class="nob"><a class="hk-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScEMz4rVoQZzacMbOktG83VV28Fr87YQ7xnI-uB3hmg0mNEqA/viewform" target="_blank" rel="noopener">Register your team</a></li>
         </ul>
+        <p class="hk-note" style="margin-top:14px">Full rules and evaluation criteria: <span class="hk-soon">Info available soon</span></p>
       </div>
-      <p class="hk-final"><b>REGISTER YOUR TEAM BY 7 JANUARY 2027</b> <span>REGISTRATION OPENS DECEMBER 1ST</span></p>
     </div>
   </section>
 
-  <section class="hk-white hk-orgs">
+  <section id="hk-mentors" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People</p><h2 class="hk-h">Mentors and jury</h2></div>
+      <div class="hk-prose">
+        <p>Teams are mentored by an international board of experts from Ariel University, SRCW and industry partners in Israel and India. Each track has its own jury.</p>
+        <div class="hk-ph"><span class="hk-soon">Info available soon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hk-cta">
+    <div class="wrap hk-cta-in">
+      <p><b>REGISTRATION OPENS DECEMBER 1ST</b><br><span>Register your team by 7 January 2027</span></p>
+      <a class="hk-btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLScEMz4rVoQZzacMbOktG83VV28Fr87YQ7xnI-uB3hmg0mNEqA/viewform" target="_blank" rel="noopener">Register your team</a>
+    </div>
+  </section>
+
+  <section id="hk-orgs" class="hk-sec">
     <div class="wrap">
-      <p class="hk-phase hk-dk">ORGANISED BY</p>
-      <div class="logos"><span><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women" style="height:44px"></span><span><img src="assets/snr.png" alt="SNR Sons Charitable Trust" style="height:56px"></span><span><img src="assets/techguard.png" alt="TechGuard Labs Foundation" style="height:32px"></span><span><img src="assets/promitei.webp" alt="Promitei" style="height:44px"></span><span><img src="assets/ariel_en.png" alt="Ariel University" style="height:44px"></span></div>
-      <p class="hk-phase hk-dk" style="margin-top:28px">WITH THE SUPPORT OF</p>
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Who is behind the hackathon</h2>
+      <div class="hk-orgs2"><article class="hk-org"><span class="lg"><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women"></span><div><h3>Sri Ramakrishna College of Arts and Science for Women</h3><p class="hk-orgrole">Host institution</p><p>An autonomous college in Coimbatore with more than 35 years of academic heritage. SRCW hosts the final defense and the International Scientific Conference.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/ariel_en.png" alt="Ariel University"></span><div><h3>Ariel University</h3><p class="hk-orgrole">Academic partner, Israel</p><p>Israel's newest public research university, with strengths in health sciences, cybersecurity and life sciences. Ariel University experts mentor the teams and evaluate the projects.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/promitei.webp" alt="Promitei"></span><div><h3>Promitei</h3><p class="hk-orgrole">Project integrator, Israel</p><p>An Israeli company connecting research, industry and markets across Israel, India and Asia for more than 15 years, including through Promitei Data, its medical data venture.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/techguard.png" alt="TechGuard Labs Foundation"></span><div><h3>TechGuard Labs Foundation</h3><p class="hk-orgrole">Israel–India innovation centre, Coimbatore</p><p>An Israel–India cybersecurity innovation centre co-founded by SNR Sons Charitable Trust, Ariel University and Promitei.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/snr.png" alt="SNR Sons Charitable Trust"></span><div><h3>SNR Sons Charitable Trust</h3><p class="hk-orgrole">Coimbatore</p><p>The trust behind Sri Ramakrishna educational institutions and Sri Ramakrishna Hospital in Coimbatore.</p></div></article></div>
+      <p class="hk-phase hk-dk" style="margin-top:34px">WITH THE SUPPORT OF</p>
       <p class="hk-support">Consulate General of Israel to South India · Ministry of Economy and Industry, Foreign Trade Administration · MASHAV, Israel's Agency for International Development Cooperation</p>
-      <p class="hk-q">Questions: <a href="mailto:mark@promitei.com">mark@promitei.com</a> · <a href="mailto:andreydo@ariel.ac.il">andreydo@ariel.ac.il</a></p>
+      <p class="hk-phase hk-dk" style="margin-top:26px">INDUSTRY PARTNERS</p>
+      <p class="hk-support"><span class="hk-soon">Info available soon</span></p>
+    </div>
+  </section>
+
+  <section id="hk-faq" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> FAQ</p><h2 class="hk-h">Questions and answers</h2><p class="hk-note">This page is updated as the programme develops.</p></div>
+      <div><details class="hk-faq"><summary>Who can take part?</summary><div>Final-year BSc students, graduates, young professionals and early-career researchers. Track 01 is aimed at AI, IT and data profiles; Track 02 at biotech and life-science profiles.</div></details><details class="hk-faq"><summary>How big is a team?</summary><div>Teams of 3–4 people. One team lead registers the whole team through the registration form.</div></details><details class="hk-faq"><summary>Can I join one track only?</summary><div>Yes. Each team chooses one track when registering.</div></details><details class="hk-faq"><summary>Is the hackathon online or on site?</summary><div>Both. Project work runs online from 17 to 31 January with mentoring by experts from Israel and India. Shortlisted teams defend their projects on site at SRCW, Coimbatore, on 1 February 2027.</div></details><details class="hk-faq"><summary>How are teams selected for the hackathon?</summary><div>After registration closes on 7 January, teams receive the challenges and submit a project proposal by 11 January. Ariel University and SRCW evaluate the proposals from 12 to 15 January and invite 20 teams per track.</div></details><details class="hk-faq"><summary>What data will we work with?</summary><div>Each track works with its own dataset prepared by the organisers. Details are shared with registered teams together with the challenges on 7 January.</div></details><details class="hk-faq"><summary>What can we win?</summary><div>Cash prizes for the winner and runner-up teams, internship opportunities at TechGuard Labs and Promitei Data, and the opportunity to join the Israel–India International Research Group on Longevity and Healthy Ageing.</div></details><details class="hk-faq"><summary>Is there a participation fee?</summary><div><span class="hk-soon">Info available soon</span></div></details><details class="hk-faq"><summary>Is travel or accommodation provided for the final in Coimbatore?</summary><div><span class="hk-soon">Info available soon</span></div></details><details class="hk-faq"><summary>Who owns the projects and code we create?</summary><div><span class="hk-soon">Info available soon</span></div></details><details class="hk-faq"><summary>Can I register without a team?</summary><div><span class="hk-soon">Info available soon</span></div></details></div>
+    </div>
+  </section>
+
+  <section class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Around the hackathon</p><h2 class="hk-h">1–3 February in Coimbatore</h2></div>
+      <div class="hk-around">
+        <div><b>2 Feb · Industry Day</b><p>Workshops and meetings with health-tech and medical-AI companies. Coming soon.</p></div>
+        <a href="#conference"><b>3 Feb · International Scientific Conference</b><p>AI-Driven Innovations in Computing and Life Science for Sustainable Development, at SRCW with Ariel University. See the conference</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Contact</p><h2 class="hk-h">Questions</h2></div>
+      <ul class="hk-ticks2 plain">
+        <li><b>Mark Melamed</b>, Promitei · <a href="mailto:mark@promitei.com">mark@promitei.com</a></li>
+        <li><b>Dr. Andrei Dorofeev</b>, Ariel University · <a href="mailto:andreydo@ariel.ac.il">andreydo@ariel.ac.il</a></li>
+      </ul>
     </div>
   </section>
 </div>
@@ -701,6 +847,7 @@ footer b{color:var(--on-navy)}
     window.scrollTo(0,0);
   }
   window.addEventListener('hashchange',show); show();
+  document.addEventListener('click',function(e){var b=e.target.closest('[data-go]');if(!b)return;var t=document.getElementById(b.dataset.go);if(t){var y=t.getBoundingClientRect().top+window.scrollY-120;window.scrollTo({top:y,behavior:'smooth'});}});
   document.querySelectorAll('[aria-disabled="true"]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();});});
 })();
 </script>
