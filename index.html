@@ -539,12 +539,10 @@ footer b{color:var(--on-navy)}
 .intro-flag{display:block;height:clamp(96px,17vw,200px);width:auto;opacity:0;box-shadow:0 10px 40px rgba(0,0,0,.35)}
 .intro-flag.il{transform:translateX(-40px)}
 .intro-flag.in{transform:translateX(40px)}
-.intro-flag .star{opacity:0;transform:scale(.6);transform-box:fill-box;transform-origin:center}
 .intro-flag .chakra{transform-box:fill-box;transform-origin:center}
 #intro.measure .intro-flag{transform:none!important}
 #intro.v-flags.play .intro-flag{animation:intro-flag-in .55s cubic-bezier(.2,.7,.2,1) forwards,intro-flag-out .35s 1.2s cubic-bezier(.6,0,.4,1) forwards}
 #intro.v-flags.play .intro-flag.in{animation-delay:.08s,1.22s}
-#intro.v-flags.play .star{animation:intro-pop .5s .35s cubic-bezier(.2,.8,.3,1.2) forwards}
 #intro.v-flags.play .chakra{animation:intro-spin 1.3s .1s cubic-bezier(.3,0,.2,1) forwards}
 #intro.v-flags.play .intro-fly{animation:intro-fly-flag 2.1s cubic-bezier(.3,0,.2,1) forwards}
 #intro.v-flags.play .ln:nth-child(1)>span{animation-delay:1.55s}
@@ -558,7 +556,6 @@ footer b{color:var(--on-navy)}
 #intro.v-flags.play .intro-col.c3{animation-delay:2.66s}
 @keyframes intro-flag-in{to{opacity:1;transform:translateX(0)}}
 @keyframes intro-flag-out{from{opacity:1;transform:translateX(0) scale(1)}to{opacity:0;transform:translateX(0) scale(.6)}}
-@keyframes intro-pop{to{opacity:1;transform:scale(1)}}
 @keyframes intro-spin{to{transform:rotate(360deg)}}
 @keyframes intro-fly-flag{0%,52%{transform:translate(var(--x0),var(--y0)) scale(0)}58%{transform:translate(var(--x0),var(--y0)) scale(1.3)}64%,68%{transform:translate(var(--x0),var(--y0)) scale(1)}100%{transform:translate(var(--x1),var(--y1)) scale(1)}}
 @keyframes intro-draw{to{stroke-dashoffset:0}}
