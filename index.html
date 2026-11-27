@@ -580,6 +580,20 @@ footer b{color:var(--on-navy)}
 .org h3{font-size:16.5px;font-weight:800;font-stretch:110%;line-height:1.3;color:#0C1A2D}
 .org p{margin-top:4px;font-size:14.5px;line-height:1.5;color:#3C4957}
 @media (max-width:520px){.org{grid-template-columns:72px 1fr}.org-lg img{max-width:72px}}
+
+/* CIC credits */
+.cic-credits{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:30px 44px}
+.cr{padding-left:18px;border-left:3px solid #C9761B}
+.cr-k{font-size:12.5px;font-weight:700;font-stretch:125%;letter-spacing:.08em;text-transform:uppercase;color:#9A5B0B}
+.cr-lg{height:64px;display:flex;align-items:center;margin-top:12px}
+.cr-lg img{width:auto;max-width:200px;mix-blend-mode:multiply}
+.cr-n{margin-top:8px;font-size:17px;font-weight:800;font-stretch:110%;color:#0C1A2D}
+.cr-person{display:flex;gap:16px;align-items:flex-start;margin-top:12px}
+.cr-ph{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:center 20%;flex:none}
+.cr-d{margin-top:4px;font-size:14.5px;line-height:1.45;color:#3C4957}
+.cr-acic{width:auto;margin-top:10px;mix-blend-mode:multiply}
+@media (max-width:860px){.cic-credits{grid-template-columns:1fr 1fr}.cr-p{grid-column:1/-1}}
+@media (max-width:520px){.cic-credits{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -822,7 +836,7 @@ footer b{color:var(--on-navy)}
   </div>
 
   <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
-    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-who">Organisers and guests</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button><button data-go="ind-orgs">Organisers</button>
+    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-who">Organisers &amp; Guests</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button><button data-go="ind-orgs">Organisers</button>
   </div></nav>
 
   <section id="ind-about" class="hk-sec">
@@ -891,9 +905,8 @@ footer b{color:var(--on-navy)}
             <p class="ind-cic-sub">The first AI, Data and Cyber Innovation Centre in Tamil Nadu</p>
           </div>
           <div class="ind-cic-text">
-            <p>On 2 February the foundation stone is laid for the TechGuard Cyber Innovation Centre on the campus of Sri Ramakrishna Engineering College in Coimbatore: the moment an idea becomes a building.</p>
-            <p>The centre is an initiative of <b>TechGuard Labs Foundation</b>, a joint Israel–India foundation, built together with <b>SNR Sons Charitable Trust</b>, <b>Sri Ramakrishna Engineering College</b>, <b>Ariel University</b>, <b>ERA IT Consulting &amp; Audit</b> and <b>Promitei</b>. A new home for cyber, AI and data innovation in Tamil Nadu, bringing Israeli experience in cyber defence together with India’s talent and industry.</p>
-            <p>Design and turnkey execution: <b>Biopharmax India</b>.</p>
+            <p>On 2 February the foundation stone is laid for the TechGuard Cyber Innovation Centre: the first of its kind, a state-of-the-art Israel–India AI, cyber and data centre to be built in Coimbatore, Tamil Nadu. It will serve as a centre of excellence for cybersecurity innovation.</p>
+            
             <p class="ind-cic-quote">Built for India.<br>Battle-tested cyber defence.</p>
           </div>
         </div>
@@ -911,15 +924,21 @@ footer b{color:var(--on-navy)}
     </div>
     <div class="ind-cic-partners">
       <div class="wrap">
-        <p class="hk-phase hk-dk">PARTNERS OF THE CENTRE</p>
-        <div class="orgs">
-          <div class="org"><div class="org-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:44px"></div><div><h3>TechGuard Labs Foundation</h3><p>Initiator of the centre. A joint Israel–India foundation for cyber, AI and data innovation.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:54px"></div><div><h3>SNR Sons Charitable Trust</h3><p>The Coimbatore trust behind the Sri Ramakrishna institutions. The centre rises on its SREC campus.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:40px"></div><div><h3>Sri Ramakrishna Engineering College</h3><p>Host campus of the centre in Coimbatore.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/ariel_en.png" alt="Ariel University" style="height:38px"></div><div><h3>Ariel University</h3><p>Israeli academic partner, home of the Ariel Cyber Innovation Center.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/era.png" alt="ERA IT Consulting and Audit" style="height:36px"></div><div><h3>ERA IT Consulting &amp; Audit</h3><p>IT consulting and audit partner.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:50px"></div><div><h3>Promitei</h3><p>Israel–India business partner and co-founder of TechGuard Labs Foundation.</p></div></div>
-          <div class="org"><div class="org-lg"><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:46px"></div><div><h3>Biopharmax India</h3><p>Design and turnkey execution of the centre.</p></div></div>
+        <div class="cic-credits">
+          <div class="cr">
+            <p class="cr-k">(Future) headquarters of</p>
+            <div class="cr-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:54px"></div>
+            <p class="cr-n">TechGuard Labs Foundation</p>
+          </div>
+          <div class="cr">
+            <p class="cr-k">Designed by</p>
+            <div class="cr-lg"><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:54px"></div>
+            <p class="cr-n">Biopharmax India</p>
+          </div>
+          <div class="cr cr-p">
+            <p class="cr-k">Scientific curator</p>
+            <div class="cr-person"><img class="cr-ph" src="assets/dvir.jpg" alt="Prof. Amit Dvir"><div><p class="cr-n" style="margin-top:0">Prof. Amit Dvir</p><p class="cr-d">Founder and head of the Ariel Cyber Innovation Center</p><img class="cr-acic" src="assets/ariel_en.png" alt="Ariel Cyber Innovation Center, Ariel University" style="height:30px"></div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -927,7 +946,7 @@ footer b{color:var(--on-navy)}
 
   <section id="ind-who" class="hk-sec">
     <div class="wrap">
-      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers and guests</p><h2 class="hk-h">Who is behind the day</h2>
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People and organisations</p><h2 class="hk-h">Organisers &amp; Guests</h2>
       <div class="orgs" style="margin-top:28px">
         <div class="org"><div class="org-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:54px"></div><div><h3>SNR Sons Charitable Trust</h3><p>The Coimbatore trust behind the Sri Ramakrishna institutions, including Sri Ramakrishna Engineering College and its SREC SPARK incubation centre, host of Industry Day.</p></div></div>
         <div class="org"><div class="org-lg"><img src="assets/ariel_en.png" alt="Ariel University" style="height:38px"></div><div><h3>Ariel University</h3><p>Israel’s newest public research university, with 25 research centres and 150 laboratories. Home of the Ariel Cyber Innovation Center.</p></div></div>
@@ -936,8 +955,9 @@ footer b{color:var(--on-navy)}
         <div class="org"><div class="org-lg"><img src="assets/fl_mashav.png" alt="MASHAV" style="height:44px"></div><div><h3>MASHAV</h3><p>Israel’s Agency for International Development Cooperation, Ministry of Foreign Affairs.</p></div></div>
         <div class="org"><div class="org-lg"><img src="assets/fl_il_consulate.png" alt="Consulate General of Israel to South India" style="height:44px"></div><div><h3>Consulate General of Israel to South India</h3><p>Israel’s diplomatic mission in Bengaluru for the southern Indian states, including Tamil Nadu.</p></div></div>
         <div class="org"><div class="org-lg"><img src="assets/fl_moe.png" alt="Israel Economic and Trade Mission, Ministry of Economy and Industry" style="height:44px"></div><div><h3>Israel Economic and Trade Mission, Bengaluru</h3><p>Israel’s Ministry of Economy and Industry in South India, connecting Israeli companies with Indian business.</p></div></div>
+        <div class="org"><div class="org-lg"><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:46px"></div><div><h3>Biopharmax India</h3><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities. Designer of the TechGuard Cyber Innovation Centre.</p></div></div>
       </div>
-      <p class="ind-meta" style="margin-top:30px">Participating companies: <b>Biopharmax India</b> · more speakers and participants: <span class="hk-soon">Info available soon</span></p>
+      <p class="ind-meta" style="margin-top:30px">More speakers and participants: <span class="hk-soon">Info available soon</span></p>
       <p class="ind-meta">Want your company here? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p>
     </div>
   </section>
