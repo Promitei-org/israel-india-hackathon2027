@@ -546,7 +546,13 @@ footer b{color:var(--on-navy)}
 .ind-chips b{display:block;color:#fff;font-size:17px;font-stretch:115%}
 .ind-chips button:hover b{color:#FFB25C}
 .ind-sub{margin-top:12px;font-size:17px;color:#26323F}
-.ind-pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:34px}
+.ind-pkgs{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px;max-width:1000px}
+.pkg-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:30px;padding:14px 0 14px 22px;border-left:3px solid #C9761B;max-width:1000px}
+.pkg-row-t{display:flex;align-items:baseline;gap:14px;min-width:190px}
+.pkg-row .pkg-k{font-size:28px}
+.pkg-row h3{margin-top:0;font-size:clamp(22px,2vw,26px);font-weight:800;font-stretch:125%;text-transform:uppercase;letter-spacing:.02em;color:#0C1A2D}
+.pkg-row-d{flex:1;min-width:200px;font-size:16px;color:#26323F}
+.pkg-row .pkg-fee,.pkg-row .pkg-btn{margin-top:0}
 .pkg{display:flex;flex-direction:column;padding-left:22px;border-left:3px solid #C9761B}
 .pkg.lead{border-left-width:6px;border-left-color:#FC9732}
 .pkg-k{font-weight:300;font-stretch:125%;font-size:34px;line-height:1;color:#C9761B}
@@ -564,7 +570,7 @@ footer b{color:var(--on-navy)}
 .pkg.lead .pkg-btn:hover{background:#FFB25C}
 .pkg-btn.ghost{background:transparent;color:#4A5868;border:1.5px solid #B9C4CE;cursor:default}
 .pkg-btn.ghost:hover{background:transparent}
-@media (max-width:860px){.ind-pkgs{grid-template-columns:1fr;gap:30px}}
+@media (max-width:760px){.ind-pkgs{grid-template-columns:1fr;gap:30px}.pkg-row{flex-direction:column;align-items:flex-start}}
 .ind-wh{margin-top:44px;padding-top:28px;border-top:1px solid #D5DDE3;max-width:760px}
 .ind-wh .ind-why{margin-top:0}
 </style>
@@ -914,13 +920,13 @@ footer b{color:var(--on-navy)}
     <div class="wrap">
       <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2>
       <p class="ind-sub"><b>By invitation only.</b> Participation is subject to available places and confirmation.</p>
+      <div class="pkg-row">
+        <div class="pkg-row-t"><p class="pkg-k">01</p><h3>Visitor</h3></div>
+        <p class="pkg-row-d">Attendance by invitation only</p>
+        <p class="pkg-fee">Fee: on request</p>
+        <a class="hk-btn pkg-btn ghost" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
+      </div>
       <div class="ind-pkgs">
-        <div class="pkg">
-          <p class="pkg-k">01</p><h3>Visitor</h3>
-          <ul><li>Attendance by invitation only</li></ul>
-          <p class="pkg-fee">Fee: on request</p>
-          <a class="hk-btn pkg-btn ghost" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
-        </div>
         <div class="pkg">
           <p class="pkg-k">02</p><h3>Sponsor</h3>
           <ul><li>Business Breakfast</li><li>Access to the special networking and pitching sessions</li><li>Company profile in the official Industry Day catalogue for all guests</li><li>Access to all Industry Day main and closed events: Chamber of Commerce opening, AI, Data and Cyber Innovation Centre foundation stone ceremony, plenary discussions, workshops</li><li>Event materials after the day</li><li>10 invitation passes</li></ul>
