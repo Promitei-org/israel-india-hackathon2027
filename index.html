@@ -40,7 +40,6 @@ img{max-width:100%;display:block}
 :focus-visible{outline:3px solid var(--hack);outline-offset:3px;border-radius:6px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
 section{padding:64px 0}
-.lead{font-size:18px;color:var(--muted);max-width:64ch;margin-top:12px}
 .soon{display:inline-block;font-size:13px;font-weight:600;border-radius:999px;padding:3px 11px;margin-left:8px;vertical-align:3px;border:1.5px solid currentColor}
 .top{position:sticky;top:0;z-index:20;background:var(--navy);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:14px}
@@ -53,83 +52,22 @@ section{padding:64px 0}
 .facts{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:26px;color:var(--on-navy-muted);font-size:15px}
 .facts b{display:block;color:var(--on-navy);font-size:17px;font-weight:600}
 .status{display:inline-block;margin-top:24px;font-weight:600;font-size:14.5px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);color:var(--on-navy)}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media (max-width:860px){.grid2,.grid3{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
-.card p{color:var(--text)}
-.card p.muted{color:var(--muted)}
-.list{margin:12px 0 0;padding-left:20px;display:grid;gap:6px}
 .dark{background:var(--navy);color:var(--on-navy-muted);border-color:var(--navy)}
 .dark h3{color:var(--on-navy)}
 .dark li b{color:var(--on-navy)}
 table{width:100%;border-collapse:collapse;font-size:15.5px}
 th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 th{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.5px}
-.dates{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
-.date{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.date b{display:block;font-family:"Manrope",sans-serif;font-size:20px;color:var(--ink)}
-.date.key{border-color:var(--accent);background:var(--accent-soft)}
-.date.key b{color:var(--accent-text)}
-@media (max-width:760px){.dates{grid-template-columns:1fr 1fr}}
 .logos{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:20px}
 .logos span{background:#FFFFFF;border-radius:12px;padding:10px 14px;display:block}
 .logos img{height:42px;width:auto}
-.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#FFFFFF;font-weight:600;padding:12px 20px;border-radius:999px;text-decoration:none;border:0;font-size:15.5px}
-.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed}
 footer{background:var(--navy);color:var(--on-navy-muted);padding:34px 0;font-size:14px}
 footer b{color:var(--on-navy)}
 [hidden]{display:none !important}
 .pg-hack{--accent:var(--hack);--accent-text:var(--hack-text);--accent-soft:var(--hack-soft)}
 .pg-ind{--accent:var(--ind);--accent-text:var(--ind-text);--accent-soft:var(--ind-soft)}
 .pg-conf{--accent:var(--conf);--accent-text:var(--conf-text);--accent-soft:var(--conf-soft)}
-.chero{position:relative;overflow:hidden;background:#06213A;color:#FFFFFF}
-.chero-bg{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:.55}
-.chero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,24,44,.95) 0%,rgba(6,24,44,.82) 45%,rgba(6,24,44,.35) 100%)}
-.chero-in{position:relative;z-index:1;padding-top:40px;padding-bottom:56px}
-.clogos{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.clogos span{background:#FFFFFF;border-radius:12px;padding:8px 12px;display:block}
-.clogos img{height:40px;width:auto}
-.clogos .x{color:#AFC4D8;font-size:22px;font-weight:600}
-.chero .eyeline{color:#BFD3E6;font-size:15px;margin-top:26px}
-.chero h1{color:#FFFFFF;font-size:clamp(30px,4.6vw,54px);font-weight:800;letter-spacing:-0.02em;margin-top:10px;line-height:1.06;max-width:22ch}
-.chero .org{color:#D3E1EE;font-size:16.5px;margin-top:16px;max-width:62ch}
 .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;margin-top:28px}
-.cta-row .deadline{color:#D3E1EE;font-size:15px}
-.cta-row .deadline b{color:#FFFFFF}
-.about2{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:start;margin-top:44px}
-@media (max-width:860px){.about2{grid-template-columns:1fr}}
-.band{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.kicker{font-size:12.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-text)}
-.kicker+h2{margin-top:6px}
-.speakers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
-.speaker{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.speaker img{width:100%;aspect-ratio:4/3.3;object-fit:cover;object-position:center 20%}
-.speaker>div{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px}
-.speaker .sess{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent-text)}
-.speaker h3{font-size:17.5px}
-.speaker .name{font-family:"Manrope",sans-serif;font-weight:800;font-size:18px;color:var(--ink);margin-top:4px}
-.speaker .role{font-size:14px;color:var(--muted);line-height:1.5}
-@media (max-width:900px){.speakers{grid-template-columns:1fr}.speaker{flex-direction:row}.speaker img{width:140px;aspect-ratio:auto;height:auto;flex:none}}
-.themes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;margin-top:24px}
-@media (max-width:900px){.themes{grid-template-columns:1fr}}
-.theme{border-top:5px solid var(--accent)}
-.theme ul{margin:12px 0 0;padding-left:18px;display:grid;gap:5px;font-size:15px}
-.board{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-@media (max-width:860px){.board{grid-template-columns:1fr}}
-.people{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}
-.people li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
-.people li b{color:var(--ink);font-family:"Manrope",sans-serif;font-size:16px}
-.people li span{color:var(--muted);font-size:14px}
-.people li.ph{flex-direction:row;align-items:center;gap:14px}
-.people li.ph img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}
-.people li.ph div{display:flex;flex-direction:column;gap:2px}
-.inst .lg{display:inline-block;background:#FFFFFF;border-radius:10px;padding:8px 12px;margin-bottom:14px}
-.inst .lg img{height:38px;width:auto}
-.inst h3+p{margin-top:8px}
-.contactc{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:center}
-@media (max-width:760px){.contactc{grid-template-columns:1fr}}
-.muted{color:var(--muted)}
 .split{display:grid;grid-template-columns:repeat(3,1fr);min-height:calc(100vh - 60px - env(safe-area-inset-top,0px))}
 .pane{position:relative;overflow:hidden;display:flex;align-items:flex-end;text-decoration:none;color:#FFFFFF;padding:40px 34px;min-height:460px;isolation:isolate}
 .pane-in{position:relative;z-index:2;display:flex;flex-direction:column;gap:12px;max-width:34ch}
@@ -154,12 +92,10 @@ footer b{color:var(--on-navy)}
 .hub-foot p{color:var(--muted);font-size:14.5px}
 .hhero{background:var(--navy);color:#FFFFFF;overflow:hidden}
 .hhero-in{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding-top:46px;padding-bottom:50px}
-.hhero .eyeline{color:var(--on-navy-muted);font-size:15px}
 .hhero h1{color:#FFFFFF;font-size:clamp(46px,7.5vw,96px);font-weight:800;letter-spacing:-0.03em;line-height:.95;margin-top:10px}
 .hhero .motto{font-family:"Manrope",sans-serif;font-weight:600;font-size:clamp(20px,2.6vw,28px);margin-top:14px}
 .hhero .motto em{font-style:normal;color:var(--hack)}
 .hhero .facts b{color:#FFFFFF}
-.hhero .deadline{color:#D3E1EE;font-size:15px}
 .hhero-art{width:100%;height:auto}
 .hhero-art .ecg{stroke:#2F9BD6}
 .hhero-art .rec{stroke:#45C29A}
@@ -195,7 +131,6 @@ footer b{color:var(--on-navy)}
 .ticks li{position:relative;padding-left:28px;line-height:1.5}
 .ticks li::before{content:"";position:absolute;left:2px;top:6px;width:12px;height:7px;border-left:2.5px solid var(--hack);border-bottom:2.5px solid var(--hack);transform:rotate(-45deg)}
 .ihero{position:relative;overflow:hidden;background:linear-gradient(160deg,#C9761A 0%,#8E4E0C 100%);color:#FFFFFF;padding:52px 0 56px}
-.ihero .eyeline{color:#FBE6C8;font-size:15px}
 .ihero h1{color:#FFFFFF;font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-0.02em;margin-top:10px}
 .ihero .motto{font-family:"Manrope",sans-serif;font-weight:600;font-size:clamp(19px,2.4vw,26px);margin-top:12px}
 .ihero .status{background:rgba(255,255,255,.18);color:#FFFFFF}
@@ -205,7 +140,6 @@ footer b{color:var(--on-navy)}
 .pinit{width:46px;height:46px;flex:none;border-radius:12px;background:var(--ind-soft);color:var(--ind-text);font-family:"Manrope",sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center}
 .pcard h3{font-size:17px}
 .pwho{font-size:14px;font-weight:600;color:var(--ind-text);margin-top:2px}
-.pcard .muted{font-size:14.5px;margin-top:4px}
 .opens{display:inline-flex;flex-direction:column;gap:2px;margin-top:22px;padding:14px 22px;border-radius:16px;background:var(--hack);color:#06231A;box-shadow:0 10px 30px rgba(69,194,154,.25)}
 .opens small{font-size:12.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:#06231A;opacity:.8}
 .opens b{font-family:"Manrope",sans-serif;font-weight:800;font-size:clamp(26px,3.6vw,40px);line-height:1.05;color:#06231A}
@@ -362,8 +296,6 @@ footer b{color:var(--on-navy)}
 .hk-orgs2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
 @media (max-width:860px){.hk-orgs2{grid-template-columns:1fr}}
 .hk-org{display:flex;gap:18px;align-items:flex-start;background:#F2F6F4;border-radius:18px;padding:20px}
-.hk-org .lg{flex:none;width:120px;height:64px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;padding:8px}
-.hk-org .lg img{max-height:48px;max-width:104px;width:auto}
 .hk-org h3{font-size:17px;font-weight:800;font-stretch:110%;color:#0C1A2D}
 .hk-orgrole{font-size:13.5px;font-weight:700;color:#0B6E56;margin-top:2px}
 .hk-org p:last-child{margin-top:6px;font-size:15px;line-height:1.5;color:#3C4957}
@@ -399,8 +331,6 @@ footer b{color:var(--on-navy)}
 .hk-mentor .mt{display:inline-block;margin-top:8px;font-size:12.5px;font-weight:800;letter-spacing:.04em;padding:3px 10px;border-radius:999px}
 .hk-mentor .mt.t1{background:#DDF2EA;color:#0B6E56}
 .hk-mentor .mt.t2{background:#FBEBD3;color:#9A5B0B}
-.hk-org .lg{width:132px;height:72px}
-.hk-org .lg img{max-height:56px;max-width:118px}
 
 /* flat style: no boxed cards */
 .hk-logos{display:flex;flex-wrap:wrap;align-items:flex-start;gap:30px 52px;margin-top:20px}
@@ -459,13 +389,8 @@ footer b{color:var(--on-navy)}
 .pane-conf::before{background:linear-gradient(180deg,rgba(12,26,45,0) 35%,rgba(12,26,45,.85) 80%)!important;z-index:1}
 .pane-ind{background:linear-gradient(180deg,#0C1A2D 0%,#3A2A1C 50%,#9A5A14 85%,#C9761B 100%)!important}
 .pane-ind::before{background:linear-gradient(180deg,rgba(12,26,45,0) 40%,rgba(12,26,45,.55) 85%)!important;z-index:1}
-.chero{background:linear-gradient(120deg,#0C1A2D 0%,#0D2747 60%,#0E3A66 100%)!important}
-.chero-art{position:absolute;top:0;right:0;width:min(46%,560px);height:100%;opacity:.9}
-.chero-art svg{width:100%;height:100%;display:block}
-.chero::after{background:linear-gradient(90deg,rgba(12,26,45,.92) 0%,rgba(12,26,45,.7) 50%,rgba(12,26,45,0) 100%)!important}
 .ind-art{opacity:.9!important}
 .ind-art svg{width:100%;height:100%}
-@media (max-width:700px){.chero-art{width:70%;opacity:.4}}
 .pane-art{z-index:0!important}
 .pane-conf::before,.pane-ind::before{z-index:1!important}
 .pane-conf .pane-art svg{transform:translateX(12%)}
@@ -488,12 +413,122 @@ footer b{color:var(--on-navy)}
 .ind-ask{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:30px;padding-top:22px;border-top:1px solid #D5DDE3}
 .ind-ask p{font-size:16px;color:#26323F}
 .ind-ask a:not(.hk-btn){color:#9A5B0B}
+
+/* header on phones */
+@media (max-width:560px){.brand .b-x{display:none}}
+.brand{min-width:0;overflow:hidden;text-overflow:ellipsis}
+
+/* per-day accents for shared hk components */
+.pg-ind .hk-subnav button:hover{background:#FBEBD3;color:#9A5B0B}
+.pg-conf .hk-subnav button:hover{background:#E1EBF6;color:#1E4F7E}
+.pg-ind .hk-kick:not(.light){color:#9A5B0B}
+.pg-conf .hk-kick:not(.light){color:#1E4F7E}
+
+/* industry day: chamber */
+.ind-more{display:inline-block;margin-top:6px;font-size:15px;font-weight:600}
+.ind-bridge{margin:26px 0 0;max-width:360px}
+.ind-bridge svg{width:100%;height:auto;display:block}
+.ind-lead{font-size:clamp(19px,1.8vw,22px);line-height:1.45;color:#0C1A2D}
+.ind-lead b{font-weight:800}
+.ind-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:30px}
+.ind-pillars>div{padding-left:18px;border-left:3px solid #C9761B}
+.ind-pillars h3{font-size:20px;font-weight:800;font-stretch:125%;color:#0C1A2D;text-transform:uppercase;letter-spacing:.03em}
+.ind-pillars p{margin-top:6px;font-size:15.5px;line-height:1.55;color:#3C4957}
+@media (max-width:760px){.ind-pillars{grid-template-columns:1fr;gap:18px}}
+.ind-meta{margin-top:22px;font-size:15.5px;color:#26323F}
+.ind-meta+.ind-meta{margin-top:8px}
+.ind-meta a{color:#9A5B0B}
+
+/* industry day: innovation centre */
+.ind-cic-dark{background:linear-gradient(180deg,#0C1A2D 0%,#0C1A2D 45%,#2A2A2C 75%,#5A3812 100%);color:#fff;padding:72px 0 56px}
+.ind-cic-head{display:grid;grid-template-columns:minmax(260px,1fr) 1.15fr;gap:40px;align-items:start}
+@media (max-width:860px){.ind-cic-head{grid-template-columns:1fr;gap:20px}}
+.ind-cic-h{margin-top:12px;font-weight:300;font-stretch:125%;font-size:clamp(32px,4.4vw,56px);line-height:1.04;color:#fff}
+.ind-cic-sub{margin-top:14px;font-weight:800;font-stretch:125%;font-size:clamp(15px,1.6vw,19px);text-transform:uppercase;letter-spacing:.03em;color:#FFB25C;line-height:1.3}
+.ind-cic-text p{font-size:17px;line-height:1.65;color:#D9E2EA}
+.ind-cic-text p+p{margin-top:14px}
+.ind-cic-text b{color:#fff}
+.ind-cic-quote{margin-top:22px!important;padding-left:18px;border-left:3px solid #FC9732;font-family:"Chakra Petch","Archivo",sans-serif;font-size:clamp(20px,2.2vw,26px)!important;line-height:1.25!important;color:#fff!important;text-transform:uppercase;letter-spacing:.02em}
+.ind-cic-main{margin:44px 0 0}
+.ind-cic-main img,.ind-cic-gal img{width:100%;height:auto;display:block}
+.ind-cic-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.ind-cic-gal a,.ind-cic-main a{display:block;overflow:hidden}
+.ind-cic-gal img,.ind-cic-main img{transition:transform .4s ease}
+.ind-cic-gal a:hover img,.ind-cic-main a:hover img{transform:scale(1.03)}
+@media (max-width:760px){.ind-cic-gal{grid-template-columns:1fr 1fr}}
+.ind-cic-cap{margin-top:12px;font-size:13.5px;color:#C9B9A6}
+.ind-cic-partners{background:#fff;padding:44px 0 56px;border-bottom:1px solid #E1E7EC}
+
+/* conference in hk style */
+.conf-hero{background:linear-gradient(180deg,#0C1A2D 0%,#0C1A2D 30%,#0D2A4D 55%,#16508F 80%,#2F7FD8 100%)!important}
+.conf-art{width:min(40%,500px)!important;opacity:.75!important}
+.conf-art svg{width:100%;height:100%;display:block}
+@media (max-width:700px){.conf-art{width:60%!important;opacity:.35!important}}
+.hk2-tag.conf span{color:#7DBBFF}
+.conf-hero .hk2-lead{color:#E3EDF7}
+.conf-hero .hk2-lead b{color:#fff}
+.conf-hero .hk2-chips span{border-left-color:#7DBBFF!important;color:#D3E1EE}
+.conf-hero .hk2-chips span.key{border-left-color:#FFFFFF!important}
+.conf-hero .hk2-open,.conf-hero .hk2-open b{color:#0C1A2D}
+.hk-btn.conf{background:#FFFFFF;color:#0C1A2D;animation:confpulse 2.2s ease-out infinite}
+.hk-btn.conf:hover{background:#E1EBF6}
+@keyframes confpulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.65)}70%{box-shadow:0 0 0 14px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+.pg-conf .hk-ticks2 li::before{border-color:#2F6DB0}
+.pg-conf .hk-ticks2 a,.pg-conf .hk-addr a,.pg-conf .cf-note a{color:#1E4F7E}
+.pg-conf .hk-addr{border-left-color:#2F6DB0}
+.cf-lead{font-size:clamp(19px,1.8vw,22px)!important;line-height:1.45!important;color:#0C1A2D!important}
+.cf-plen{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:30px}
+.cf-plen article{display:flex;flex-direction:column;gap:16px}
+.cf-plen img{width:100%;aspect-ratio:4/3.4;object-fit:cover;object-position:center 22%;display:block}
+.cf-plen article>div{padding-left:16px;border-left:3px solid #2F6DB0}
+.cf-sess{font-size:12.5px;font-weight:700;font-stretch:125%;letter-spacing:.08em;text-transform:uppercase;color:#1E4F7E}
+.cf-plen h3{margin-top:8px;font-size:18px;font-weight:800;font-stretch:110%;line-height:1.3;color:#0C1A2D}
+.cf-name{margin-top:12px;font-weight:700;font-size:16.5px;color:#0C1A2D}
+.cf-role{margin-top:4px;font-size:14.5px;line-height:1.5;color:#4A5868}
+@media (max-width:900px){.cf-plen{grid-template-columns:1fr;gap:28px}.cf-plen article{flex-direction:row;align-items:flex-start}.cf-plen img{width:120px;flex:none;aspect-ratio:1}}
+.cf-intro{margin-top:12px;font-size:17px;color:#3C4957;max-width:64ch}
+.cf-themes{display:grid;grid-template-columns:1.15fr 1fr 1fr;margin-top:28px;border-top:2px solid #0C1A2D;border-bottom:2px solid #0C1A2D}
+.cf-themes article{padding:22px 28px 30px}
+.cf-themes article:first-child{padding-left:4px}
+.cf-themes article+article{border-left:2px solid #0C1A2D}
+.cf-n{font-weight:300;font-stretch:125%;font-size:34px;line-height:1;color:#2F6DB0}
+.cf-themes h3{margin-top:10px;font-size:clamp(19px,1.8vw,23px);font-weight:800;font-stretch:125%;line-height:1.2;color:#0C1A2D}
+.cf-themes ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.cf-themes li{font-size:15.5px;line-height:1.45;color:#26323F;padding-left:16px;position:relative}
+.cf-themes li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:#2F6DB0}
+@media (max-width:860px){.cf-themes{grid-template-columns:1fr}.cf-themes article,.cf-themes article:first-child{padding:22px 4px 26px}.cf-themes article+article{border-left:0;border-top:2px solid #0C1A2D}}
+.cf-sub{font-size:14px;font-weight:700;font-stretch:125%;letter-spacing:.06em;text-transform:uppercase;color:#0C1A2D}
+.cf-fees{width:100%;max-width:520px;border-collapse:collapse;margin-top:12px;font-size:16px}
+.cf-fees th{text-align:left;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#4A5868;padding:8px 0;border-bottom:2px solid #0C1A2D}
+.cf-fees td{padding:11px 0;border-bottom:1px solid #C9D3DB;color:#26323F}
+.cf-fees td span{color:#5B6877;font-size:14px}
+.cf-note{margin-top:12px;font-size:14.5px;color:#4A5868}
+.cf-board{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:28px}
+.cf-board>div{padding-left:20px;border-left:3px solid #2F6DB0}
+@media (max-width:860px){.cf-board{grid-template-columns:1fr;gap:30px}}
+.cf-people{list-style:none;margin:14px 0 0;padding:0;display:grid}
+.cf-people li{display:flex;flex-direction:column;gap:2px;padding:12px 0;border-bottom:1px solid #DCE2E8}
+.cf-people li:last-child{border-bottom:0}
+.cf-people b{font-weight:700;font-size:16.5px;color:#0C1A2D}
+.cf-people span{font-size:14.5px;line-height:1.45;color:#4A5868}
+.cf-people.ph li{flex-direction:row;align-items:center;gap:14px}
+.cf-people.ph img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}
+.cf-people.ph li div{display:flex;flex-direction:column;gap:2px}
+.cf-hosts{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:28px}
+.cf-hosts img{width:auto;max-width:260px}
+.cf-hosts h3{margin-top:18px;font-size:19px;font-weight:800;font-stretch:110%;color:#0C1A2D}
+.cf-hosts p{margin-top:8px;font-size:15.5px;line-height:1.6;color:#3C4957}
+@media (max-width:860px){.cf-hosts{grid-template-columns:1fr;gap:36px}}
+.cf-cta{background:linear-gradient(90deg,#1E4F7E,#3094FF)!important}
+.cf-cta p span{color:#DCEBFA}
+.ind-cic{padding:0}
+.cf-hosts img,.ind-cic-partners img{mix-blend-mode:multiply}
 </style>
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#">Israel–India Innovation Week · Coimbatore 2027 <span class="all" style="font-weight:600;color:var(--on-navy-muted);font-size:14px">· all events</span></a>
+    <a class="brand" href="#"><span class="b-x">Israel–India </span>Innovation Week<span class="b-x"> · Coimbatore 2027</span> <span class="all" style="font-weight:600;color:var(--on-navy-muted);font-size:14px">· all events</span></a>
     <nav class="tabs" aria-label="Events">
       <a href="#hackathon" data-v="hackathon">1 Feb<span> · Hackathon</span></a>
       <a href="#industry-day" data-v="industry-day">2 Feb<span> · Industry Day</span></a>
@@ -728,13 +763,17 @@ footer b{color:var(--on-navy)}
     </div>
   </div>
 
-  <section class="hk-sec">
+  <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
+    <button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-speakers">Speakers</button><button data-go="ind-partners">Participants</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button><button data-go="ind-orgs">Organisers</button>
+  </div></nav>
+
+  <section id="ind-prog" class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Programme</p><h2 class="hk-h">What happens on 2 February</h2><figure class="ind-dc"><svg viewBox="0 0 460 320" role="img" aria-label="Illustration of the AI, Data and Cyber Innovation Centre"><defs><linearGradient id="dc1g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C1A2D"/><stop offset="1" stop-color="#7A4A16"/></linearGradient></defs><rect width="460" height="320" fill="url(#dc1g)"/><line x1="-20" y1="320" x2="182" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="40" y1="320" x2="194" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="100" y1="320" x2="206" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="160" y1="320" x2="218" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="220" y1="320" x2="230" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="280" y1="320" x2="242" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="340" y1="320" x2="254" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="400" y1="320" x2="266" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="460" y1="320" x2="278" y2="200" stroke="#FFB25C" stroke-opacity=".18"/><line x1="0" y1="230" x2="460" y2="230" stroke="#FFB25C" stroke-opacity=".14"/><line x1="0" y1="255" x2="460" y2="255" stroke="#FFB25C" stroke-opacity=".14"/><line x1="0" y1="285" x2="460" y2="285" stroke="#FFB25C" stroke-opacity=".14"/><rect x="58" y="62" width="56" height="170" rx="4" fill="#0C1A2D" fill-opacity="0.55" stroke="#FFB25C" stroke-opacity="0.80" stroke-width="2"/><rect x="65" y="72" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="77.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="77" cy="77.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="84" cy="77.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="92" y1="77.5" x2="103" y2="77.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="89" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="94.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="77" cy="94.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="84" cy="94.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="92" y1="94.5" x2="103" y2="94.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="106" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="111.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="77" cy="111.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="84" cy="111.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="92" y1="111.5" x2="103" y2="111.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="123" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="128.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="77" cy="128.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="84" cy="128.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="92" y1="128.5" x2="103" y2="128.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="140" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="145.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="77" cy="145.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="84" cy="145.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="92" y1="145.5" x2="103" y2="145.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="157" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="162.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="77" cy="162.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="84" cy="162.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="92" y1="162.5" x2="103" y2="162.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="174" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="179.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="77" cy="179.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="84" cy="179.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="92" y1="179.5" x2="103" y2="179.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="65" y="191" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="70" cy="196.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="77" cy="196.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="84" cy="196.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="92" y1="196.5" x2="103" y2="196.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="128" y="62" width="56" height="170" rx="4" fill="#0C1A2D" fill-opacity="0.55" stroke="#FFB25C" stroke-opacity="0.80" stroke-width="2"/><rect x="135" y="72" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="77.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="147" cy="77.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="154" cy="77.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="162" y1="77.5" x2="173" y2="77.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="89" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="94.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="147" cy="94.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="154" cy="94.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="162" y1="94.5" x2="173" y2="94.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="106" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="111.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="147" cy="111.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="154" cy="111.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="162" y1="111.5" x2="173" y2="111.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="123" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="128.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="147" cy="128.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="154" cy="128.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="162" y1="128.5" x2="173" y2="128.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="140" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="145.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="147" cy="145.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="154" cy="145.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="162" y1="145.5" x2="173" y2="145.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="157" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="162.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="147" cy="162.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="154" cy="162.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="162" y1="162.5" x2="173" y2="162.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="174" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="179.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="147" cy="179.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="154" cy="179.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="162" y1="179.5" x2="173" y2="179.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="135" y="191" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="140" cy="196.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="147" cy="196.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="154" cy="196.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="162" y1="196.5" x2="173" y2="196.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="198" y="62" width="56" height="170" rx="4" fill="#0C1A2D" fill-opacity="0.55" stroke="#FFB25C" stroke-opacity="0.80" stroke-width="2"/><rect x="205" y="72" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="77.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="217" cy="77.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="224" cy="77.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="232" y1="77.5" x2="243" y2="77.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="89" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="94.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="217" cy="94.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="224" cy="94.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="232" y1="94.5" x2="243" y2="94.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="106" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="111.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="217" cy="111.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="224" cy="111.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="232" y1="111.5" x2="243" y2="111.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="123" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="128.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="217" cy="128.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="224" cy="128.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="232" y1="128.5" x2="243" y2="128.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="140" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="145.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="217" cy="145.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="224" cy="145.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="232" y1="145.5" x2="243" y2="145.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="157" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="162.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="217" cy="162.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="224" cy="162.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="232" y1="162.5" x2="243" y2="162.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="174" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="179.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="217" cy="179.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="224" cy="179.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="232" y1="179.5" x2="243" y2="179.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="205" y="191" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="210" cy="196.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="217" cy="196.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="224" cy="196.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="232" y1="196.5" x2="243" y2="196.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="268" y="62" width="56" height="170" rx="4" fill="#0C1A2D" fill-opacity="0.55" stroke="#FFB25C" stroke-opacity="0.80" stroke-width="2"/><rect x="275" y="72" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="77.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="287" cy="77.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="294" cy="77.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="302" y1="77.5" x2="313" y2="77.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="89" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="94.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="287" cy="94.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="294" cy="94.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="302" y1="94.5" x2="313" y2="94.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="106" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="111.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="287" cy="111.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="294" cy="111.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="302" y1="111.5" x2="313" y2="111.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="123" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="128.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="287" cy="128.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="294" cy="128.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="302" y1="128.5" x2="313" y2="128.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="140" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="145.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="287" cy="145.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="294" cy="145.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="302" y1="145.5" x2="313" y2="145.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="157" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="162.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="287" cy="162.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="294" cy="162.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="302" y1="162.5" x2="313" y2="162.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="174" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="179.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="287" cy="179.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="294" cy="179.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="302" y1="179.5" x2="313" y2="179.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="275" y="191" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="280" cy="196.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="287" cy="196.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="294" cy="196.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="302" y1="196.5" x2="313" y2="196.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="338" y="62" width="56" height="170" rx="4" fill="#0C1A2D" fill-opacity="0.55" stroke="#FFB25C" stroke-opacity="0.80" stroke-width="2"/><rect x="345" y="72" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="77.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="357" cy="77.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="364" cy="77.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="372" y1="77.5" x2="383" y2="77.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="89" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="94.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="357" cy="94.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="364" cy="94.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="372" y1="94.5" x2="383" y2="94.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="106" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="111.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="357" cy="111.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="364" cy="111.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="372" y1="111.5" x2="383" y2="111.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="123" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="128.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="357" cy="128.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="364" cy="128.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="372" y1="128.5" x2="383" y2="128.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="140" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="145.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="357" cy="145.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="364" cy="145.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="372" y1="145.5" x2="383" y2="145.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="157" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="162.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="357" cy="162.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="364" cy="162.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><line x1="372" y1="162.5" x2="383" y2="162.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="174" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="179.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><circle cx="357" cy="179.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="364" cy="179.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><line x1="372" y1="179.5" x2="383" y2="179.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><rect x="345" y="191" width="42" height="11" rx="2" fill="#FFFFFF" fill-opacity="0.10"/><circle cx="350" cy="196.5" r="1.9" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="357" cy="196.5" r="1.9" fill="#12C493" fill-opacity="0.95"/><circle cx="364" cy="196.5" r="1.9" fill="#FC9732" fill-opacity="0.95"/><line x1="372" y1="196.5" x2="383" y2="196.5" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="1.5"/><g transform="translate(330,18)"><path d="M20 40 a18 18 0 0 1 4-35 a24 24 0 0 1 44 6 a16 16 0 0 1 2 29 Z" fill="#FFFFFF" fill-opacity=".14" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="2"/><path d="M44 14 l14 5 v10 c0 8-6 13-14 16 c-8-3-14-8-14-16 v-10 Z" fill="#12C493" fill-opacity=".9"/><path d="M38 28 l4 4 l8-9" fill="none" stroke="#0C1A2D" stroke-width="2.5" stroke-linecap="round"/></g><path d="M405 92 H440" stroke="#12C493" stroke-width="2" stroke-dasharray="5 5" stroke-opacity=".8"/><path d="M405 140 H440" stroke="#12C493" stroke-width="2" stroke-dasharray="5 5" stroke-opacity=".8"/><path d="M405 188 H440" stroke="#12C493" stroke-width="2" stroke-dasharray="5 5" stroke-opacity=".8"/><text x="58" y="262" fill="#FFFFFF" fill-opacity=".85" font-family="Archivo,Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">AI · DATA · CYBER</text></svg><figcaption>First AI, Data and Cyber Innovation Centre in Tamil Nadu: foundation stone on 2 February</figcaption></figure></div>
       <div>
         <ol class="ind-prog">
-          <li><b>Opening of the Israel–Tamil Nadu Chamber of Commerce</b><p>Launch of a new platform for business cooperation between Israel and Tamil Nadu.</p></li>
-          <li><b>Foundation stone ceremony</b><p>Laying the foundation stone for the first AI, Data and Cyber Innovation Centre in Tamil Nadu.</p></li>
+          <li><b>Opening of the Israel–Tamil Nadu Chamber of Commerce</b><p>Launch of a new platform for business cooperation between Israel and Tamil Nadu.</p><button type="button" class="ind-link ind-more" data-go="ind-chamber">About the Chamber</button></li>
+          <li><b>Foundation stone ceremony</b><p>Laying the foundation stone for the TechGuard Cyber Innovation Centre, the first AI, Data and Cyber Innovation Centre in Tamil Nadu.</p><button type="button" class="ind-link ind-more" data-go="ind-cic">About the Centre</button></li>
           <li><b>Workshops and networking sessions</b><p>Hands-on sessions and meetings between companies, researchers, start-ups and students.</p></li>
           <li><b>Plenary discussions</b><p>Leaders from Israel and India on technology, innovation and partnership.</p></li>
         </ol>
@@ -743,21 +782,82 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec tint">
+
+  <section id="ind-chamber" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Chamber of Commerce</p><h2 class="hk-h">A new bridge for Israel–Tamil Nadu business</h2><figure class="ind-bridge" aria-hidden="true"><svg viewBox="0 0 420 190" role="presentation">
+  <path d="M70 120 C 150 20, 270 20, 350 120" fill="none" stroke="#0C1A2D" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <path d="M70 120 C 150 50, 270 50, 350 120" fill="none" stroke="#C9761B" stroke-width="2.5"/>
+  <circle cx="150" cy="68" r="7" fill="#3094FF"/><circle cx="190" cy="57" r="7" fill="#FFFFFF" stroke="#B9C4CE"/><circle cx="230" cy="57" r="7" fill="#FF9933"/><circle cx="270" cy="68" r="7" fill="#138808"/>
+  <circle cx="70" cy="120" r="30" fill="#0C1A2D"/><circle cx="70" cy="120" r="12" fill="#3094FF"/>
+  <circle cx="350" cy="120" r="30" fill="#0C1A2D"/><circle cx="350" cy="120" r="12" fill="#FF9933"/>
+  <text x="70" y="176" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="14" letter-spacing="1.5" fill="#0C1A2D">ISRAEL</text>
+  <text x="350" y="176" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="800" font-size="14" letter-spacing="1.5" fill="#0C1A2D">TAMIL NADU</text>
+</svg></figure></div>
+      <div>
+        <p class="ind-lead">Industry Day opens with the launch of the <b>Israel–Tamil Nadu Chamber of Commerce</b>, a new platform for business cooperation between Israel and Tamil Nadu.</p>
+        <p class="hk-prose-p">Israel is known around the world for its culture of innovation and technology start-ups. Tamil Nadu is one of India’s leading industrial states, and Coimbatore one of its key centres of engineering, manufacturing and education. The Chamber is created to turn this natural fit into lasting business relationships.</p>
+        <div class="ind-pillars">
+          <div><h3>Connect</h3><p>Bring together companies, investors and institutions from Israel and Tamil Nadu.</p></div>
+          <div><h3>Partner</h3><p>Open the way to joint projects in technology, innovation and trade.</p></div>
+          <div><h3>Continue</h3><p>Keep the dialogue going all year round, well beyond Innovation Week.</p></div>
+        </div>
+        <p class="ind-meta">Founding members, membership and how to join: <span class="hk-soon">Info available soon</span></p>
+        <p class="ind-meta">Interested in the Chamber? Write to <a href="mailto:mark@promitei.com?subject=Israel%E2%80%93Tamil%20Nadu%20Chamber%20of%20Commerce">mark@promitei.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ind-cic" class="ind-cic">
+    <div class="ind-cic-dark">
+      <div class="wrap">
+        <div class="ind-cic-head">
+          <div>
+            <p class="hk-kick light"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Foundation stone · 2 February 2027</p>
+            <h2 class="ind-cic-h">TechGuard Cyber Innovation Centre</h2>
+            <p class="ind-cic-sub">The first AI, Data and Cyber Innovation Centre in Tamil Nadu</p>
+          </div>
+          <div class="ind-cic-text">
+            <p>On 2 February the foundation stone is laid for the TechGuard Cyber Innovation Centre on the campus of Sri Ramakrishna Engineering College in Coimbatore: the moment an idea becomes a building.</p>
+            <p>The centre is an initiative of <b>TechGuard Labs Foundation</b>, a joint Israel–India foundation, created together with partners from both countries. It is designed to become a home for cyber, AI and data innovation in Tamil Nadu, bringing Israeli experience in cyber defence together with India’s talent and industry.</p>
+            <p class="ind-cic-quote">Built for India.<br>Battle-tested cyber defence.</p>
+          </div>
+        </div>
+        <figure class="ind-cic-main"><a href="assets/cic-aerial.jpg" target="_blank" rel="noopener"><img src="assets/cic-aerial.jpg" width="1600" height="853" alt="Aerial view of the TechGuard Cyber Innovation Centre campus, architectural concept" loading="lazy"></a></figure>
+        <div class="ind-cic-gal">
+          <a href="assets/cic-entrance.jpg" target="_blank" rel="noopener"><img src="assets/cic-entrance.jpg" width="1100" height="587" alt="TechGuard main entrance, architectural concept" loading="lazy"></a>
+          <a href="assets/cic-entrance-2.jpg" target="_blank" rel="noopener"><img src="assets/cic-entrance-2.jpg" width="1100" height="587" alt="TechGuard entrance and façade, architectural concept" loading="lazy"></a>
+          <a href="assets/cic-techpark.jpg" target="_blank" rel="noopener"><img src="assets/cic-techpark.jpg" width="1100" height="587" alt="Tech Park entrance, architectural concept" loading="lazy"></a>
+          <a href="assets/cic-techpark-2.jpg" target="_blank" rel="noopener"><img src="assets/cic-techpark-2.jpg" width="1100" height="587" alt="Tech Park entry close-up, architectural concept" loading="lazy"></a>
+        </div>
+        <p class="ind-cic-cap">Architectural concept visualisations. Final design subject to approval.</p>
+      </div>
+    </div>
+    <div class="ind-cic-partners">
+      <div class="wrap">
+        <p class="hk-phase hk-dk">AN INITIATIVE OF</p>
+        <div class="hk-logos"><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:56px"></figure></div>
+        <p class="hk-phase hk-dk" style="margin-top:30px">TOGETHER WITH</p>
+        <div class="hk-logos"><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:66px"></figure><figure class="hk-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:52px"></figure><figure class="hk-lg"><img src="assets/ariel_en.png" alt="Ariel University" style="height:48px"></figure><figure class="hk-lg"><img src="assets/era.png" alt="ERA IT Consulting and Audit" style="height:44px"><span class="cap">ERA IT Consulting &amp; Audit</span></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:62px"></figure><figure class="hk-lg"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:58px"></figure></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ind-speakers" class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People</p><h2 class="hk-h">Speakers</h2></div>
       <div class="hk-prose"><p>Speakers from government, industry and academia in Israel and India.</p><p style="margin-top:10px"><span class="hk-soon">Info available soon</span></p></div>
     </div>
   </section>
 
-  <section class="hk-sec">
+  <section id="ind-partners" class="hk-sec tint">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Partners</p><h2 class="hk-h">Participants and sponsors</h2></div>
       <div class="hk-prose"><p>Companies, start-ups and institutions from Israel and Tamil Nadu.</p><div class="ind-part"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:56px"><div><b>Biopharmax India</b><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities</p></div></div><p style="margin-top:14px">More participants and sponsors: <span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Interested in participating or sponsoring? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p></div>
     </div>
   </section>
 
-  <section id="ind-sponsor" class="hk-sec tint">
+  <section id="ind-sponsor" class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2></div>
       <div>
@@ -788,7 +888,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec">
+  <section class="hk-sec tint">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Israel–India</p><h2 class="hk-h">Building on Bengaluru Tech Summit 2026</h2></div>
       <div>
@@ -800,7 +900,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec tint">
+  <section id="ind-venue" class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Venue</p><h2 class="hk-h">Hosted at SREC SPARK</h2></div>
       <div class="ind-venue">
@@ -817,7 +917,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section class="hk-sec">
+  <section id="ind-orgs" class="hk-sec tint">
     <div class="wrap">
       <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Organised by</h2>
       <div class="hk-logos"><figure class="hk-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:56px"></figure><figure class="hk-lg"><img src="assets/srec-spark-logo.png" alt="SREC SPARK" style="height:64px"></figure><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:52px"></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:58px"></figure><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:62px"></figure></div>
@@ -833,111 +933,103 @@ footer b{color:var(--on-navy)}
   </section>
 </div>
 
-<div id="v-conference" class="pg-conf" data-view hidden>
-  <div class="chero">
-    <div class="chero-art" aria-hidden="true"><svg viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="hcg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5CC8FF" stop-opacity=".9"/><stop offset="1" stop-color="#12C493" stop-opacity=".9"/></linearGradient><filter id="hcb"><feGaussianBlur stdDeviation="2"/></filter></defs><g stroke="#8FB8E0" stroke-opacity=".16" stroke-width="1"><line x1="463" y1="886" x2="573" y2="877"/><line x1="463" y1="886" x2="520" y2="875"/><line x1="463" y1="886" x2="551" y2="829"/><line x1="463" y1="886" x2="564" y2="860"/><line x1="573" y1="877" x2="520" y2="875"/><line x1="573" y1="877" x2="551" y2="829"/><line x1="573" y1="877" x2="564" y2="860"/><line x1="476" y1="462" x2="524" y2="487"/><line x1="476" y1="462" x2="405" y2="463"/><line x1="476" y1="462" x2="481" y2="384"/><line x1="476" y1="462" x2="406" y2="429"/><line x1="520" y1="875" x2="551" y2="829"/><line x1="520" y1="875" x2="564" y2="860"/><line x1="194" y1="189" x2="190" y2="96"/><line x1="194" y1="189" x2="145" y2="92"/><line x1="524" y1="487" x2="481" y2="384"/><line x1="190" y1="96" x2="145" y2="92"/><line x1="190" y1="96" x2="214" y2="53"/><line x1="457" y1="310" x2="475" y2="334"/><line x1="457" y1="310" x2="481" y2="384"/><line x1="145" y1="92" x2="60" y2="36"/><line x1="145" y1="92" x2="68" y2="17"/><line x1="145" y1="92" x2="214" y2="53"/><line x1="551" y1="829" x2="564" y2="860"/><line x1="42" y1="609" x2="4" y2="678"/><line x1="42" y1="609" x2="71" y2="576"/><line x1="42" y1="609" x2="74" y2="579"/><line x1="405" y1="463" x2="301" y2="511"/><line x1="405" y1="463" x2="481" y2="384"/><line x1="405" y1="463" x2="406" y2="429"/><line x1="161" y1="638" x2="247" y2="614"/><line x1="161" y1="638" x2="200" y2="531"/><line x1="161" y1="638" x2="239" y2="655"/><line x1="161" y1="638" x2="85" y2="724"/><line x1="161" y1="638" x2="71" y2="576"/><line x1="161" y1="638" x2="74" y2="579"/><line x1="15" y1="851" x2="30" y2="796"/><line x1="15" y1="851" x2="110" y2="866"/><line x1="60" y1="36" x2="68" y2="17"/><line x1="194" y1="900" x2="110" y2="866"/><line x1="194" y1="900" x2="203" y2="797"/><line x1="247" y1="614" x2="200" y2="531"/><line x1="247" y1="614" x2="239" y2="655"/><line x1="247" y1="614" x2="301" y2="511"/><line x1="247" y1="614" x2="235" y2="525"/><line x1="30" y1="796" x2="85" y2="724"/><line x1="30" y1="796" x2="110" y2="866"/><line x1="475" y1="334" x2="481" y2="384"/><line x1="475" y1="334" x2="406" y2="429"/><line x1="200" y1="531" x2="301" y2="511"/><line x1="200" y1="531" x2="235" y2="525"/><line x1="301" y1="511" x2="284" y2="416"/><line x1="301" y1="511" x2="235" y2="525"/><line x1="301" y1="511" x2="297" y2="395"/><line x1="4" y1="678" x2="85" y2="724"/><line x1="87" y1="468" x2="71" y2="576"/><line x1="87" y1="468" x2="110" y2="410"/><line x1="87" y1="468" x2="74" y2="579"/><line x1="284" y1="416" x2="260" y2="322"/><line x1="284" y1="416" x2="235" y2="525"/><line x1="284" y1="416" x2="297" y2="395"/><line x1="284" y1="416" x2="276" y2="344"/><line x1="260" y1="322" x2="297" y2="395"/><line x1="260" y1="322" x2="276" y2="344"/><line x1="295" y1="30" x2="214" y2="53"/><line x1="295" y1="30" x2="340" y2="15"/><line x1="71" y1="576" x2="74" y2="579"/><line x1="110" y1="410" x2="89" y2="318"/><line x1="110" y1="866" x2="203" y2="797"/><line x1="297" y1="395" x2="406" y2="429"/><line x1="297" y1="395" x2="276" y2="344"/><line x1="481" y1="384" x2="406" y2="429"/></g><g fill="#8FB8E0" fill-opacity=".35"><circle cx="463" cy="886" r="2"/><circle cx="573" cy="877" r="1.5"/><circle cx="476" cy="462" r="1.5"/><circle cx="520" cy="875" r="1.5"/><circle cx="194" cy="189" r="2.5"/><circle cx="524" cy="487" r="1.5"/><circle cx="190" cy="96" r="1.5"/><circle cx="457" cy="310" r="1.5"/><circle cx="145" cy="92" r="2"/><circle cx="551" cy="829" r="2"/><circle cx="42" cy="609" r="1.5"/><circle cx="405" cy="463" r="2.5"/><circle cx="161" cy="638" r="2.5"/><circle cx="15" cy="851" r="1.5"/><circle cx="541" cy="64" r="2"/><circle cx="60" cy="36" r="2.5"/><circle cx="194" cy="900" r="1.5"/><circle cx="247" cy="614" r="2.5"/><circle cx="30" cy="796" r="1.5"/><circle cx="475" cy="334" r="2"/><circle cx="451" cy="605" r="2.5"/><circle cx="200" cy="531" r="2"/><circle cx="239" cy="655" r="1.5"/><circle cx="301" cy="511" r="2"/><circle cx="4" cy="678" r="2"/><circle cx="87" cy="468" r="1.5"/><circle cx="284" cy="416" r="1.5"/><circle cx="564" cy="860" r="2"/><circle cx="85" cy="724" r="2.5"/><circle cx="260" cy="322" r="2"/><circle cx="235" cy="525" r="1.5"/><circle cx="295" cy="30" r="1.5"/><circle cx="71" cy="576" r="1.5"/><circle cx="110" cy="410" r="2"/><circle cx="110" cy="866" r="2.5"/><circle cx="297" cy="395" r="2.5"/><circle cx="68" cy="17" r="2.5"/><circle cx="0" cy="218" r="1.5"/><circle cx="214" cy="53" r="1.5"/><circle cx="481" cy="384" r="1.5"/><circle cx="406" cy="429" r="1.5"/><circle cx="74" cy="579" r="2"/><circle cx="203" cy="797" r="2"/><circle cx="276" cy="344" r="1.5"/><circle cx="89" cy="318" r="2.5"/><circle cx="340" cy="15" r="2"/></g><g stroke-width="2.2" stroke-linecap="round"><line x1="305.1" y1="-40" x2="474.9" y2="-40" stroke="#FFFFFF" stroke-opacity="0.29"/><line x1="339.8" y1="-22" x2="440.2" y2="-22" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="380.6" y1="-4" x2="399.4" y2="-4" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="422.6" y1="14" x2="357.4" y2="14" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="460.5" y1="32" x2="319.5" y2="32" stroke="#FFFFFF" stroke-opacity="0.31"/><line x1="489.8" y1="50" x2="290.2" y2="50" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="506.7" y1="68" x2="273.3" y2="68" stroke="#FFFFFF" stroke-opacity="0.23"/><line x1="509.2" y1="86" x2="270.8" y2="86" stroke="#FFFFFF" stroke-opacity="0.19"/><line x1="496.9" y1="104" x2="283.1" y2="104" stroke="#FFFFFF" stroke-opacity="0.15"/><line x1="471.5" y1="122" x2="308.5" y2="122" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="435.9" y1="140" x2="344.1" y2="140" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="394.7" y1="158" x2="385.3" y2="158" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="352.9" y1="176" x2="427.1" y2="176" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="315.7" y1="194" x2="464.3" y2="194" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="287.7" y1="212" x2="492.3" y2="212" stroke="#FFFFFF" stroke-opacity="0.14"/><line x1="272.3" y1="230" x2="507.7" y2="230" stroke="#FFFFFF" stroke-opacity="0.18"/><line x1="271.5" y1="248" x2="508.5" y2="248" stroke="#FFFFFF" stroke-opacity="0.22"/><line x1="285.3" y1="266" x2="494.7" y2="266" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="312.1" y1="284" x2="467.9" y2="284" stroke="#FFFFFF" stroke-opacity="0.30"/><line x1="348.5" y1="302" x2="431.5" y2="302" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="390.0" y1="320" x2="390.0" y2="320" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="431.5" y1="338" x2="348.5" y2="338" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="467.9" y1="356" x2="312.1" y2="356" stroke="#FFFFFF" stroke-opacity="0.30"/><line x1="494.7" y1="374" x2="285.3" y2="374" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="508.5" y1="392" x2="271.5" y2="392" stroke="#FFFFFF" stroke-opacity="0.22"/><line x1="507.7" y1="410" x2="272.3" y2="410" stroke="#FFFFFF" stroke-opacity="0.18"/><line x1="492.3" y1="428" x2="287.7" y2="428" stroke="#FFFFFF" stroke-opacity="0.14"/><line x1="464.3" y1="446" x2="315.7" y2="446" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="427.1" y1="464" x2="352.9" y2="464" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="385.3" y1="482" x2="394.7" y2="482" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="344.1" y1="500" x2="435.9" y2="500" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="308.5" y1="518" x2="471.5" y2="518" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="283.1" y1="536" x2="496.9" y2="536" stroke="#FFFFFF" stroke-opacity="0.15"/><line x1="270.8" y1="554" x2="509.2" y2="554" stroke="#FFFFFF" stroke-opacity="0.19"/><line x1="273.3" y1="572" x2="506.7" y2="572" stroke="#FFFFFF" stroke-opacity="0.23"/><line x1="290.2" y1="590" x2="489.8" y2="590" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="319.5" y1="608" x2="460.5" y2="608" stroke="#FFFFFF" stroke-opacity="0.31"/><line x1="357.4" y1="626" x2="422.6" y2="626" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="399.4" y1="644" x2="380.6" y2="644" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="440.2" y1="662" x2="339.8" y2="662" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="474.9" y1="680" x2="305.1" y2="680" stroke="#FFFFFF" stroke-opacity="0.29"/><line x1="499.0" y1="698" x2="281.0" y2="698" stroke="#FFFFFF" stroke-opacity="0.26"/><line x1="509.6" y1="716" x2="270.4" y2="716" stroke="#FFFFFF" stroke-opacity="0.21"/><line x1="505.5" y1="734" x2="274.5" y2="734" stroke="#FFFFFF" stroke-opacity="0.17"/><line x1="487.1" y1="752" x2="292.9" y2="752" stroke="#FFFFFF" stroke-opacity="0.13"/><line x1="456.7" y1="770" x2="323.3" y2="770" stroke="#FFFFFF" stroke-opacity="0.10"/><line x1="418.0" y1="788" x2="362.0" y2="788" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="375.9" y1="806" x2="404.1" y2="806" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="335.5" y1="824" x2="444.5" y2="824" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="301.9" y1="842" x2="478.1" y2="842" stroke="#FFFFFF" stroke-opacity="0.12"/><line x1="279.1" y1="860" x2="500.9" y2="860" stroke="#FFFFFF" stroke-opacity="0.16"/><line x1="270.1" y1="878" x2="509.9" y2="878" stroke="#FFFFFF" stroke-opacity="0.20"/><line x1="275.9" y1="896" x2="504.1" y2="896" stroke="#FFFFFF" stroke-opacity="0.24"/><line x1="295.8" y1="914" x2="484.2" y2="914" stroke="#FFFFFF" stroke-opacity="0.28"/><line x1="327.3" y1="932" x2="452.7" y2="932" stroke="#FFFFFF" stroke-opacity="0.31"/></g><path d="M305.1 -40 L315.7 -34 L327.3 -28 L339.8 -22 L352.9 -16 L366.6 -10 L380.6 -4 L394.7 2 L408.8 8 L422.6 14 L435.9 20 L448.6 26 L460.5 32 L471.5 38 L481.2 44 L489.8 50 L496.9 56 L502.6 62 L506.7 68 L509.2 74 L510.0 80 L509.2 86 L506.7 92 L502.6 98 L496.9 104 L489.8 110 L481.2 116 L471.5 122 L460.5 128 L448.6 134 L435.9 140 L422.6 146 L408.8 152 L394.7 158 L380.6 164 L366.6 170 L352.9 176 L339.8 182 L327.3 188 L315.7 194 L305.1 200 L295.8 206 L287.7 212 L281.0 218 L275.9 224 L272.3 230 L270.4 236 L270.1 242 L271.5 248 L274.5 254 L279.1 260 L285.3 266 L292.9 272 L301.9 278 L312.1 284 L323.3 290 L335.5 296 L348.5 302 L362.0 308 L375.9 314 L390.0 320 L404.1 326 L418.0 332 L431.5 338 L444.5 344 L456.7 350 L467.9 356 L478.1 362 L487.1 368 L494.7 374 L500.9 380 L505.5 386 L508.5 392 L509.9 398 L509.6 404 L507.7 410 L504.1 416 L499.0 422 L492.3 428 L484.2 434 L474.9 440 L464.3 446 L452.7 452 L440.2 458 L427.1 464 L413.4 470 L399.4 476 L385.3 482 L371.2 488 L357.4 494 L344.1 500 L331.4 506 L319.5 512 L308.5 518 L298.8 524 L290.2 530 L283.1 536 L277.4 542 L273.3 548 L270.8 554 L270.0 560 L270.8 566 L273.3 572 L277.4 578 L283.1 584 L290.2 590 L298.8 596 L308.5 602 L319.5 608 L331.4 614 L344.1 620 L357.4 626 L371.2 632 L385.3 638 L399.4 644 L413.4 650 L427.1 656 L440.2 662 L452.7 668 L464.3 674 L474.9 680 L484.2 686 L492.3 692 L499.0 698 L504.1 704 L507.7 710 L509.6 716 L509.9 722 L508.5 728 L505.5 734 L500.9 740 L494.7 746 L487.1 752 L478.1 758 L467.9 764 L456.7 770 L444.5 776 L431.5 782 L418.0 788 L404.1 794 L390.0 800 L375.9 806 L362.0 812 L348.5 818 L335.5 824 L323.3 830 L312.1 836 L301.9 842 L292.9 848 L285.3 854 L279.1 860 L274.5 866 L271.5 872 L270.1 878 L270.4 884 L272.3 890 L275.9 896 L281.0 902 L287.7 908 L295.8 914 L305.1 920 L315.7 926 L327.3 932 L339.8 938" fill="none" stroke="url(#hcg)" stroke-width="4" stroke-opacity="0.95"/><path d="M474.9 -40 L464.3 -34 L452.7 -28 L440.2 -22 L427.1 -16 L413.4 -10 L399.4 -4 L385.3 2 L371.2 8 L357.4 14 L344.1 20 L331.4 26 L319.5 32 L308.5 38 L298.8 44 L290.2 50 L283.1 56 L277.4 62 L273.3 68 L270.8 74 L270.0 80 L270.8 86 L273.3 92 L277.4 98 L283.1 104 L290.2 110 L298.8 116 L308.5 122 L319.5 128 L331.4 134 L344.1 140 L357.4 146 L371.2 152 L385.3 158 L399.4 164 L413.4 170 L427.1 176 L440.2 182 L452.7 188 L464.3 194 L474.9 200 L484.2 206 L492.3 212 L499.0 218 L504.1 224 L507.7 230 L509.6 236 L509.9 242 L508.5 248 L505.5 254 L500.9 260 L494.7 266 L487.1 272 L478.1 278 L467.9 284 L456.7 290 L444.5 296 L431.5 302 L418.0 308 L404.1 314 L390.0 320 L375.9 326 L362.0 332 L348.5 338 L335.5 344 L323.3 350 L312.1 356 L301.9 362 L292.9 368 L285.3 374 L279.1 380 L274.5 386 L271.5 392 L270.1 398 L270.4 404 L272.3 410 L275.9 416 L281.0 422 L287.7 428 L295.8 434 L305.1 440 L315.7 446 L327.3 452 L339.8 458 L352.9 464 L366.6 470 L380.6 476 L394.7 482 L408.8 488 L422.6 494 L435.9 500 L448.6 506 L460.5 512 L471.5 518 L481.2 524 L489.8 530 L496.9 536 L502.6 542 L506.7 548 L509.2 554 L510.0 560 L509.2 566 L506.7 572 L502.6 578 L496.9 584 L489.8 590 L481.2 596 L471.5 602 L460.5 608 L448.6 614 L435.9 620 L422.6 626 L408.8 632 L394.7 638 L380.6 644 L366.6 650 L352.9 656 L339.8 662 L327.3 668 L315.7 674 L305.1 680 L295.8 686 L287.7 692 L281.0 698 L275.9 704 L272.3 710 L270.4 716 L270.1 722 L271.5 728 L274.5 734 L279.1 740 L285.3 746 L292.9 752 L301.9 758 L312.1 764 L323.3 770 L335.5 776 L348.5 782 L362.0 788 L375.9 794 L390.0 800 L404.1 806 L418.0 812 L431.5 818 L444.5 824 L456.7 830 L467.9 836 L478.1 842 L487.1 848 L494.7 854 L500.9 860 L505.5 866 L508.5 872 L509.9 878 L509.6 884 L507.7 890 L504.1 896 L499.0 902 L492.3 908 L484.2 914 L474.9 920 L464.3 926 L452.7 932 L440.2 938" fill="none" stroke="url(#hcg)" stroke-width="4" stroke-opacity="0.55"/><circle cx="305.1" cy="-40" r="8.3" fill="#5CC8FF" fill-opacity="0.86"/><circle cx="474.9" cy="-40" r="4.7" fill="#12C493" fill-opacity="0.44"/><circle cx="380.6" cy="-4" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="399.4" cy="-4" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="460.5" cy="32" r="8.5" fill="#FFFFFF" fill-opacity="0.89"/><circle cx="319.5" cy="32" r="4.5" fill="#FFFFFF" fill-opacity="0.41"/><circle cx="506.7" cy="68" r="7.1" fill="#5CC8FF" fill-opacity="0.72"/><circle cx="273.3" cy="68" r="5.9" fill="#12C493" fill-opacity="0.58"/><circle cx="496.9" cy="104" r="5.4" fill="#5CC8FF" fill-opacity="0.51"/><circle cx="283.1" cy="104" r="7.6" fill="#12C493" fill-opacity="0.79"/><circle cx="435.9" cy="140" r="4.2" fill="#FFFFFF" fill-opacity="0.37"/><circle cx="344.1" cy="140" r="8.8" fill="#FFFFFF" fill-opacity="0.93"/><circle cx="352.9" cy="176" r="4.1" fill="#5CC8FF" fill-opacity="0.36"/><circle cx="427.1" cy="176" r="8.9" fill="#12C493" fill-opacity="0.94"/><circle cx="287.7" cy="212" r="5.2" fill="#5CC8FF" fill-opacity="0.49"/><circle cx="492.3" cy="212" r="7.8" fill="#12C493" fill-opacity="0.81"/><circle cx="271.5" cy="248" r="6.9" fill="#FFFFFF" fill-opacity="0.70"/><circle cx="508.5" cy="248" r="6.1" fill="#FFFFFF" fill-opacity="0.60"/><circle cx="312.1" cy="284" r="8.4" fill="#5CC8FF" fill-opacity="0.88"/><circle cx="467.9" cy="284" r="4.6" fill="#12C493" fill-opacity="0.42"/><circle cx="390.0" cy="320" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="390.0" cy="320" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="467.9" cy="356" r="8.4" fill="#FFFFFF" fill-opacity="0.88"/><circle cx="312.1" cy="356" r="4.6" fill="#FFFFFF" fill-opacity="0.42"/><circle cx="508.5" cy="392" r="6.9" fill="#5CC8FF" fill-opacity="0.70"/><circle cx="271.5" cy="392" r="6.1" fill="#12C493" fill-opacity="0.60"/><circle cx="492.3" cy="428" r="5.2" fill="#5CC8FF" fill-opacity="0.49"/><circle cx="287.7" cy="428" r="7.8" fill="#12C493" fill-opacity="0.81"/><circle cx="427.1" cy="464" r="4.1" fill="#FFFFFF" fill-opacity="0.36"/><circle cx="352.9" cy="464" r="8.9" fill="#FFFFFF" fill-opacity="0.94"/><circle cx="344.1" cy="500" r="4.2" fill="#5CC8FF" fill-opacity="0.37"/><circle cx="435.9" cy="500" r="8.8" fill="#12C493" fill-opacity="0.93"/><circle cx="283.1" cy="536" r="5.4" fill="#5CC8FF" fill-opacity="0.51"/><circle cx="496.9" cy="536" r="7.6" fill="#12C493" fill-opacity="0.79"/><circle cx="273.3" cy="572" r="7.1" fill="#FFFFFF" fill-opacity="0.72"/><circle cx="506.7" cy="572" r="5.9" fill="#FFFFFF" fill-opacity="0.58"/><circle cx="319.5" cy="608" r="8.5" fill="#5CC8FF" fill-opacity="0.89"/><circle cx="460.5" cy="608" r="4.5" fill="#12C493" fill-opacity="0.41"/><circle cx="399.4" cy="644" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="380.6" cy="644" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="474.9" cy="680" r="8.3" fill="#FFFFFF" fill-opacity="0.86"/><circle cx="305.1" cy="680" r="4.7" fill="#FFFFFF" fill-opacity="0.44"/><circle cx="509.6" cy="716" r="6.7" fill="#5CC8FF" fill-opacity="0.67"/><circle cx="270.4" cy="716" r="6.3" fill="#12C493" fill-opacity="0.63"/><circle cx="487.1" cy="752" r="5.0" fill="#5CC8FF" fill-opacity="0.47"/><circle cx="292.9" cy="752" r="8.0" fill="#12C493" fill-opacity="0.83"/><circle cx="418.0" cy="788" r="4.1" fill="#FFFFFF" fill-opacity="0.36"/><circle cx="362.0" cy="788" r="8.9" fill="#FFFFFF" fill-opacity="0.94"/><circle cx="335.5" cy="824" r="4.3" fill="#5CC8FF" fill-opacity="0.38"/><circle cx="444.5" cy="824" r="8.7" fill="#12C493" fill-opacity="0.92"/><circle cx="279.1" cy="860" r="5.5" fill="#5CC8FF" fill-opacity="0.54"/><circle cx="500.9" cy="860" r="7.5" fill="#12C493" fill-opacity="0.76"/><circle cx="275.9" cy="896" r="7.3" fill="#FFFFFF" fill-opacity="0.74"/><circle cx="504.1" cy="896" r="5.7" fill="#FFFFFF" fill-opacity="0.56"/><circle cx="327.3" cy="932" r="8.6" fill="#5CC8FF" fill-opacity="0.91"/><circle cx="452.7" cy="932" r="4.4" fill="#12C493" fill-opacity="0.39"/><circle cx="150" cy="180" r="60" fill="#FC9732" fill-opacity=".14" filter="url(#hcb)"/><circle cx="470" cy="520" r="80" fill="#2F80FF" fill-opacity=".14" filter="url(#hcb)"/><circle cx="90" cy="640" r="50" fill="#12C493" fill-opacity=".14" filter="url(#hcb)"/></svg></div>
-    <div class="wrap chero-in">
-      <div class="clogos">
-        <span><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women"></span>
-        <p class="x" aria-hidden="true">×</p>
-        <span><img src="assets/ariel_en.png" alt="Ariel University"></span>
+<div id="v-conference" class="pg-conf hk" data-view hidden>
+  <div class="hk-hero hk2 conf-hero">
+    <div class="hk-bokeh conf-art" aria-hidden="true"><svg viewBox="0 0 600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="hcg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5CC8FF" stop-opacity=".9"/><stop offset="1" stop-color="#12C493" stop-opacity=".9"/></linearGradient><filter id="hcb"><feGaussianBlur stdDeviation="2"/></filter></defs><g stroke="#8FB8E0" stroke-opacity=".16" stroke-width="1"><line x1="463" y1="886" x2="573" y2="877"/><line x1="463" y1="886" x2="520" y2="875"/><line x1="463" y1="886" x2="551" y2="829"/><line x1="463" y1="886" x2="564" y2="860"/><line x1="573" y1="877" x2="520" y2="875"/><line x1="573" y1="877" x2="551" y2="829"/><line x1="573" y1="877" x2="564" y2="860"/><line x1="476" y1="462" x2="524" y2="487"/><line x1="476" y1="462" x2="405" y2="463"/><line x1="476" y1="462" x2="481" y2="384"/><line x1="476" y1="462" x2="406" y2="429"/><line x1="520" y1="875" x2="551" y2="829"/><line x1="520" y1="875" x2="564" y2="860"/><line x1="194" y1="189" x2="190" y2="96"/><line x1="194" y1="189" x2="145" y2="92"/><line x1="524" y1="487" x2="481" y2="384"/><line x1="190" y1="96" x2="145" y2="92"/><line x1="190" y1="96" x2="214" y2="53"/><line x1="457" y1="310" x2="475" y2="334"/><line x1="457" y1="310" x2="481" y2="384"/><line x1="145" y1="92" x2="60" y2="36"/><line x1="145" y1="92" x2="68" y2="17"/><line x1="145" y1="92" x2="214" y2="53"/><line x1="551" y1="829" x2="564" y2="860"/><line x1="42" y1="609" x2="4" y2="678"/><line x1="42" y1="609" x2="71" y2="576"/><line x1="42" y1="609" x2="74" y2="579"/><line x1="405" y1="463" x2="301" y2="511"/><line x1="405" y1="463" x2="481" y2="384"/><line x1="405" y1="463" x2="406" y2="429"/><line x1="161" y1="638" x2="247" y2="614"/><line x1="161" y1="638" x2="200" y2="531"/><line x1="161" y1="638" x2="239" y2="655"/><line x1="161" y1="638" x2="85" y2="724"/><line x1="161" y1="638" x2="71" y2="576"/><line x1="161" y1="638" x2="74" y2="579"/><line x1="15" y1="851" x2="30" y2="796"/><line x1="15" y1="851" x2="110" y2="866"/><line x1="60" y1="36" x2="68" y2="17"/><line x1="194" y1="900" x2="110" y2="866"/><line x1="194" y1="900" x2="203" y2="797"/><line x1="247" y1="614" x2="200" y2="531"/><line x1="247" y1="614" x2="239" y2="655"/><line x1="247" y1="614" x2="301" y2="511"/><line x1="247" y1="614" x2="235" y2="525"/><line x1="30" y1="796" x2="85" y2="724"/><line x1="30" y1="796" x2="110" y2="866"/><line x1="475" y1="334" x2="481" y2="384"/><line x1="475" y1="334" x2="406" y2="429"/><line x1="200" y1="531" x2="301" y2="511"/><line x1="200" y1="531" x2="235" y2="525"/><line x1="301" y1="511" x2="284" y2="416"/><line x1="301" y1="511" x2="235" y2="525"/><line x1="301" y1="511" x2="297" y2="395"/><line x1="4" y1="678" x2="85" y2="724"/><line x1="87" y1="468" x2="71" y2="576"/><line x1="87" y1="468" x2="110" y2="410"/><line x1="87" y1="468" x2="74" y2="579"/><line x1="284" y1="416" x2="260" y2="322"/><line x1="284" y1="416" x2="235" y2="525"/><line x1="284" y1="416" x2="297" y2="395"/><line x1="284" y1="416" x2="276" y2="344"/><line x1="260" y1="322" x2="297" y2="395"/><line x1="260" y1="322" x2="276" y2="344"/><line x1="295" y1="30" x2="214" y2="53"/><line x1="295" y1="30" x2="340" y2="15"/><line x1="71" y1="576" x2="74" y2="579"/><line x1="110" y1="410" x2="89" y2="318"/><line x1="110" y1="866" x2="203" y2="797"/><line x1="297" y1="395" x2="406" y2="429"/><line x1="297" y1="395" x2="276" y2="344"/><line x1="481" y1="384" x2="406" y2="429"/></g><g fill="#8FB8E0" fill-opacity=".35"><circle cx="463" cy="886" r="2"/><circle cx="573" cy="877" r="1.5"/><circle cx="476" cy="462" r="1.5"/><circle cx="520" cy="875" r="1.5"/><circle cx="194" cy="189" r="2.5"/><circle cx="524" cy="487" r="1.5"/><circle cx="190" cy="96" r="1.5"/><circle cx="457" cy="310" r="1.5"/><circle cx="145" cy="92" r="2"/><circle cx="551" cy="829" r="2"/><circle cx="42" cy="609" r="1.5"/><circle cx="405" cy="463" r="2.5"/><circle cx="161" cy="638" r="2.5"/><circle cx="15" cy="851" r="1.5"/><circle cx="541" cy="64" r="2"/><circle cx="60" cy="36" r="2.5"/><circle cx="194" cy="900" r="1.5"/><circle cx="247" cy="614" r="2.5"/><circle cx="30" cy="796" r="1.5"/><circle cx="475" cy="334" r="2"/><circle cx="451" cy="605" r="2.5"/><circle cx="200" cy="531" r="2"/><circle cx="239" cy="655" r="1.5"/><circle cx="301" cy="511" r="2"/><circle cx="4" cy="678" r="2"/><circle cx="87" cy="468" r="1.5"/><circle cx="284" cy="416" r="1.5"/><circle cx="564" cy="860" r="2"/><circle cx="85" cy="724" r="2.5"/><circle cx="260" cy="322" r="2"/><circle cx="235" cy="525" r="1.5"/><circle cx="295" cy="30" r="1.5"/><circle cx="71" cy="576" r="1.5"/><circle cx="110" cy="410" r="2"/><circle cx="110" cy="866" r="2.5"/><circle cx="297" cy="395" r="2.5"/><circle cx="68" cy="17" r="2.5"/><circle cx="0" cy="218" r="1.5"/><circle cx="214" cy="53" r="1.5"/><circle cx="481" cy="384" r="1.5"/><circle cx="406" cy="429" r="1.5"/><circle cx="74" cy="579" r="2"/><circle cx="203" cy="797" r="2"/><circle cx="276" cy="344" r="1.5"/><circle cx="89" cy="318" r="2.5"/><circle cx="340" cy="15" r="2"/></g><g stroke-width="2.2" stroke-linecap="round"><line x1="305.1" y1="-40" x2="474.9" y2="-40" stroke="#FFFFFF" stroke-opacity="0.29"/><line x1="339.8" y1="-22" x2="440.2" y2="-22" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="380.6" y1="-4" x2="399.4" y2="-4" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="422.6" y1="14" x2="357.4" y2="14" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="460.5" y1="32" x2="319.5" y2="32" stroke="#FFFFFF" stroke-opacity="0.31"/><line x1="489.8" y1="50" x2="290.2" y2="50" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="506.7" y1="68" x2="273.3" y2="68" stroke="#FFFFFF" stroke-opacity="0.23"/><line x1="509.2" y1="86" x2="270.8" y2="86" stroke="#FFFFFF" stroke-opacity="0.19"/><line x1="496.9" y1="104" x2="283.1" y2="104" stroke="#FFFFFF" stroke-opacity="0.15"/><line x1="471.5" y1="122" x2="308.5" y2="122" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="435.9" y1="140" x2="344.1" y2="140" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="394.7" y1="158" x2="385.3" y2="158" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="352.9" y1="176" x2="427.1" y2="176" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="315.7" y1="194" x2="464.3" y2="194" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="287.7" y1="212" x2="492.3" y2="212" stroke="#FFFFFF" stroke-opacity="0.14"/><line x1="272.3" y1="230" x2="507.7" y2="230" stroke="#FFFFFF" stroke-opacity="0.18"/><line x1="271.5" y1="248" x2="508.5" y2="248" stroke="#FFFFFF" stroke-opacity="0.22"/><line x1="285.3" y1="266" x2="494.7" y2="266" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="312.1" y1="284" x2="467.9" y2="284" stroke="#FFFFFF" stroke-opacity="0.30"/><line x1="348.5" y1="302" x2="431.5" y2="302" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="390.0" y1="320" x2="390.0" y2="320" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="431.5" y1="338" x2="348.5" y2="338" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="467.9" y1="356" x2="312.1" y2="356" stroke="#FFFFFF" stroke-opacity="0.30"/><line x1="494.7" y1="374" x2="285.3" y2="374" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="508.5" y1="392" x2="271.5" y2="392" stroke="#FFFFFF" stroke-opacity="0.22"/><line x1="507.7" y1="410" x2="272.3" y2="410" stroke="#FFFFFF" stroke-opacity="0.18"/><line x1="492.3" y1="428" x2="287.7" y2="428" stroke="#FFFFFF" stroke-opacity="0.14"/><line x1="464.3" y1="446" x2="315.7" y2="446" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="427.1" y1="464" x2="352.9" y2="464" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="385.3" y1="482" x2="394.7" y2="482" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="344.1" y1="500" x2="435.9" y2="500" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="308.5" y1="518" x2="471.5" y2="518" stroke="#FFFFFF" stroke-opacity="0.11"/><line x1="283.1" y1="536" x2="496.9" y2="536" stroke="#FFFFFF" stroke-opacity="0.15"/><line x1="270.8" y1="554" x2="509.2" y2="554" stroke="#FFFFFF" stroke-opacity="0.19"/><line x1="273.3" y1="572" x2="506.7" y2="572" stroke="#FFFFFF" stroke-opacity="0.23"/><line x1="290.2" y1="590" x2="489.8" y2="590" stroke="#FFFFFF" stroke-opacity="0.27"/><line x1="319.5" y1="608" x2="460.5" y2="608" stroke="#FFFFFF" stroke-opacity="0.31"/><line x1="357.4" y1="626" x2="422.6" y2="626" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="399.4" y1="644" x2="380.6" y2="644" stroke="#FFFFFF" stroke-opacity="0.33"/><line x1="440.2" y1="662" x2="339.8" y2="662" stroke="#FFFFFF" stroke-opacity="0.32"/><line x1="474.9" y1="680" x2="305.1" y2="680" stroke="#FFFFFF" stroke-opacity="0.29"/><line x1="499.0" y1="698" x2="281.0" y2="698" stroke="#FFFFFF" stroke-opacity="0.26"/><line x1="509.6" y1="716" x2="270.4" y2="716" stroke="#FFFFFF" stroke-opacity="0.21"/><line x1="505.5" y1="734" x2="274.5" y2="734" stroke="#FFFFFF" stroke-opacity="0.17"/><line x1="487.1" y1="752" x2="292.9" y2="752" stroke="#FFFFFF" stroke-opacity="0.13"/><line x1="456.7" y1="770" x2="323.3" y2="770" stroke="#FFFFFF" stroke-opacity="0.10"/><line x1="418.0" y1="788" x2="362.0" y2="788" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="375.9" y1="806" x2="404.1" y2="806" stroke="#FFFFFF" stroke-opacity="0.08"/><line x1="335.5" y1="824" x2="444.5" y2="824" stroke="#FFFFFF" stroke-opacity="0.09"/><line x1="301.9" y1="842" x2="478.1" y2="842" stroke="#FFFFFF" stroke-opacity="0.12"/><line x1="279.1" y1="860" x2="500.9" y2="860" stroke="#FFFFFF" stroke-opacity="0.16"/><line x1="270.1" y1="878" x2="509.9" y2="878" stroke="#FFFFFF" stroke-opacity="0.20"/><line x1="275.9" y1="896" x2="504.1" y2="896" stroke="#FFFFFF" stroke-opacity="0.24"/><line x1="295.8" y1="914" x2="484.2" y2="914" stroke="#FFFFFF" stroke-opacity="0.28"/><line x1="327.3" y1="932" x2="452.7" y2="932" stroke="#FFFFFF" stroke-opacity="0.31"/></g><path d="M305.1 -40 L315.7 -34 L327.3 -28 L339.8 -22 L352.9 -16 L366.6 -10 L380.6 -4 L394.7 2 L408.8 8 L422.6 14 L435.9 20 L448.6 26 L460.5 32 L471.5 38 L481.2 44 L489.8 50 L496.9 56 L502.6 62 L506.7 68 L509.2 74 L510.0 80 L509.2 86 L506.7 92 L502.6 98 L496.9 104 L489.8 110 L481.2 116 L471.5 122 L460.5 128 L448.6 134 L435.9 140 L422.6 146 L408.8 152 L394.7 158 L380.6 164 L366.6 170 L352.9 176 L339.8 182 L327.3 188 L315.7 194 L305.1 200 L295.8 206 L287.7 212 L281.0 218 L275.9 224 L272.3 230 L270.4 236 L270.1 242 L271.5 248 L274.5 254 L279.1 260 L285.3 266 L292.9 272 L301.9 278 L312.1 284 L323.3 290 L335.5 296 L348.5 302 L362.0 308 L375.9 314 L390.0 320 L404.1 326 L418.0 332 L431.5 338 L444.5 344 L456.7 350 L467.9 356 L478.1 362 L487.1 368 L494.7 374 L500.9 380 L505.5 386 L508.5 392 L509.9 398 L509.6 404 L507.7 410 L504.1 416 L499.0 422 L492.3 428 L484.2 434 L474.9 440 L464.3 446 L452.7 452 L440.2 458 L427.1 464 L413.4 470 L399.4 476 L385.3 482 L371.2 488 L357.4 494 L344.1 500 L331.4 506 L319.5 512 L308.5 518 L298.8 524 L290.2 530 L283.1 536 L277.4 542 L273.3 548 L270.8 554 L270.0 560 L270.8 566 L273.3 572 L277.4 578 L283.1 584 L290.2 590 L298.8 596 L308.5 602 L319.5 608 L331.4 614 L344.1 620 L357.4 626 L371.2 632 L385.3 638 L399.4 644 L413.4 650 L427.1 656 L440.2 662 L452.7 668 L464.3 674 L474.9 680 L484.2 686 L492.3 692 L499.0 698 L504.1 704 L507.7 710 L509.6 716 L509.9 722 L508.5 728 L505.5 734 L500.9 740 L494.7 746 L487.1 752 L478.1 758 L467.9 764 L456.7 770 L444.5 776 L431.5 782 L418.0 788 L404.1 794 L390.0 800 L375.9 806 L362.0 812 L348.5 818 L335.5 824 L323.3 830 L312.1 836 L301.9 842 L292.9 848 L285.3 854 L279.1 860 L274.5 866 L271.5 872 L270.1 878 L270.4 884 L272.3 890 L275.9 896 L281.0 902 L287.7 908 L295.8 914 L305.1 920 L315.7 926 L327.3 932 L339.8 938" fill="none" stroke="url(#hcg)" stroke-width="4" stroke-opacity="0.95"/><path d="M474.9 -40 L464.3 -34 L452.7 -28 L440.2 -22 L427.1 -16 L413.4 -10 L399.4 -4 L385.3 2 L371.2 8 L357.4 14 L344.1 20 L331.4 26 L319.5 32 L308.5 38 L298.8 44 L290.2 50 L283.1 56 L277.4 62 L273.3 68 L270.8 74 L270.0 80 L270.8 86 L273.3 92 L277.4 98 L283.1 104 L290.2 110 L298.8 116 L308.5 122 L319.5 128 L331.4 134 L344.1 140 L357.4 146 L371.2 152 L385.3 158 L399.4 164 L413.4 170 L427.1 176 L440.2 182 L452.7 188 L464.3 194 L474.9 200 L484.2 206 L492.3 212 L499.0 218 L504.1 224 L507.7 230 L509.6 236 L509.9 242 L508.5 248 L505.5 254 L500.9 260 L494.7 266 L487.1 272 L478.1 278 L467.9 284 L456.7 290 L444.5 296 L431.5 302 L418.0 308 L404.1 314 L390.0 320 L375.9 326 L362.0 332 L348.5 338 L335.5 344 L323.3 350 L312.1 356 L301.9 362 L292.9 368 L285.3 374 L279.1 380 L274.5 386 L271.5 392 L270.1 398 L270.4 404 L272.3 410 L275.9 416 L281.0 422 L287.7 428 L295.8 434 L305.1 440 L315.7 446 L327.3 452 L339.8 458 L352.9 464 L366.6 470 L380.6 476 L394.7 482 L408.8 488 L422.6 494 L435.9 500 L448.6 506 L460.5 512 L471.5 518 L481.2 524 L489.8 530 L496.9 536 L502.6 542 L506.7 548 L509.2 554 L510.0 560 L509.2 566 L506.7 572 L502.6 578 L496.9 584 L489.8 590 L481.2 596 L471.5 602 L460.5 608 L448.6 614 L435.9 620 L422.6 626 L408.8 632 L394.7 638 L380.6 644 L366.6 650 L352.9 656 L339.8 662 L327.3 668 L315.7 674 L305.1 680 L295.8 686 L287.7 692 L281.0 698 L275.9 704 L272.3 710 L270.4 716 L270.1 722 L271.5 728 L274.5 734 L279.1 740 L285.3 746 L292.9 752 L301.9 758 L312.1 764 L323.3 770 L335.5 776 L348.5 782 L362.0 788 L375.9 794 L390.0 800 L404.1 806 L418.0 812 L431.5 818 L444.5 824 L456.7 830 L467.9 836 L478.1 842 L487.1 848 L494.7 854 L500.9 860 L505.5 866 L508.5 872 L509.9 878 L509.6 884 L507.7 890 L504.1 896 L499.0 902 L492.3 908 L484.2 914 L474.9 920 L464.3 926 L452.7 932 L440.2 938" fill="none" stroke="url(#hcg)" stroke-width="4" stroke-opacity="0.55"/><circle cx="305.1" cy="-40" r="8.3" fill="#5CC8FF" fill-opacity="0.86"/><circle cx="474.9" cy="-40" r="4.7" fill="#12C493" fill-opacity="0.44"/><circle cx="380.6" cy="-4" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="399.4" cy="-4" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="460.5" cy="32" r="8.5" fill="#FFFFFF" fill-opacity="0.89"/><circle cx="319.5" cy="32" r="4.5" fill="#FFFFFF" fill-opacity="0.41"/><circle cx="506.7" cy="68" r="7.1" fill="#5CC8FF" fill-opacity="0.72"/><circle cx="273.3" cy="68" r="5.9" fill="#12C493" fill-opacity="0.58"/><circle cx="496.9" cy="104" r="5.4" fill="#5CC8FF" fill-opacity="0.51"/><circle cx="283.1" cy="104" r="7.6" fill="#12C493" fill-opacity="0.79"/><circle cx="435.9" cy="140" r="4.2" fill="#FFFFFF" fill-opacity="0.37"/><circle cx="344.1" cy="140" r="8.8" fill="#FFFFFF" fill-opacity="0.93"/><circle cx="352.9" cy="176" r="4.1" fill="#5CC8FF" fill-opacity="0.36"/><circle cx="427.1" cy="176" r="8.9" fill="#12C493" fill-opacity="0.94"/><circle cx="287.7" cy="212" r="5.2" fill="#5CC8FF" fill-opacity="0.49"/><circle cx="492.3" cy="212" r="7.8" fill="#12C493" fill-opacity="0.81"/><circle cx="271.5" cy="248" r="6.9" fill="#FFFFFF" fill-opacity="0.70"/><circle cx="508.5" cy="248" r="6.1" fill="#FFFFFF" fill-opacity="0.60"/><circle cx="312.1" cy="284" r="8.4" fill="#5CC8FF" fill-opacity="0.88"/><circle cx="467.9" cy="284" r="4.6" fill="#12C493" fill-opacity="0.42"/><circle cx="390.0" cy="320" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="390.0" cy="320" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="467.9" cy="356" r="8.4" fill="#FFFFFF" fill-opacity="0.88"/><circle cx="312.1" cy="356" r="4.6" fill="#FFFFFF" fill-opacity="0.42"/><circle cx="508.5" cy="392" r="6.9" fill="#5CC8FF" fill-opacity="0.70"/><circle cx="271.5" cy="392" r="6.1" fill="#12C493" fill-opacity="0.60"/><circle cx="492.3" cy="428" r="5.2" fill="#5CC8FF" fill-opacity="0.49"/><circle cx="287.7" cy="428" r="7.8" fill="#12C493" fill-opacity="0.81"/><circle cx="427.1" cy="464" r="4.1" fill="#FFFFFF" fill-opacity="0.36"/><circle cx="352.9" cy="464" r="8.9" fill="#FFFFFF" fill-opacity="0.94"/><circle cx="344.1" cy="500" r="4.2" fill="#5CC8FF" fill-opacity="0.37"/><circle cx="435.9" cy="500" r="8.8" fill="#12C493" fill-opacity="0.93"/><circle cx="283.1" cy="536" r="5.4" fill="#5CC8FF" fill-opacity="0.51"/><circle cx="496.9" cy="536" r="7.6" fill="#12C493" fill-opacity="0.79"/><circle cx="273.3" cy="572" r="7.1" fill="#FFFFFF" fill-opacity="0.72"/><circle cx="506.7" cy="572" r="5.9" fill="#FFFFFF" fill-opacity="0.58"/><circle cx="319.5" cy="608" r="8.5" fill="#5CC8FF" fill-opacity="0.89"/><circle cx="460.5" cy="608" r="4.5" fill="#12C493" fill-opacity="0.41"/><circle cx="399.4" cy="644" r="9.0" fill="#5CC8FF" fill-opacity="0.95"/><circle cx="380.6" cy="644" r="4.0" fill="#12C493" fill-opacity="0.35"/><circle cx="474.9" cy="680" r="8.3" fill="#FFFFFF" fill-opacity="0.86"/><circle cx="305.1" cy="680" r="4.7" fill="#FFFFFF" fill-opacity="0.44"/><circle cx="509.6" cy="716" r="6.7" fill="#5CC8FF" fill-opacity="0.67"/><circle cx="270.4" cy="716" r="6.3" fill="#12C493" fill-opacity="0.63"/><circle cx="487.1" cy="752" r="5.0" fill="#5CC8FF" fill-opacity="0.47"/><circle cx="292.9" cy="752" r="8.0" fill="#12C493" fill-opacity="0.83"/><circle cx="418.0" cy="788" r="4.1" fill="#FFFFFF" fill-opacity="0.36"/><circle cx="362.0" cy="788" r="8.9" fill="#FFFFFF" fill-opacity="0.94"/><circle cx="335.5" cy="824" r="4.3" fill="#5CC8FF" fill-opacity="0.38"/><circle cx="444.5" cy="824" r="8.7" fill="#12C493" fill-opacity="0.92"/><circle cx="279.1" cy="860" r="5.5" fill="#5CC8FF" fill-opacity="0.54"/><circle cx="500.9" cy="860" r="7.5" fill="#12C493" fill-opacity="0.76"/><circle cx="275.9" cy="896" r="7.3" fill="#FFFFFF" fill-opacity="0.74"/><circle cx="504.1" cy="896" r="5.7" fill="#FFFFFF" fill-opacity="0.56"/><circle cx="327.3" cy="932" r="8.6" fill="#5CC8FF" fill-opacity="0.91"/><circle cx="452.7" cy="932" r="4.4" fill="#12C493" fill-opacity="0.39"/><circle cx="150" cy="180" r="60" fill="#FC9732" fill-opacity=".14" filter="url(#hcb)"/><circle cx="470" cy="520" r="80" fill="#2F80FF" fill-opacity=".14" filter="url(#hcb)"/><circle cx="90" cy="640" r="50" fill="#12C493" fill-opacity=".14" filter="url(#hcb)"/></svg></div>
+    <div class="wrap hk2-in">
+      <p class="hk-brand"><b>ISRAEL–INDIA</b> <span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span><br>INNOVATION WEEK<br><b>COIMBATORE</b> 2027</p>
+      <h1 class="hk-lld sm">SCIENTIFIC CONFERENCE</h1>
+      <p class="hk2-tag conf"><span>3 February 2027</span> · SRCW, Coimbatore · Hybrid</p>
+      <p class="hk2-lead"><b>AI-Driven Innovations in Computing and Life Science for Sustainable Development.</b> Organised by the School of Computer Science and the School of Life Science, Sri Ramakrishna College of Arts and Science for Women, Coimbatore, in collaboration with Ariel University, Israel.</p>
+      <div class="hk2-chips">
+        <span class="key"><b>8 Dec 2026</b>Abstract submission</span>
+        <span><b>22 Dec 2026</b>Notification of acceptance</span>
+        <span><b>10 Jan 2027</b>Registration deadline</span>
+        <span><b>3 Feb 2027</b>Conference day</span>
       </div>
-      <p class="eyeline">Israel–India Innovation Week · International Conference · Wednesday 3 February 2027 · Hybrid</p>
-      <h1>AI-Driven Innovations in Computing and Life Science for Sustainable Development</h1>
-      <p class="org">Organised by the School of Computer Science and the School of Life Science, Sri Ramakrishna College of Arts and Science for Women, Coimbatore, in collaboration with Ariel University, Israel</p>
       <div class="cta-row">
-        <a class="btn" href="mailto:conference@srcw.ac.in?subject=Abstract%20submission%20-%20International%20Conference%203%20February%202027">Submit your abstract</a>
-        <p class="deadline">Abstract deadline <b>8 December 2026</b></p>
+        <a class="hk-btn conf" href="mailto:conference@srcw.ac.in?subject=Abstract%20submission%20-%20International%20Conference%203%20February%202027">Submit your abstract</a>
+        <p class="hk2-open">Abstract deadline <b>8 December 2026</b></p>
       </div>
     </div>
   </div>
-  <section>
-    <div class="wrap">
-      <div class="dates">
-        <div class="date key"><b>8 Dec 2026</b>Abstract submission</div>
-        <div class="date"><b>22 Dec 2026</b>Notification of acceptance</div>
-        <div class="date"><b>10 Jan 2027</b>Registration deadline</div>
-        <div class="date"><b>3 Feb 2027</b>Conference day</div>
-      </div>
-      <div class="about2">
-        <div>
-          <h2>About the conference</h2>
-          <p class="lead">A platform for scientists, researchers, educators, industry and students to explore the convergence of artificial intelligence, computing, mathematical sciences and life-science research.</p>
-        </div>
-        <div class="card">
-          <p>The conference focuses on applying intelligent computing to challenges in <b>bioinformatics, computational biology, healthcare, agriculture and environmental sustainability</b>. It highlights how machine learning, data analytics, optimisation and mathematical frameworks accelerate discovery, improve decision-making and enable resource-efficient solutions.</p>
-          <p style="margin-top:12px">Aligned with the <b>United Nations Sustainable Development Goals</b>, it promotes research that benefits society, protects the environment and addresses pressing global challenges.</p>
-        </div>
+
+  <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
+    <button data-go="cf-about">About</button><button data-go="cf-plenary">Plenary sessions</button><button data-go="cf-themes">Sub-themes</button><button data-go="cf-guide">Guidelines and fees</button><button data-go="cf-board">Advisory board</button><button data-go="cf-hosts">Hosts</button><button data-go="cf-contact">Contact</button>
+  </div></nav>
+
+  <section id="cf-about" class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> About the conference</p><h2 class="hk-h">Where intelligent computing meets life science</h2></div>
+      <div class="hk-prose">
+        <p class="cf-lead">A platform for scientists, researchers, educators, industry and students to explore the convergence of artificial intelligence, computing, mathematical sciences and life-science research.</p>
+        <p>The conference focuses on applying intelligent computing to challenges in <b>bioinformatics, computational biology, healthcare, agriculture and environmental sustainability</b>. It highlights how machine learning, data analytics, optimisation and mathematical frameworks accelerate discovery, improve decision-making and enable resource-efficient solutions.</p>
+        <p>Aligned with the <b>United Nations Sustainable Development Goals</b>, it promotes research that benefits society, protects the environment and addresses pressing global challenges.</p>
       </div>
     </div>
   </section>
-  <section class="band">
+
+  <section id="cf-plenary" class="hk-sec tint">
     <div class="wrap">
-      <p class="kicker">On site · 3 February 2027</p>
-      <h2>Plenary sessions</h2>
-      <div class="speakers">
-        <article class="speaker">
-          <img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski">
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> On site · 3 February 2027</p><h2 class="hk-h">Plenary sessions</h2>
+      <div class="cf-plen">
+        <article>
+          <img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski" loading="lazy">
           <div>
-            <p class="sess">Plenary session I</p>
+            <p class="cf-sess">Plenary session I</p>
             <h3>Artificial Intelligence in Life Sciences: Transforming Biological Research and Healthcare</h3>
-            <p class="name">Prof. Izhak Michaelevski</p>
-            <p class="role">Head and Principal Investigator, Molecular and Functional Neurobiology Lab · Department of Molecular Biology · Institute for Personalized and Translational Medicine, Ariel University, Israel</p>
+            <p class="cf-name">Prof. Izhak Michaelevski</p>
+            <p class="cf-role">Head and Principal Investigator, Molecular and Functional Neurobiology Lab · Department of Molecular Biology · Institute for Personalized and Translational Medicine, Ariel University, Israel</p>
           </div>
         </article>
-        <article class="speaker">
-          <img src="assets/dvir.jpg" alt="Prof. Amit Dvir">
+        <article>
+          <img src="assets/dvir.jpg" alt="Prof. Amit Dvir" loading="lazy">
           <div>
-            <p class="sess">Plenary session II</p>
+            <p class="cf-sess">Plenary session II</p>
             <h3>Cybersecurity in the Age of Artificial Intelligence: Challenges, Innovations and Future Perspectives</h3>
-            <p class="name">Prof. Amit Dvir</p>
-            <p class="role">Head of the Department of Computer and Software Engineering · Head of the Ariel Cyber Innovation Center (ACIC), Ariel University, Israel</p>
+            <p class="cf-name">Prof. Amit Dvir</p>
+            <p class="cf-role">Head of the Department of Computer and Software Engineering · Head of the Ariel Cyber Innovation Center (ACIC), Ariel University, Israel</p>
           </div>
         </article>
-        <article class="speaker">
-          <img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov">
+        <article>
+          <img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov" loading="lazy">
           <div>
-            <p class="sess">Plenary session III</p>
+            <p class="cf-sess">Plenary session III</p>
             <h3>Intelligent Automation and Data-Driven Technologies for Sustainable Development</h3>
-            <p class="name">Dr. Nadia Iermakov</p>
-            <p class="role">Director of Strategic Projects Development, Office of the Rector, Ariel University, Israel</p>
+            <p class="cf-name">Dr. Nadia Iermakov</p>
+            <p class="cf-role">Director of Strategic Projects Development, Office of the Rector, Ariel University, Israel</p>
           </div>
         </article>
       </div>
     </div>
   </section>
-  <section>
+
+  <section id="cf-themes" class="hk-sec">
     <div class="wrap">
-      <p class="kicker">Call for papers</p>
-      <h2>Sub-themes</h2>
-      <p class="lead">Original, unpublished papers are invited on the following sub-themes, but not limited to them.</p>
-      <div class="themes">
-        <div class="card theme">
-          <h3>Computing and AI</h3>
-          <ul>
-            <li>Artificial Intelligence and Machine Learning</li><li>Deep Learning and Generative AI</li><li>Data Science and Big Data Analytics</li><li>Computer Vision and Image Processing</li><li>Natural Language Processing</li><li>Internet of Things and Industrial IoT</li><li>Cloud and Edge Computing</li><li>Cyber Security</li><li>Quantum Computing</li><li>Robotics and Automation</li><li>Sustainable (Green) Computing</li><li>Mathematics for Machine Learning</li><li>Operations Research</li><li>Statistics and Probabilistic Models</li>
-          </ul>
-        </div>
-        <div class="card theme">
-          <h3>Life Science</h3>
-          <ul>
-            <li>Bioinformatics and Computational Biology</li><li>Genomics and Proteomics</li><li>Drug Discovery and Biotherapeutics</li><li>Gut Microbiome, Immunity and Human Health</li><li>Microbial and Nano Biotechnology</li><li>Functional Food, Nutrition and Agriculture</li><li>Cellular and Molecular Biology</li><li>Probiotics, Prebiotics, Synbiotics and Postbiotics</li>
-          </ul>
-        </div>
-        <div class="card theme">
-          <h3>Sustainable Development and Interdisciplinary Research</h3>
-          <ul>
-            <li>Environmental Sustainability and Climate</li><li>Waste Management</li><li>Smart Agriculture and Food Security</li><li>Clean Water and Energy</li><li>AI for Public Health and Well-being</li>
-          </ul>
-        </div>
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Call for papers</p><h2 class="hk-h">Sub-themes</h2>
+      <p class="cf-intro">Original, unpublished papers are invited on the following sub-themes, but not limited to them.</p>
+      <div class="cf-themes">
+        <article>
+          <p class="cf-n">01</p><h3>Computing and AI</h3>
+          <ul><li>Artificial Intelligence and Machine Learning</li><li>Deep Learning and Generative AI</li><li>Data Science and Big Data Analytics</li><li>Computer Vision and Image Processing</li><li>Natural Language Processing</li><li>Internet of Things and Industrial IoT</li><li>Cloud and Edge Computing</li><li>Cyber Security</li><li>Quantum Computing</li><li>Robotics and Automation</li><li>Sustainable (Green) Computing</li><li>Mathematics for Machine Learning</li><li>Operations Research</li><li>Statistics and Probabilistic Models</li></ul>
+        </article>
+        <article>
+          <p class="cf-n">02</p><h3>Life Science</h3>
+          <ul><li>Bioinformatics and Computational Biology</li><li>Genomics and Proteomics</li><li>Drug Discovery and Biotherapeutics</li><li>Gut Microbiome, Immunity and Human Health</li><li>Microbial and Nano Biotechnology</li><li>Functional Food, Nutrition and Agriculture</li><li>Cellular and Molecular Biology</li><li>Probiotics, Prebiotics, Synbiotics and Postbiotics</li></ul>
+        </article>
+        <article>
+          <p class="cf-n">03</p><h3>Sustainable Development and Interdisciplinary Research</h3>
+          <ul><li>Environmental Sustainability and Climate</li><li>Waste Management</li><li>Smart Agriculture and Food Security</li><li>Clean Water and Energy</li><li>AI for Public Health and Well-being</li></ul>
+        </article>
       </div>
     </div>
   </section>
-  <section style="padding-top:0">
-    <div class="wrap grid2">
-      <div class="card">
-        <h3 style="font-size:22px">Guidelines</h3>
-        <ul class="list">
+
+  <section id="cf-guide" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Participation</p><h2 class="hk-h">Guidelines and fees</h2></div>
+      <div>
+        <ul class="hk-ticks2">
           <li><b>Submission:</b> send your abstract by email to <a href="mailto:conference@srcw.ac.in">conference@srcw.ac.in</a>. Ariel University authors, please copy <a href="mailto:andreydo@ariel.ac.il">andreydo@ariel.ac.il</a></li>
           <li><b>Full paper:</b> MS Word, up to 2,000 words, IEEE format</li>
           <li><b>Authors:</b> maximum three; each author registers individually</li>
@@ -947,72 +1039,76 @@ footer b{color:var(--on-navy)}
           <li><b>Included:</b> lunch, refreshments, conference kit and certificates for all registered authors and participants</li>
           <li>No travel or daily allowance is provided</li>
         </ul>
-      </div>
-      <div class="card">
-        <h3 style="font-size:22px">Registration fees</h3>
-        <table style="margin-top:10px">
+        <p class="cf-sub" style="margin-top:36px">Registration fees</p>
+        <table class="cf-fees">
           <tr><th>Category</th><th>Fee</th></tr>
-          <tr><td>Students</td><td>INR 300 <span class="muted">(≈ USD 3.5)</span></td></tr>
-          <tr><td>Research scholars</td><td>INR 600 <span class="muted">(≈ USD 7)</span></td></tr>
-          <tr><td>Academicians</td><td>INR 600 <span class="muted">(≈ USD 7)</span></td></tr>
-          <tr><td>Industry professionals</td><td>INR 1,000 <span class="muted">(≈ USD 11.5)</span></td></tr>
+          <tr><td>Students</td><td>INR 300 <span>(≈ USD 3.5)</span></td></tr>
+          <tr><td>Research scholars</td><td>INR 600 <span>(≈ USD 7)</span></td></tr>
+          <tr><td>Academicians</td><td>INR 600 <span>(≈ USD 7)</span></td></tr>
+          <tr><td>Industry professionals</td><td>INR 1,000 <span>(≈ USD 11.5)</span></td></tr>
           <tr><td>Foreign delegates</td><td><b>USD 50</b></td></tr>
         </table>
-        <p class="muted" style="margin-top:10px;font-size:14px">Foreign delegates receive the payment link by email. Registration link to be announced.</p>
+        <p class="cf-note">Foreign delegates receive the payment link by email. Registration link: <span class="hk-soon">Info available soon</span></p>
       </div>
     </div>
   </section>
-  <section class="band">
+
+  <section id="cf-board" class="hk-sec">
     <div class="wrap">
-      <h2>Conference advisory board</h2>
-      <div class="board">
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People</p><h2 class="hk-h">Conference advisory board</h2>
+      <div class="cf-board">
         <div>
-          <p class="kicker" style="margin-top:18px">Sri Ramakrishna College of Arts and Science for Women</p>
-          <ul class="people">
-            <li><b>Dr. K. Chitra</b><span>Principal</span></li>
-            <li><b>Dr. N. Tajunisha</b><span>Professor and Dean, School of Computer Science</span></li>
-            <li><b>Dr. B. Thamarai Selvi</b><span>Professor and Dean, School of Life Science</span></li>
-            <li><b>Dr. Gokilamani</b><span>Professor and Head, Department of Mathematics</span></li>
-          </ul>
+          <p class="cf-sub">Sri Ramakrishna College of Arts and Science for Women</p>
+          <ul class="cf-people"><li><b>Dr. K. Chitra</b><span>Principal</span></li><li><b>Dr. N. Tajunisha</b><span>Professor and Dean, School of Computer Science</span></li><li><b>Dr. B. Thamarai Selvi</b><span>Professor and Dean, School of Life Science</span></li><li><b>Dr. Gokilamani</b><span>Professor and Head, Department of Mathematics</span></li></ul>
         </div>
         <div>
-          <p class="kicker" style="margin-top:18px">Ariel University, Israel</p>
-          <ul class="people">
-            <li class="ph"><img src="assets/pinhasov.jpg" alt="Prof. Albert Pinhasov"><div><b>Prof. Albert Pinhasov</b><span>Rector</span></div></li>
-            <li class="ph"><img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski"><div><b>Prof. Izhak Michaelevski</b><span>Head and Principal Investigator, Molecular and Functional Neurobiology Lab</span></div></li>
-            <li class="ph"><img src="assets/dvir.jpg" alt="Prof. Amit Dvir"><div><b>Prof. Amit Dvir</b><span>Head, Computer and Software Engineering</span></div></li>
-            <li class="ph"><img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov"><div><b>Dr. Nadia Iermakov</b><span>Director of Strategic Projects Development</span></div></li>
+          <p class="cf-sub">Ariel University, Israel</p>
+          <ul class="cf-people ph">
+            <li><img src="assets/pinhasov.jpg" alt="Prof. Albert Pinhasov" loading="lazy"><div><b>Prof. Albert Pinhasov</b><span>Rector</span></div></li>
+            <li><img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski" loading="lazy"><div><b>Prof. Izhak Michaelevski</b><span>Head and Principal Investigator, Molecular and Functional Neurobiology Lab</span></div></li>
+            <li><img src="assets/dvir.jpg" alt="Prof. Amit Dvir" loading="lazy"><div><b>Prof. Amit Dvir</b><span>Head, Computer and Software Engineering</span></div></li>
+            <li><img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov" loading="lazy"><div><b>Dr. Nadia Iermakov</b><span>Director of Strategic Projects Development</span></div></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section>
-    <div class="wrap grid2">
-      <div class="card inst">
-        <span class="lg"><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women"></span>
-        <h3>About SRCW</h3>
-        <p class="muted">Sri Ramakrishna College of Arts and Science for Women is one of the most preferred autonomous women's institutions for higher learning in Coimbatore, with over 35 years of academic heritage. Funded by the Department of Science and Technology under the FIST programme, it offers 12 undergraduate, 4 postgraduate and 6 PhD programmes. The college received the ASSOCHAM Award for Excellence in Promoting Industry–Academia Interface (2026) and is ranked among the Top 10 Best Colleges in India for Excellence in Academic Achievement by the Education World Grand Jury Higher Education Ranking 2026.</p>
-      </div>
-      <div class="card inst">
-        <span class="lg"><img src="assets/ariel_en.png" alt="Ariel University"></span>
-        <h3>About Ariel University</h3>
-        <p class="muted">Ariel University, Israel's newest public research university, has eight faculties and schools and serves over 15,000 students. Home to 25 research centres and 150 state-of-the-art laboratories, it leads advances in health sciences, cybersecurity, robotics and archaeology, and serves as an academic and clinical hub for its region.</p>
+
+  <section id="cf-hosts" class="hk-sec tint">
+    <div class="wrap">
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Hosts</p><h2 class="hk-h">Organised by</h2>
+      <div class="cf-hosts">
+        <div>
+          <img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women" style="height:58px">
+          <h3>Sri Ramakrishna College of Arts and Science for Women</h3>
+          <p>Sri Ramakrishna College of Arts and Science for Women is one of the most preferred autonomous women's institutions for higher learning in Coimbatore, with over 35 years of academic heritage. Funded by the Department of Science and Technology under the FIST programme, it offers 12 undergraduate, 4 postgraduate and 6 PhD programmes. The college received the ASSOCHAM Award for Excellence in Promoting Industry–Academia Interface (2026) and is ranked among the Top 10 Best Colleges in India for Excellence in Academic Achievement by the Education World Grand Jury Higher Education Ranking 2026.</p>
+        </div>
+        <div>
+          <img src="assets/ariel_en.png" alt="Ariel University" style="height:52px">
+          <h3>Ariel University, Israel</h3>
+          <p>Ariel University, Israel's newest public research university, has eight faculties and schools and serves over 15,000 students. Home to 25 research centres and 150 state-of-the-art laboratories, it leads advances in health sciences, cybersecurity, robotics and archaeology, and serves as an academic and clinical hub for its region.</p>
+        </div>
       </div>
     </div>
   </section>
-  <section style="padding-top:0">
-    <div class="wrap">
-      <div class="card contactc">
-        <div>
-          <h3 style="font-size:22px">Contact</h3>
-          <p class="muted" style="margin-top:6px"><a href="mailto:conference@srcw.ac.in">conference@srcw.ac.in</a> · 0422-2243624 · <a href="https://srcw.ac.in/" target="_blank" rel="noopener">www.srcw.ac.in</a></p>
+
+  <section id="cf-contact" class="hk-sec">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Contact</p><h2 class="hk-h">Questions about the conference</h2></div>
+      <div>
+        <div class="hk-addr">
+          <p class="hk-phase hk-dk">CONFERENCE OFFICE</p>
+          <p><a href="mailto:conference@srcw.ac.in">conference@srcw.ac.in</a> · 0422-2243624 · <a href="https://srcw.ac.in/" target="_blank" rel="noopener">www.srcw.ac.in</a></p>
         </div>
-        <ul class="people" style="margin:0">
-          <li><b>Dr. D. Gayathri Devi</b><span>Associate Professor, School of Computer Science, SRCW · +91 97865 89246</span></li>
-          <li><b>Dr. N. Gunasheela</b><span>Associate Professor, School of Life Science, SRCW · +91 95786 81630</span></li>
-        </ul>
+        <ul class="cf-people" style="margin-top:22px"><li><b>Dr. D. Gayathri Devi</b><span>Associate Professor, School of Computer Science, SRCW · +91 97865 89246</span></li><li><b>Dr. N. Gunasheela</b><span>Associate Professor, School of Life Science, SRCW · +91 95786 81630</span></li></ul>
       </div>
+    </div>
+  </section>
+
+  <section class="hk-cta cf-cta">
+    <div class="wrap hk-cta-in">
+      <p><b>SCIENTIFIC CONFERENCE · 3 FEBRUARY 2027</b><br><span>Abstract deadline 8 December 2026 · conference@srcw.ac.in</span></p>
+      <a class="hk-btn dark" href="mailto:conference@srcw.ac.in?subject=Abstract%20submission%20-%20International%20Conference%203%20February%202027">Submit your abstract</a>
     </div>
   </section>
 </div>
