@@ -18,7 +18,7 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 - Fonts: Archivo (wide, `font-stretch:125%` for headings), Chakra Petch for "LONG LIVE DATA", Inter for body.
 - Flat layout: no boxed "cards" with backgrounds and rounded corners. Use thin coloured left lines, dividers and plain logos instead. Organisers are shown as logos only.
 - Colour per day: Hackathon teal, Industry Day orange, Conference blue.
-- Opening animation (`#intro`, CSS + small script in `index.html`): bridge arc between blue (Israel) and saffron (India) dots, four dots land in the lockup, then three day-coloured columns slide away. Plays on every page load, ~2.5 s, skips on any click/key/scroll, never shown with prefers-reduced-motion or without JS, removed from the DOM when done.
+- Opening animation (`#intro`, CSS + small script in `index.html`): bridge arc between blue (Israel) and saffron (India) dots, four dots land in the lockup, then three day-coloured columns slide away. Plays on every page load, ~2.5 s, skips on any click/key/scroll, never shown with prefers-reduced-motion or without JS, removed from the DOM when done. Second variant "flags" (Israel and India flags, the four dots pop out of the flag stripes) is previewed with `?intro=flags`; default is `bridge`, set in the intro script.
 - Sections without confirmed content show `<span class="hk-soon">Info available soon</span>`. Never invent facts, names, prices or dates.
 
 ## Content facts (confirmed)
