@@ -400,6 +400,32 @@ footer b{color:var(--on-navy)}
 .hk-mentor .mt.t2{background:#FBEBD3;color:#9A5B0B}
 .hk-org .lg{width:132px;height:72px}
 .hk-org .lg img{max-height:56px;max-width:118px}
+
+/* flat style: no boxed cards */
+.hk-logos{display:flex;flex-wrap:wrap;align-items:flex-start;gap:30px 52px;margin-top:20px}
+.hk-lg{margin:0;display:flex;flex-direction:column;gap:8px;max-width:240px}
+.hk-lg img{width:auto;max-width:240px;object-fit:contain}
+.hk-lg .cap{font-size:12.5px;line-height:1.35;color:#5B6877}
+.hk2-tracks{gap:44px}
+.hk2-tracks article{background:none!important;border-radius:0!important;box-shadow:none!important;border-top:0!important;border-left:3px solid #0B9E78;padding:4px 0 4px 24px!important}
+.hk2-tracks article.t2{border-left-color:#C9761B}
+.hk-mini{border-top:1px solid #D5DDE3}
+.hk-facts3>div{background:none!important;border-radius:0!important;padding:4px 0 4px 18px!important}
+.hk-mentors{gap:30px 36px}
+.hk-mentor{background:none!important;border:0!important;border-radius:0!important;padding:0!important}
+.hk-mentor.more{border:0!important}
+.hk-faq{background:none!important;border:0!important;border-radius:0!important;border-bottom:1px solid #C9D3DB!important;margin:0!important}
+.hk-faq:first-child{border-top:1px solid #C9D3DB!important}
+.hk-faq summary{padding-left:0!important}
+.hk-faq div{padding-left:0!important}
+.hk-around>*{background:none!important;border-radius:0!important;border:0!important;border-left:3px solid #0B9E78!important;padding:2px 0 2px 18px!important}
+.hk-around>div{border-left-color:#B9C4CE!important}
+.hk2-chips{gap:22px}
+.hk2-chips span{background:none!important;border:0!important;border-radius:0!important;border-left:2px solid #12C493!important;padding:2px 0 2px 14px!important;backdrop-filter:none!important}
+.hk2-chips span.or{border-left-color:#FC9732!important;color:#D6EAE3}
+.hk2-chips span.or b{color:#FFB25C}
+.hk-ph{border:0!important;padding:10px 0 0!important;text-align:left!important}
+.hk-soon{background:none!important;padding:0!important;border-radius:0!important;color:#B4640F!important;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:12.5px}
 </style>
 </head>
 <body>
@@ -590,9 +616,10 @@ footer b{color:var(--on-navy)}
   <section id="hk-orgs" class="hk-sec">
     <div class="wrap">
       <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Who is behind the hackathon</h2>
-      <div class="hk-orgs2"><article class="hk-org"><span class="lg"><img src="assets/fl_srcw.png" alt="Sri Ramakrishna College of Arts and Science for Women"></span><div><h3>Sri Ramakrishna College of Arts and Science for Women</h3><p class="hk-orgrole">Host institution, Coimbatore</p><p>An autonomous college in Coimbatore with more than 35 years of academic heritage. SRCW hosts the final defense and the International Scientific Conference.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/ariel_en.png" alt="Ariel University"></span><div><h3>Ariel University</h3><p class="hk-orgrole">Academic partner, Israel</p><p>Israel's newest public research university, with strengths in health sciences, cybersecurity and life sciences. Ariel University experts mentor the teams and evaluate the projects.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/ariel_en.png" alt="Institute for Personalized and Translational Medicine"></span><div><h3>Institute for Personalized and Translational Medicine</h3><p class="hk-orgrole">Ariel University · academic partner for Track 02</p><p>Home to Prof. Izhak Michaelevski's Molecular and Functional Neurobiology Lab, working on molecular biology and translational research.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/fl_promitei.png" alt="Promitei"></span><div><h3>Promitei</h3><p class="hk-orgrole">Project integrator, Israel</p><p>An Israeli company connecting research, industry and markets across Israel, India and Asia for more than 15 years.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/promitei-data.png" alt="Promitei Data"></span><div><h3>Promitei Data</h3><p class="hk-orgrole">Medical data for research and AI</p><p>Promitei’s medical data venture, preparing real-world clinical data for research and AI. Internship partner for the hackathon.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation"></span><div><h3>TechGuard Labs Foundation</h3><p class="hk-orgrole">Israel–India innovation centre, Coimbatore</p><p>An Israel–India cybersecurity innovation centre co-founded by SNR Sons Charitable Trust, Ariel University and Promitei. Internship partner for the hackathon.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust"></span><div><h3>SNR Sons Charitable Trust</h3><p class="hk-orgrole">Coimbatore</p><p>The trust behind Sri Ramakrishna educational institutions and Sri Ramakrishna Hospital in Coimbatore.</p></div></article></div>
-      <p class="hk-phase hk-dk" style="margin-top:34px">WITH THE SUPPORT OF</p>
-      <div class="hk-orgs2"><article class="hk-org"><span class="lg"><img src="assets/fl_moe.png" alt="Israel Economic and Trade Mission, Bengaluru"></span><div><h3>Israel Economic and Trade Mission, Bengaluru</h3><p class="hk-orgrole">Ministry of Economy and Industry, Foreign Trade Administration</p><p>Represents Israel’s Ministry of Economy and Industry in South India and supports business and innovation partnerships between Israel and India.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/fl_il_consulate.png" alt="Consulate General of Israel to South India"></span><div><h3>Consulate General of Israel to South India</h3><p class="hk-orgrole">Bengaluru</p><p>Israel's diplomatic mission for South India.</p></div></article><article class="hk-org"><span class="lg"><img src="assets/fl_mashav.png" alt="MASHAV"></span><div><h3>MASHAV</h3><p class="hk-orgrole">Ministry of Foreign Affairs of Israel</p><p>Israel's Agency for International Development Cooperation.</p></div></article></div>
+      <p class="hk-phase hk-dk" style="margin-top:26px">ORGANISED BY</p>
+      <div class="hk-logos"><figure class="hk-lg"><img src="assets/fl_srcw.png" alt="Sri Ramakrishna College of Arts and Science for Women" style="height:56px"></figure><figure class="hk-lg"><img src="assets/ariel_en.png" alt="Ariel University" style="height:56px"><span class="cap">incl. Institute for Personalized and Translational Medicine</span></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:58px"></figure><figure class="hk-lg"><img src="assets/promitei-data.png" alt="Promitei Data" style="height:40px"></figure><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:52px"></figure><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:62px"></figure></div>
+      <p class="hk-phase hk-dk" style="margin-top:40px">WITH THE SUPPORT OF</p>
+      <div class="hk-logos"><figure class="hk-lg"><img src="assets/fl_moe.png" alt="Israel Economic and Trade Mission, Ministry of Economy and Industry" style="height:50px"><span class="cap">Israel Economic and Trade Mission, Bengaluru</span></figure><figure class="hk-lg"><img src="assets/fl_il_consulate.png" alt="Consulate General of Israel to South India" style="height:50px"></figure><figure class="hk-lg"><img src="assets/fl_mashav.png" alt="MASHAV" style="height:50px"></figure></div>
       <p class="hk-phase hk-dk" style="margin-top:26px">INDUSTRY PARTNERS</p>
       <p class="hk-support"><span class="hk-soon">Info available soon</span></p>
     </div>
