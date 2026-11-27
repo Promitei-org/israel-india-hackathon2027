@@ -1,2 +1,5 @@
-# israel-india-hackathon2027
-Israel–India Hackathon, Industry Day and Scientific Conference · SRCW, Coimbatore · 1–3 February 2027
+# Israel–India · Coimbatore 2027
+
+Hackathon (1 Feb), Industry Day (2 Feb) and International Scientific Conference (3 Feb) at SRCW, Coimbatore.
+
+Site: https://promitei-org.github.io/israel-india-hackathon2027/

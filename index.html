@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Israel–India Innovation Week · SRCW, Coimbatore · 1–3 February 2027</title>
+<meta name="description" content="Israel–India Hackathon, Industry Day and International Scientific Conference at SRCW, Coimbatore, 1–3 February 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F4F1; --card:#FFFFFF; --ink:#0B1A2E; --text:#26323F; --muted:#5B6877; --line:#DCE2E8;
+  --navy:#0B1A2E; --on-navy:#FFFFFF; --on-navy-muted:#AFC4D8;
+  --hack:#2E9E7A; --hack-text:#1C7A5C; --hack-soft:#DDF2EA;
+  --ind:#D98A1E; --ind-text:#9A5B0B; --ind-soft:#FBEBD3;
+  --conf:#2F6DB0; --conf-text:#1E4F7E; --conf-soft:#E1EBF6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0A1420; --card:#122234; --ink:#EEF3F8; --text:#D3DEE8; --muted:#97A9BA; --line:#22374B;
+    --navy:#06101B; --on-navy:#FFFFFF; --on-navy-muted:#9DB6CC;
+    --hack:#45C29A; --hack-text:#6FD6B2; --hack-soft:#123A30;
+    --ind:#F0A640; --ind-text:#F3BC6E; --ind-soft:#3A2A12;
+    --conf:#5C9BE0; --conf-text:#8DBBEF; --conf-soft:#152D47;
+    color-scheme: dark;
+  }
+}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+:root{padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 16.5px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Manrope","Inter",system-ui,sans-serif;color:var(--ink);margin:0;line-height:1.1}
+h2{font-size:clamp(26px,3.4vw,36px);font-weight:800}
+h3{font-size:19px;font-weight:700;line-height:1.25}
+p{margin:0}
+a{color:var(--conf-text)}
+img{max-width:100%;display:block}
+:focus-visible{outline:3px solid var(--hack);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+.lead{font-size:18px;color:var(--muted);max-width:64ch;margin-top:12px}
+.soon{display:inline-block;font-size:13px;font-weight:600;border-radius:999px;padding:3px 11px;margin-left:8px;vertical-align:3px;border:1.5px solid currentColor}
+.top{position:sticky;top:0;z-index:20;background:var(--navy);padding-top:env(safe-area-inset-top,0px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:14px}
+.brand{font-family:"Manrope",sans-serif;font-weight:800;color:var(--on-navy);text-decoration:none;font-size:17px;white-space:nowrap}
+.tabs{display:flex;gap:6px}
+.tabs a{color:var(--on-navy-muted);text-decoration:none;font-size:14px;font-weight:600;padding:7px 12px;border-radius:999px}
+.tabs a:hover{color:var(--on-navy)}
+.tabs a[aria-current="page"]{background:rgba(255,255,255,.12);color:var(--on-navy)}
+@media (max-width:720px){.tabs a span{display:none}.brand .all{display:none}}
+.facts{display:flex;flex-wrap:wrap;gap:10px 34px;margin-top:26px;color:var(--on-navy-muted);font-size:15px}
+.facts b{display:block;color:var(--on-navy);font-size:17px;font-weight:600}
+.status{display:inline-block;margin-top:24px;font-weight:600;font-size:14.5px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.1);color:var(--on-navy)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media (max-width:860px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.card p{color:var(--text)}
+.card p.muted{color:var(--muted)}
+.list{margin:12px 0 0;padding-left:20px;display:grid;gap:6px}
+.dark{background:var(--navy);color:var(--on-navy-muted);border-color:var(--navy)}
+.dark h3{color:var(--on-navy)}
+.dark li b{color:var(--on-navy)}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.5px}
+.dates{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:24px}
+.date{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+.date b{display:block;font-family:"Manrope",sans-serif;font-size:20px;color:var(--ink)}
+.date.key{border-color:var(--accent);background:var(--accent-soft)}
+.date.key b{color:var(--accent-text)}
+@media (max-width:760px){.dates{grid-template-columns:1fr 1fr}}
+.logos{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px;margin-top:20px}
+.logos span{background:#FFFFFF;border-radius:12px;padding:10px 14px;display:block}
+.logos img{height:42px;width:auto}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#FFFFFF;font-weight:600;padding:12px 20px;border-radius:999px;text-decoration:none;border:0;font-size:15.5px}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed}
+footer{background:var(--navy);color:var(--on-navy-muted);padding:34px 0;font-size:14px}
+footer b{color:var(--on-navy)}
+[hidden]{display:none !important}
+.pg-hack{--accent:var(--hack);--accent-text:var(--hack-text);--accent-soft:var(--hack-soft)}
+.pg-ind{--accent:var(--ind);--accent-text:var(--ind-text);--accent-soft:var(--ind-soft)}
+.pg-conf{--accent:var(--conf);--accent-text:var(--conf-text);--accent-soft:var(--conf-soft)}
+.chero{position:relative;overflow:hidden;background:#06213A;color:#FFFFFF}
+.chero-bg{position:absolute;inset:0;background-size:cover;background-position:center 40%;opacity:.55}
+.chero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,24,44,.95) 0%,rgba(6,24,44,.82) 45%,rgba(6,24,44,.35) 100%)}
+.chero-in{position:relative;z-index:1;padding-top:40px;padding-bottom:56px}
+.clogos{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.clogos span{background:#FFFFFF;border-radius:12px;padding:8px 12px;display:block}
+.clogos img{height:40px;width:auto}
+.clogos .x{color:#AFC4D8;font-size:22px;font-weight:600}
+.chero .eyeline{color:#BFD3E6;font-size:15px;margin-top:26px}
+.chero h1{color:#FFFFFF;font-size:clamp(30px,4.6vw,54px);font-weight:800;letter-spacing:-0.02em;margin-top:10px;line-height:1.06;max-width:22ch}
+.chero .org{color:#D3E1EE;font-size:16.5px;margin-top:16px;max-width:62ch}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px 22px;margin-top:28px}
+.cta-row .deadline{color:#D3E1EE;font-size:15px}
+.cta-row .deadline b{color:#FFFFFF}
+.about2{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:start;margin-top:44px}
+@media (max-width:860px){.about2{grid-template-columns:1fr}}
+.band{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kicker{font-size:12.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent-text)}
+.kicker+h2{margin-top:6px}
+.speakers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}
+.speaker{background:var(--bg);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.speaker img{width:100%;aspect-ratio:4/3.3;object-fit:cover;object-position:center 20%}
+.speaker>div{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px}
+.speaker .sess{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--accent-text)}
+.speaker h3{font-size:17.5px}
+.speaker .name{font-family:"Manrope",sans-serif;font-weight:800;font-size:18px;color:var(--ink);margin-top:4px}
+.speaker .role{font-size:14px;color:var(--muted);line-height:1.5}
+@media (max-width:900px){.speakers{grid-template-columns:1fr}.speaker{flex-direction:row}.speaker img{width:140px;aspect-ratio:auto;height:auto;flex:none}}
+.themes{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;margin-top:24px}
+@media (max-width:900px){.themes{grid-template-columns:1fr}}
+.theme{border-top:5px solid var(--accent)}
+.theme ul{margin:12px 0 0;padding-left:18px;display:grid;gap:5px;font-size:15px}
+.board{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:860px){.board{grid-template-columns:1fr}}
+.people{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}
+.people li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.people li b{color:var(--ink);font-family:"Manrope",sans-serif;font-size:16px}
+.people li span{color:var(--muted);font-size:14px}
+.people li.ph{flex-direction:row;align-items:center;gap:14px}
+.people li.ph img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}
+.people li.ph div{display:flex;flex-direction:column;gap:2px}
+.inst .lg{display:inline-block;background:#FFFFFF;border-radius:10px;padding:8px 12px;margin-bottom:14px}
+.inst .lg img{height:38px;width:auto}
+.inst h3+p{margin-top:8px}
+.contactc{display:grid;grid-template-columns:1fr 1.3fr;gap:24px;align-items:center}
+@media (max-width:760px){.contactc{grid-template-columns:1fr}}
+.muted{color:var(--muted)}
+.split{display:grid;grid-template-columns:repeat(3,1fr);min-height:calc(100vh - 60px - env(safe-area-inset-top,0px))}
+.pane{position:relative;overflow:hidden;display:flex;align-items:flex-end;text-decoration:none;color:#FFFFFF;padding:40px 34px;min-height:460px;isolation:isolate}
+.pane-in{position:relative;z-index:2;display:flex;flex-direction:column;gap:12px;max-width:34ch}
+.pane-day{font-size:14px;font-weight:600;letter-spacing:.4px;opacity:.85}
+.pane-title{font-family:"Manrope",sans-serif;font-weight:800;font-size:clamp(28px,3vw,44px);line-height:1.02;letter-spacing:.5px;color:#FFFFFF}
+.pane-sub{font-size:16px;line-height:1.45;opacity:.9}
+.pane-go{margin-top:8px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.16);width:fit-content;transition:background .2s}
+.pane:hover .pane-go{background:rgba(255,255,255,.28)}
+.pane::before{content:"";position:absolute;inset:0;z-index:1;transition:opacity .3s}
+.pane-hack{background:#0B1A2E}
+.pane-hack::before{background:radial-gradient(120% 80% at 80% 10%,rgba(69,194,154,.28),transparent 60%)}
+.pane-ecg{position:absolute;left:0;right:0;top:18%;width:100%;height:42%;color:#45C29A;opacity:.8;z-index:1}
+.pane-ind{background:linear-gradient(160deg,#C9761A 0%,#8E4E0C 100%)}
+.pane-grid{position:absolute;inset:0;z-index:1;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:36px 36px;mask-image:linear-gradient(180deg,#000 0%,transparent 80%);-webkit-mask-image:linear-gradient(180deg,#000 0%,transparent 80%)}
+.pane-conf{background:#0B2E52}
+.pane-photo{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0;transition:transform .6s ease}
+.pane-conf::before{background:linear-gradient(180deg,rgba(8,33,60,.35) 0%,rgba(8,33,60,.92) 75%)}
+.pane:hover .pane-photo{transform:scale(1.04)}
+.pane:focus-visible{outline:4px solid #FFFFFF;outline-offset:-8px}
+@media (max-width:900px){.split{grid-template-columns:1fr;min-height:0}.pane{min-height:320px}}
+.hub-foot{padding:26px 0 30px}
+.hub-foot p{color:var(--muted);font-size:14.5px}
+.hhero{background:var(--navy);color:#FFFFFF;overflow:hidden}
+.hhero-in{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding-top:46px;padding-bottom:50px}
+.hhero .eyeline{color:var(--on-navy-muted);font-size:15px}
+.hhero h1{color:#FFFFFF;font-size:clamp(46px,7.5vw,96px);font-weight:800;letter-spacing:-0.03em;line-height:.95;margin-top:10px}
+.hhero .motto{font-family:"Manrope",sans-serif;font-weight:600;font-size:clamp(20px,2.6vw,28px);margin-top:14px}
+.hhero .motto em{font-style:normal;color:var(--hack)}
+.hhero .facts b{color:#FFFFFF}
+.hhero .deadline{color:#D3E1EE;font-size:15px}
+.hhero-art{width:100%;height:auto}
+.hhero-art .ecg{stroke:#2F9BD6}
+.hhero-art .rec{stroke:#45C29A}
+.hhero-art .bar{fill:#2F9BD6}
+.hhero-art .bar.top{fill:#45C29A}
+.draw{stroke-dasharray:900;stroke-dashoffset:900;animation:draw 1.8s .2s ease-out forwards}
+.draw2{stroke-dasharray:200;stroke-dashoffset:200;animation:draw 0.6s 1.4s ease-out forwards}
+.rise{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);animation:rise .5s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes rise{to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:reduce){.draw,.draw2{animation:none;stroke-dashoffset:0}.rise{animation:none;transform:none}.pane-photo{transition:none}}
+@media (max-width:860px){.hhero-in{grid-template-columns:1fr}.hhero-art{max-width:420px}}
+.tracks2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
+@media (max-width:860px){.tracks2{grid-template-columns:1fr}}
+.trk{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+.trk::after{content:"";position:absolute;right:-40px;top:-40px;width:140px;height:140px;border-radius:50%;background:var(--hack-soft)}
+.trk>*{position:relative;z-index:1}
+.trk-n{font-size:12.5px;font-weight:700;letter-spacing:1.6px;color:var(--conf-text)}
+.trk h3{font-size:clamp(24px,2.6vw,30px);font-weight:800;letter-spacing:.3px}
+.trk h3 span{color:var(--hack-text)}
+.trk-for{font-weight:600;color:var(--conf-text)}
+.flow{display:grid;grid-template-columns:1fr 1fr 1.25fr;gap:16px;margin-top:24px}
+@media (max-width:900px){.flow{grid-template-columns:1fr}}
+.flow-phase{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.flow-phase.hl{background:var(--hack-soft);border-color:transparent}
+.fp-label{font-size:12.5px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;color:var(--hack-text)}
+.fp-steps{display:grid;gap:10px}
+.fs{background:var(--card);border-radius:12px;padding:12px 14px;border-left:4px solid var(--hack)}
+.fs b{font-family:"Manrope",sans-serif;font-size:16px;color:var(--ink)}
+.fs p{font-size:14.5px;margin-top:2px}
+.fs.final{border-left-color:var(--ind)}
+.ticks{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.ticks li{position:relative;padding-left:28px;line-height:1.5}
+.ticks li::before{content:"";position:absolute;left:2px;top:6px;width:12px;height:7px;border-left:2.5px solid var(--hack);border-bottom:2.5px solid var(--hack);transform:rotate(-45deg)}
+.ihero{position:relative;overflow:hidden;background:linear-gradient(160deg,#C9761A 0%,#8E4E0C 100%);color:#FFFFFF;padding:52px 0 56px}
+.ihero .eyeline{color:#FBE6C8;font-size:15px}
+.ihero h1{color:#FFFFFF;font-size:clamp(40px,6vw,72px);font-weight:800;letter-spacing:-0.02em;margin-top:10px}
+.ihero .motto{font-family:"Manrope",sans-serif;font-weight:600;font-size:clamp(19px,2.4vw,26px);margin-top:12px}
+.ihero .status{background:rgba(255,255,255,.18);color:#FFFFFF}
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+@media (max-width:760px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start}
+.pinit{width:46px;height:46px;flex:none;border-radius:12px;background:var(--ind-soft);color:var(--ind-text);font-family:"Manrope",sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center}
+.pcard h3{font-size:17px}
+.pwho{font-size:14px;font-weight:600;color:var(--ind-text);margin-top:2px}
+.pcard .muted{font-size:14.5px;margin-top:4px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">Israel–India · Coimbatore 2027 <span class="all" style="font-weight:600;color:var(--on-navy-muted);font-size:14px">· all events</span></a>
+    <nav class="tabs" aria-label="Events">
+      <a href="#hackathon" data-v="hackathon">1 Feb<span> · Hackathon</span></a>
+      <a href="#industry-day" data-v="industry-day">2 Feb<span> · Industry Day</span></a>
+      <a href="#conference" data-v="conference">3 Feb<span> · Conference</span></a>
+    </nav>
+  </div>
+</header>
+<main>
+<div id="v-hub" data-view>
+  <div class="split">
+    <a class="pane pane-hack" href="#hackathon">
+      <svg class="pane-ecg" viewBox="0 0 600 200" preserveAspectRatio="none" aria-hidden="true"><path d="M0 140 H180 l18 -10 l12 10 h30 l12 -80 l16 130 l12 -60 h40 H360 C420 140 470 120 500 96" fill="none" stroke="currentColor" stroke-width="3"/><rect x="510" y="110" width="18" height="90" fill="currentColor"/><rect x="540" y="80" width="18" height="120" fill="currentColor"/><rect x="570" y="45" width="18" height="155" fill="currentColor"/></svg>
+      <div class="pane-in">
+        <p class="pane-day">Monday · 1 February 2027</p>
+        <h2 class="pane-title">ISRAEL–INDIA HACKATHON</h2>
+        <p class="pane-sub">Long Live Data: from health records to record health</p>
+        <p class="pane-go">Explore the hackathon</p>
+      </div>
+    </a>
+    <a class="pane pane-ind" href="#industry-day">
+      <div class="pane-grid" aria-hidden="true"></div>
+      <div class="pane-in">
+        <p class="pane-day">Tuesday · 2 February 2027</p>
+        <h2 class="pane-title">INDUSTRY DAY</h2>
+        <p class="pane-sub">Health-tech and medical-AI companies meet researchers and young talent</p>
+        <p class="pane-go">Explore Industry Day</p>
+      </div>
+    </a>
+    <a class="pane pane-conf" href="#conference">
+      <div class="pane-photo" style="background-image:url(assets/hero.jpg)" aria-hidden="true"></div>
+      <div class="pane-in">
+        <p class="pane-day">Wednesday · 3 February 2027</p>
+        <h2 class="pane-title">SCIENTIFIC CONFERENCE</h2>
+        <p class="pane-sub">AI-Driven Innovations in Computing and Life Science for Sustainable Development</p>
+        <p class="pane-go">Explore the conference</p>
+      </div>
+    </a>
+  </div>
+  <div class="hub-foot">
+    <div class="wrap">
+      <p>Sri Ramakrishna College of Arts and Science for Women (SRCW), Coimbatore, Tamil Nadu, India · in partnership with Ariel University, Israel</p>
+      <div class="logos"><span><img src="assets/ariel.png" alt="Ariel University" style="height:40px"></span><span><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women" style="height:40px"></span><span><img src="assets/promitei.webp" alt="Promitei" style="height:40px"></span><span><img src="assets/techguard.png" alt="TechGuard Labs Foundation" style="height:30px"></span><span><img src="assets/snr.png" alt="SNR Sons Charitable Trust" style="height:52px"></span></div>
+    </div>
+  </div>
+</div>
+<div id="v-hackathon" class="pg-hack" data-view hidden>
+  <div class="hhero">
+    <div class="wrap hhero-in">
+      <div class="hhero-text">
+        <p class="eyeline">Israel–India Global Innovators Hackathon 2027</p>
+        <h1>Long Live Data</h1>
+        <p class="motto">From health records to <em>record health</em></p>
+        <div class="facts">
+          <div><b>1 Dec – 7 Jan</b>Registration</div>
+          <div><b>17–31 Jan</b>Hackathon online</div>
+          <div><b>1 February</b>Final defense, Coimbatore</div>
+        </div>
+        <div class="cta-row">
+          <a class="btn" href="#hackathon" aria-disabled="true" role="link">Registration opens 1 December</a>
+          <p class="deadline">Teams of 3–4 · two tracks · 40 teams to the final</p>
+        </div>
+      </div>
+      <svg class="hhero-art" viewBox="0 0 520 320" aria-hidden="true">
+        <path class="ecg draw" d="M0 230 H120 l16 -12 l12 12 h26 l14 -110 l18 170 l14 -80 h46 H300" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path class="rec draw2" d="M300 230 C 350 230 380 210 405 180" fill="none" stroke-width="4" stroke-linecap="round"/>
+        <rect class="bar rise" style="animation-delay:1.9s" x="410" y="190" width="24" height="90"/>
+        <rect class="bar rise" style="animation-delay:2.05s" x="442" y="150" width="24" height="130"/>
+        <rect class="bar top rise" style="animation-delay:2.2s" x="474" y="100" width="24" height="180"/>
+      </svg>
+    </div>
+  </div>
+  <section>
+    <div class="wrap">
+      <p class="kicker">Two tracks</p>
+      <h2>Pick the one that fits you</h2>
+      <div class="tracks2">
+        <article class="trk">
+          <p class="trk-n">TRACK 01</p>
+          <h3>FROM HEALTH <span>RECORDS</span></h3>
+          <p class="trk-for">For young AI, IT and data professionals</p>
+          <p>Work with real clinical records and turn them into data that research can actually use. Build the tools that make health data <b>clean, safe and ready for AI and clinical research</b>.</p>
+        </article>
+        <article class="trk">
+          <p class="trk-n">TRACK 02</p>
+          <h3>TO RECORD <span>HEALTH</span></h3>
+          <p class="trk-for">For early-career biotech and life-science researchers</p>
+          <p>Use real-world health data to discover <b>what keeps people healthy for longer</b>. Explore longevity and anti-ageing science, and turn data into evidence for the next breakthroughs in health research.</p>
+        </article>
+      </div>
+      <p class="muted" style="margin-top:14px">Each track has its own dataset and jury. Full challenges are released to registered teams on 7 January.</p>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker">How it works</p>
+      <h2>From registration to the final</h2>
+      <div class="flow">
+        <div class="flow-phase">
+          <p class="fp-label">Registration</p>
+          <div class="fp-steps">
+            <div class="fs"><b>1 Dec</b><p>Registration opens. Teams of 3–4 pick one track.</p></div>
+            <div class="fs"><b>7 Jan</b><p>Registration closes. Challenges revealed.</p></div>
+          </div>
+        </div>
+        <div class="flow-phase">
+          <p class="fp-label">Pre-hackathon · 8–15 Jan</p>
+          <div class="fp-steps">
+            <div class="fs"><b>By 11 Jan</b><p>Submit your project proposal.</p></div>
+            <div class="fs"><b>12–15 Jan</b><p>Evaluation and shortlisting: 20 teams per track invited to the hackathon.</p></div>
+          </div>
+        </div>
+        <div class="flow-phase hl">
+          <p class="fp-label">Hackathon</p>
+          <div class="fp-steps">
+            <div class="fs"><b>17–31 Jan</b><p>Hackathon online: develop your project with an international board of experts from Israel and India.</p></div>
+            <div class="fs final"><b>1 Feb</b><p>Project defense on site before an international jury · Coimbatore, Tamil Nadu, India.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap grid2">
+      <div class="card dark">
+        <h3 style="font-size:24px">What you get</h3>
+        <ul class="ticks">
+          <li><b style="color:var(--hack)">Cash prizes</b> for the winner and runner-up teams</li>
+          <li>Develop your project directly with <b>top Israeli, Indian and global experts</b></li>
+          <li><b>Internship opportunities</b> at TechGuard Labs and Promitei Data</li>
+          <li>Opportunity to join the <b>Israel–India International Research Group on Longevity and Healthy Ageing</b></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:24px">Who can apply</h3>
+        <ul class="ticks">
+          <li>Final-year BSc students, graduates, young professionals and early-career researchers</li>
+          <li>Teams of 3–4</li>
+          <li>Work online in January, defend in Coimbatore on 1 February</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p class="kicker">Coming soon</p>
+      <div class="grid3" style="margin-top:14px">
+        <div class="card"><h3>Challenges and datasets <span class="soon" style="color:var(--hack-text)">7 Jan</span></h3><p class="muted" style="margin-top:8px">Detailed problem statements and data for each track.</p></div>
+        <div class="card"><h3>Experts and jury <span class="soon" style="color:var(--hack-text)">Soon</span></h3><p class="muted" style="margin-top:8px">The international board of experts from Israel and India.</p></div>
+        <div class="card"><h3>Rules and FAQ <span class="soon" style="color:var(--hack-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Eligibility, team formation, evaluation criteria and logistics.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker">Organisers and partners</p>
+      <div class="logos"><span><img src="assets/ariel.png" alt="Ariel University" style="height:40px"></span><span><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women" style="height:40px"></span><span><img src="assets/promitei.webp" alt="Promitei" style="height:40px"></span><span><img src="assets/techguard.png" alt="TechGuard Labs Foundation" style="height:30px"></span><span><img src="assets/snr.png" alt="SNR Sons Charitable Trust" style="height:52px"></span></div>
+      <p class="muted" style="margin-top:18px">Questions: <a href="mailto:mark@promitei.com">mark@promitei.com</a> · <a href="mailto:andreydo@ariel.ac.il">andreydo@ariel.ac.il</a></p>
+    </div>
+  </section>
+</div>
+<div id="v-industry-day" class="pg-ind" data-view hidden>
+  <div class="ihero">
+    <div class="pane-grid" aria-hidden="true"></div>
+    <div class="wrap" style="position:relative;z-index:1">
+      <p class="eyeline">Tuesday 2 February 2027 · SRCW, Coimbatore</p>
+      <h1>Industry Day</h1>
+      <p class="motto">Where research meets the health-tech industry</p>
+      <p class="status">Programme to be announced</p>
+    </div>
+  </div>
+  <section>
+    <div class="wrap">
+      <p class="kicker">What to expect</p>
+      <h2>A day with the industry</h2>
+      <div class="grid3" style="margin-top:22px">
+        <div class="card"><h3>Workshops</h3><p class="muted" style="margin-top:8px">Hands-on sessions on medical data, AI, cybersecurity and health innovation, led by industry and academic experts.</p></div>
+        <div class="card"><h3>Meet the companies</h3><p class="muted" style="margin-top:8px">Health-tech, medical-AI and life-science companies from India, Israel, the US, Europe and Singapore.</p></div>
+        <div class="card"><h3>Talks by Ariel University</h3><p class="muted" style="margin-top:8px">Sessions with the visiting Ariel University delegation for students, researchers and faculty.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker">Partners and speakers</p>
+      <h2>Who will be there <span class="soon" style="color:var(--ind-text)">To be confirmed</span></h2>
+      <div class="pgrid"><div class="pcard"><p class="pinit" aria-hidden="true">SR</p><div><h3>Sri Ramakrishna Hospital</h3><p class="pwho">Hospital partner, Coimbatore</p><p class="muted">Clinical practice and real-world hospital data</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">TL</p><div><h3>TechGuard Labs Foundation</h3><p class="pwho">Israel–India cybersecurity centre, Coimbatore</p><p class="muted">Cybersecurity for health data, internships</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">PD</p><div><h3>Promitei Data</h3><p class="pwho">Medical data for research and AI</p><p class="muted">Preparing real-world data for clinical research</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">S</p><div><h3>Smartomica</h3><p class="pwho">Health-tech company</p><p class="muted">AI and data for personalised medicine</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">G</p><div><h3>GetData</h3><p class="pwho">Medical data for AI</p><p class="muted">Datasets for training medical AI models</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">F</p><div><h3>Frekil</h3><p class="pwho">AI for real-world evidence</p><p class="muted">From real-world data to clinical evidence</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">LA</p><div><h3>Lancaster AI</h3><p class="pwho">Medical imaging AI</p><p class="muted">Imaging data for diagnostic AI</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">4B</p><div><h3>4miZyme Bioscience</h3><p class="pwho">Probiotics manufacturer, Coimbatore</p><p class="muted">Probiotics and gut health products</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">BI</p><div><h3>Biopharmax India</h3><p class="pwho">Pharmaceutical company, India</p><p class="muted">Pharma innovation and market access</p></div></div><div class="pcard"><p class="pinit" aria-hidden="true">JH</p><div><h3>Jeff Hoffman</h3><p class="pwho">Invited speaker</p><p class="muted">Topic to be announced</p></div></div></div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <p class="kicker">Coming soon</p>
+      <div class="grid3" style="margin-top:14px">
+        <div class="card"><h3>Programme <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Session schedule and speakers.</p></div>
+        <div class="card"><h3>Open opportunities <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Internships, projects and collaborations offered by partners.</p></div>
+        <div class="card"><h3>Who can attend <span class="soon" style="color:var(--ind-text)">Soon</span></h3><p class="muted" style="margin-top:8px">Registration details for students, researchers and companies.</p></div>
+      </div>
+      <p class="muted" style="margin-top:22px">Companies interested in taking part: <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
+    </div>
+  </section>
+</div>
+<div id="v-conference" class="pg-conf" data-view hidden>
+  <div class="chero">
+    <div class="chero-bg" style="background-image:url(assets/hero.jpg)" aria-hidden="true"></div>
+    <div class="wrap chero-in">
+      <div class="clogos">
+        <span><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women"></span>
+        <p class="x" aria-hidden="true">×</p>
+        <span><img src="assets/ariel.png" alt="Ariel University"></span>
+      </div>
+      <p class="eyeline">International Conference · Wednesday 3 February 2027 · Hybrid</p>
+      <h1>AI-Driven Innovations in Computing and Life Science for Sustainable Development</h1>
+      <p class="org">Organised by the School of Computer Science and the School of Life Science, Sri Ramakrishna College of Arts and Science for Women, Coimbatore, in collaboration with Ariel University, Israel</p>
+      <div class="cta-row">
+        <a class="btn" href="mailto:conference@srcw.ac.in?subject=Abstract%20submission%20-%20International%20Conference%203%20February%202027">Submit your abstract</a>
+        <p class="deadline">Abstract deadline <b>8 December 2026</b></p>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="wrap">
+      <div class="dates">
+        <div class="date key"><b>8 Dec 2026</b>Abstract submission</div>
+        <div class="date"><b>22 Dec 2026</b>Notification of acceptance</div>
+        <div class="date"><b>10 Jan 2027</b>Registration deadline</div>
+        <div class="date"><b>3 Feb 2027</b>Conference day</div>
+      </div>
+      <div class="about2">
+        <div>
+          <h2>About the conference</h2>
+          <p class="lead">A platform for scientists, researchers, educators, industry and students to explore the convergence of artificial intelligence, computing, mathematical sciences and life-science research.</p>
+        </div>
+        <div class="card">
+          <p>The conference focuses on applying intelligent computing to challenges in <b>bioinformatics, computational biology, healthcare, agriculture and environmental sustainability</b>. It highlights how machine learning, data analytics, optimisation and mathematical frameworks accelerate discovery, improve decision-making and enable resource-efficient solutions.</p>
+          <p style="margin-top:12px">Aligned with the <b>United Nations Sustainable Development Goals</b>, it promotes research that benefits society, protects the environment and addresses pressing global challenges.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <p class="kicker">On site · 3 February 2027</p>
+      <h2>Plenary sessions</h2>
+      <div class="speakers">
+        <article class="speaker">
+          <img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski">
+          <div>
+            <p class="sess">Plenary session I</p>
+            <h3>Artificial Intelligence in Life Sciences: Transforming Biological Research and Healthcare</h3>
+            <p class="name">Prof. Izhak Michaelevski</p>
+            <p class="role">Head and Principal Investigator, Molecular and Functional Neurobiology Lab · Department of Molecular Biology · Institute for Personalized and Translational Medicine, Ariel University, Israel</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <img src="assets/dvir.jpg" alt="Prof. Amit Dvir">
+          <div>
+            <p class="sess">Plenary session II</p>
+            <h3>Cybersecurity in the Age of Artificial Intelligence: Challenges, Innovations and Future Perspectives</h3>
+            <p class="name">Prof. Amit Dvir</p>
+            <p class="role">Head of the Department of Computer and Software Engineering · Head of the Ariel Cyber Innovation Center (ACIC), Ariel University, Israel</p>
+          </div>
+        </article>
+        <article class="speaker">
+          <img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov">
+          <div>
+            <p class="sess">Plenary session III</p>
+            <h3>Intelligent Automation and Data-Driven Technologies for Sustainable Development</h3>
+            <p class="name">Dr. Nadia Iermakov</p>
+            <p class="role">Director of Strategic Projects Development, Office of the Rector, Ariel University, Israel</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <p class="kicker">Call for papers</p>
+      <h2>Sub-themes</h2>
+      <p class="lead">Original, unpublished papers are invited on the following sub-themes, but not limited to them.</p>
+      <div class="themes">
+        <div class="card theme">
+          <h3>Computing and AI</h3>
+          <ul>
+            <li>Artificial Intelligence and Machine Learning</li><li>Deep Learning and Generative AI</li><li>Data Science and Big Data Analytics</li><li>Computer Vision and Image Processing</li><li>Natural Language Processing</li><li>Internet of Things and Industrial IoT</li><li>Cloud and Edge Computing</li><li>Cyber Security</li><li>Quantum Computing</li><li>Robotics and Automation</li><li>Sustainable (Green) Computing</li><li>Mathematics for Machine Learning</li><li>Operations Research</li><li>Statistics and Probabilistic Models</li>
+          </ul>
+        </div>
+        <div class="card theme">
+          <h3>Life Science</h3>
+          <ul>
+            <li>Bioinformatics and Computational Biology</li><li>Genomics and Proteomics</li><li>Drug Discovery and Biotherapeutics</li><li>Gut Microbiome, Immunity and Human Health</li><li>Microbial and Nano Biotechnology</li><li>Functional Food, Nutrition and Agriculture</li><li>Cellular and Molecular Biology</li><li>Probiotics, Prebiotics, Synbiotics and Postbiotics</li>
+          </ul>
+        </div>
+        <div class="card theme">
+          <h3>Sustainable Development and Interdisciplinary Research</h3>
+          <ul>
+            <li>Environmental Sustainability and Climate</li><li>Waste Management</li><li>Smart Agriculture and Food Security</li><li>Clean Water and Energy</li><li>AI for Public Health and Well-being</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap grid2">
+      <div class="card">
+        <h3 style="font-size:22px">Guidelines</h3>
+        <ul class="list">
+          <li><b>Submission:</b> send your abstract by email to <a href="mailto:conference@srcw.ac.in">conference@srcw.ac.in</a>. Ariel University authors, please copy <a href="mailto:andreydo@ariel.ac.il">andreydo@ariel.ac.il</a></li>
+          <li><b>Full paper:</b> MS Word, up to 2,000 words, IEEE format</li>
+          <li><b>Authors:</b> maximum three; each author registers individually</li>
+          <li><b>Mode:</b> presentations online or on site (hybrid)</li>
+          <li><b>Publication:</b> registered papers are published in the conference proceedings with an ISBN</li>
+          <li><b>Awards:</b> best papers are awarded</li>
+          <li><b>Included:</b> lunch, refreshments, conference kit and certificates for all registered authors and participants</li>
+          <li>No travel or daily allowance is provided</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:22px">Registration fees</h3>
+        <table style="margin-top:10px">
+          <tr><th>Category</th><th>Fee</th></tr>
+          <tr><td>Students</td><td>INR 300 <span class="muted">(≈ USD 3.5)</span></td></tr>
+          <tr><td>Research scholars</td><td>INR 600 <span class="muted">(≈ USD 7)</span></td></tr>
+          <tr><td>Academicians</td><td>INR 600 <span class="muted">(≈ USD 7)</span></td></tr>
+          <tr><td>Industry professionals</td><td>INR 1,000 <span class="muted">(≈ USD 11.5)</span></td></tr>
+          <tr><td>Foreign delegates</td><td><b>USD 50</b></td></tr>
+        </table>
+        <p class="muted" style="margin-top:10px;font-size:14px">Foreign delegates receive the payment link by email. Registration link to be announced.</p>
+      </div>
+    </div>
+  </section>
+  <section class="band">
+    <div class="wrap">
+      <h2>Conference advisory board</h2>
+      <div class="board">
+        <div>
+          <p class="kicker" style="margin-top:18px">Sri Ramakrishna College of Arts and Science for Women</p>
+          <ul class="people">
+            <li><b>Dr. K. Chitra</b><span>Principal</span></li>
+            <li><b>Dr. N. Tajunisha</b><span>Professor and Dean, School of Computer Science</span></li>
+            <li><b>Dr. B. Thamarai Selvi</b><span>Professor and Dean, School of Life Science</span></li>
+            <li><b>Dr. Gokilamani</b><span>Professor and Head, Department of Mathematics</span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="kicker" style="margin-top:18px">Ariel University, Israel</p>
+          <ul class="people">
+            <li class="ph"><img src="assets/pinhasov.jpg" alt="Prof. Albert Pinhasov"><div><b>Prof. Albert Pinhasov</b><span>Rector</span></div></li>
+            <li class="ph"><img src="assets/michaelevski.jpg" alt="Prof. Izhak Michaelevski"><div><b>Prof. Izhak Michaelevski</b><span>Head and Principal Investigator, Molecular and Functional Neurobiology Lab</span></div></li>
+            <li class="ph"><img src="assets/dvir.jpg" alt="Prof. Amit Dvir"><div><b>Prof. Amit Dvir</b><span>Head, Computer and Software Engineering</span></div></li>
+            <li class="ph"><img src="assets/iermakov.jpg" alt="Dr. Nadia Iermakov"><div><b>Dr. Nadia Iermakov</b><span>Director of Strategic Projects Development</span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap grid2">
+      <div class="card inst">
+        <span class="lg"><img src="assets/srcw.svg" alt="Sri Ramakrishna College of Arts and Science for Women"></span>
+        <h3>About SRCW</h3>
+        <p class="muted">Sri Ramakrishna College of Arts and Science for Women is one of the most preferred autonomous women's institutions for higher learning in Coimbatore, with over 35 years of academic heritage. Funded by the Department of Science and Technology under the FIST programme, it offers 12 undergraduate, 4 postgraduate and 6 PhD programmes. The college received the ASSOCHAM Award for Excellence in Promoting Industry–Academia Interface (2026) and is ranked among the Top 10 Best Colleges in India for Excellence in Academic Achievement by the Education World Grand Jury Higher Education Ranking 2026.</p>
+      </div>
+      <div class="card inst">
+        <span class="lg"><img src="assets/ariel.png" alt="Ariel University"></span>
+        <h3>About Ariel University</h3>
+        <p class="muted">Ariel University, Israel's newest public research university, has eight faculties and schools and serves over 15,000 students. Home to 25 research centres and 150 state-of-the-art laboratories, it leads advances in health sciences, cybersecurity, robotics and archaeology, and serves as an academic and clinical hub for its region.</p>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="card contactc">
+        <div>
+          <h3 style="font-size:22px">Contact</h3>
+          <p class="muted" style="margin-top:6px"><a href="mailto:conference@srcw.ac.in">conference@srcw.ac.in</a> · 0422-2243624 · <a href="https://srcw.ac.in/" target="_blank" rel="noopener">www.srcw.ac.in</a></p>
+        </div>
+        <ul class="people" style="margin:0">
+          <li><b>Dr. D. Gayathri Devi</b><span>Associate Professor, School of Computer Science, SRCW · +91 97865 89246</span></li>
+          <li><b>Dr. N. Gunasheela</b><span>Associate Professor, School of Life Science, SRCW · +91 95786 81630</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p><b>Israel–India · Coimbatore 2027</b> · Sri Ramakrishna College of Arts and Science for Women and Ariel University, with Promitei, TechGuard Labs Foundation and SNR Sons Charitable Trust</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var views={'':'v-hub','hackathon':'v-hackathon','industry-day':'v-industry-day','conference':'v-conference'};
+  function show(){
+    var h=(location.hash||'').replace('#','');
+    if(!(h in views)) h='';
+    document.querySelectorAll('[data-view]').forEach(function(v){v.hidden=(v.id!==views[h]);});
+    document.querySelectorAll('.tabs a').forEach(function(a){ if(a.dataset.v===h) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current'); });
+    window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show); show();
+  document.querySelectorAll('[aria-disabled="true"]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();});});
+})();
+</script>
+</body>
+</html>
