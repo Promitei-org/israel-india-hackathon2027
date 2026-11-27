@@ -399,17 +399,8 @@ footer b{color:var(--on-navy)}
 .ind-part b{font-weight:800;font-stretch:110%;color:#0C1A2D;font-size:17px}
 .ind-part p{margin-top:2px;font-size:15px;color:#3C4957}
 .ind-link{font:inherit;color:#9A5B0B;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
-.ind-ways{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:26px}
-.ind-ways>div{padding-left:18px;border-left:3px solid #C9761B}
-.ind-ways h3{margin-top:0;font-size:22px;font-weight:800;font-stretch:125%;color:#0C1A2D}
-.ind-ways p{margin-top:6px;font-size:16px;line-height:1.55;color:#3C4957}
-.ind-ways .ind-way-s{margin-top:12px;font-size:15px;color:#26323F}
-@media (max-width:700px){.ind-ways{grid-template-columns:1fr;gap:22px}}
 .ind-why{margin:34px 0 12px;font-size:14px;font-weight:700;font-stretch:125%;letter-spacing:.06em;text-transform:uppercase;color:#0C1A2D}
 .pg-ind .hk-ticks2 li::before{border-color:#C9761B}
-.ind-ask{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:30px;padding-top:22px;border-top:1px solid #D5DDE3}
-.ind-ask p{font-size:16px;color:#26323F}
-.ind-ask a:not(.hk-btn){color:#9A5B0B}
 
 /* header on phones */
 @media (max-width:560px){.brand .b-x{display:none}}
@@ -548,6 +539,36 @@ footer b{color:var(--on-navy)}
 .lb-x{position:absolute;top:12px;right:16px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.12);color:#fff;font-size:30px;line-height:1;cursor:pointer}
 .lb-x:hover{background:#C9761B}
 .lb-cap{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#D9E2EA;font-size:14.5px}
+
+/* industry day: invitation-only, packages */
+.hk-btn.ind-main{background:#FC9732;color:#0C1A2D;animation:indpulse 2.2s ease-out infinite}
+.hk-btn.ind-main:hover{background:#FFB25C}
+@keyframes indpulse{0%{box-shadow:0 0 0 0 rgba(252,151,50,.7)}70%{box-shadow:0 0 0 14px rgba(252,151,50,0)}100%{box-shadow:0 0 0 0 rgba(252,151,50,0)}}
+.hk-btn.ind-inv{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55);animation:none;opacity:.85;cursor:default}
+.ind-hero .hk2-open{max-width:46ch;line-height:1.45}
+.ind-chips button{font:inherit;text-align:left;cursor:pointer}
+.ind-chips button,.ind-chips span{background:none!important;border:0!important;border-radius:0!important;border-left:2px solid #FFB25C!important;padding:2px 0 2px 14px!important;color:#F3E6D6;font-size:14px}
+.ind-chips b{display:block;color:#fff;font-size:17px;font-stretch:115%}
+.ind-chips button:hover b{color:#FFB25C}
+.ind-sub{margin-top:12px;font-size:17px;color:#26323F}
+.ind-pkgs{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:34px}
+.pkg{display:flex;flex-direction:column;padding-left:22px;border-left:3px solid #C9761B}
+.pkg.lead{border-left-width:6px;border-left-color:#FC9732}
+.pkg-k{font-weight:300;font-stretch:125%;font-size:34px;line-height:1;color:#C9761B}
+.pkg h3{margin-top:8px;font-size:clamp(24px,2.4vw,30px);font-weight:800;font-stretch:125%;text-transform:uppercase;letter-spacing:.02em;color:#0C1A2D}
+.pkg ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px;flex:1}
+.pkg li{position:relative;padding-left:26px;font-size:16px;line-height:1.45;color:#26323F}
+.pkg li::before{content:"";position:absolute;left:2px;top:6px;width:11px;height:6px;border-left:2.5px solid #C9761B;border-bottom:2.5px solid #C9761B;transform:rotate(-45deg)}
+.pkg-fee{margin-top:18px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9A5B0B}
+.pkg-btn{margin-top:14px;align-self:flex-start;background:#0C1A2D;color:#fff;animation:none;font-size:15px;padding:11px 20px}
+.pkg-btn:hover{background:#13294A}
+.pkg.lead .pkg-btn{background:#FC9732;color:#0C1A2D}
+.pkg.lead .pkg-btn:hover{background:#FFB25C}
+.pkg-btn.ghost{background:transparent;color:#4A5868;border:1.5px solid #B9C4CE;cursor:default}
+.pkg-btn.ghost:hover{background:transparent}
+@media (max-width:860px){.ind-pkgs{grid-template-columns:1fr;gap:30px}}
+.ind-wh{margin-top:44px;padding-top:28px;border-top:1px solid #D5DDE3;max-width:760px}
+.ind-wh .ind-why{margin-top:0}
 </style>
 </head>
 <body>
@@ -780,23 +801,25 @@ footer b{color:var(--on-navy)}
       <h1 class="hk-lld sm">INDUSTRY DAY</h1>
       <p class="hk2-tag ind"><span>2 February 2027</span> · SREC SPARK, Coimbatore</p>
       <p class="hk2-lead">A day bringing together Israeli and Tamil Nadu industry, government, academia and start-ups: a new chamber of commerce, a new innovation centre, workshops and plenary discussions.</p>
+      <div class="hk2-chips ind-chips"><button type="button" data-go="ind-chamber"><b>Opening</b>Israel–Tamil Nadu Chamber of Commerce</button><button type="button" data-go="ind-cic"><b>Foundation stone</b>TechGuard Cyber Innovation Centre</button><span><b>Workshops</b>B2B networking</span><span><b>Plenary</b>Israel and India leaders</span></div>
       <div class="cta-row">
-        <a class="hk-btn" href="#industry-day" aria-disabled="true" role="link">Registration opens soon</a>
-        <a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Become%20a%20sponsor%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0AInterested%20in%20%28sponsorship%20/%20company%20participation%29%3A%0A%0AMessage%3A%0A">Become a sponsor</a>
-        <p class="hk2-open">Participation inquiries: <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
+                <a class="hk-btn ind-main" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a>
+        <a class="hk-btn ind-inv" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
+        <p class="hk2-open"><b>By invitation only.</b> Participation subject to available places and confirmation. Invitation requests open soon.</p>
       </div>
     </div>
   </div>
 
   <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
-    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-speakers">Speakers</button><button data-go="ind-partners">Participants</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button><button data-go="ind-orgs">Organisers</button>
+    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-who">Who’s coming</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button><button data-go="ind-orgs">Organisers</button>
   </div></nav>
 
   <section id="ind-about" class="hk-sec">
     <div class="wrap hk-2col">
-      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> About the day</p><h2 class="hk-h">Where Israeli innovation meets Tamil Nadu industry</h2></div>
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> About the day</p><h2 class="hk-h">Witness history</h2></div>
       <div>
-        <p class="ind-lead">Industry Day is the business heart of Israel–India Innovation Week. Between the hackathon on 1 February and the scientific conference on 3 February, it brings together industry, government, academia and start-ups from Israel and Tamil Nadu at SREC SPARK in Coimbatore.</p>
+        <p class="ind-lead">On 2 February two Israel–India institutions are born in Coimbatore: the <b>Israel–Tamil Nadu Chamber of Commerce</b> and the <b>TechGuard Cyber Innovation Centre</b>.</p>
+        <p class="hk-prose-p">Industry Day is the business heart of Israel–India Innovation Week. Between the hackathon on 1 February and the scientific conference on 3 February, it brings together industry, government, academia and start-ups from Israel and Tamil Nadu at SREC SPARK in Coimbatore.</p>
         <p class="hk-prose-p">Two landmark moments define the day: the opening of the <b>Israel–Tamil Nadu Chamber of Commerce</b> and the foundation stone of the <b>TechGuard Cyber Innovation Centre</b>, the first AI, Data and Cyber Innovation Centre in Tamil Nadu. Together they turn Israel–India cooperation into lasting institutions: a platform for business, and a place for technology, talent and research.</p>
         <p class="hk-prose-p">Workshops, networking sessions and plenary discussions with leaders from Israel and India complete the programme.</p>
         <p class="hk-phase hk-dk" style="margin-top:34px">IN PARTNERSHIP WITH</p>
@@ -882,52 +905,50 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section id="ind-speakers" class="hk-sec">
+  <section id="ind-who" class="hk-sec">
     <div class="wrap hk-2col">
-      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People</p><h2 class="hk-h">Speakers</h2></div>
-      <div class="hk-prose"><p>Speakers from government, industry and academia in Israel and India.</p><p style="margin-top:10px"><span class="hk-soon">Info available soon</span></p></div>
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> People and companies</p><h2 class="hk-h">Who’s coming</h2></div>
+      <div class="hk-prose"><p>Leaders from government, industry and academia in Israel and India, with companies, start-ups and institutions from Israel and Tamil Nadu.</p><div class="ind-part"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:56px"><div><b>Biopharmax India</b><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities</p></div></div><p style="margin-top:14px">Speakers and participants: <span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Want your company here? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p></div>
     </div>
   </section>
 
-  <section id="ind-partners" class="hk-sec tint">
-    <div class="wrap hk-2col">
-      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Partners</p><h2 class="hk-h">Participants and sponsors</h2></div>
-      <div class="hk-prose"><p>Companies, start-ups and institutions from Israel and Tamil Nadu.</p><div class="ind-part"><img src="assets/biopharmax.png" alt="Biopharmax" style="height:56px"><div><b>Biopharmax India</b><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities</p></div></div><p style="margin-top:14px">More participants and sponsors: <span class="hk-soon">Info available soon</span></p><p style="margin-top:14px">Interested in participating or sponsoring? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p></div>
-    </div>
-  </section>
-
-  <section id="ind-sponsor" class="hk-sec">
-    <div class="wrap hk-2col">
-      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2></div>
-      <div>
-        <p class="hk-prose-p" style="margin-top:0">Industry Day is open to companies, start-ups and institutions from Israel and India that want to support the day as sponsors or take part as participating companies.</p>
-        <div class="ind-ways">
-          <div>
-            <h3>Sponsorship</h3>
-            <p>Support Industry Day and be visible to industry, government, academia and start-ups from Israel and Tamil Nadu.</p>
-            <p class="ind-way-s">Packages and benefits: <span class="hk-soon">Info available soon</span></p>
-          </div>
-          <div>
-            <h3>Company participation</h3>
-            <p>Take part in the workshops and networking sessions and meet companies, researchers, start-ups and students.</p>
-            <p class="ind-way-s">Participation fees: <span class="hk-soon">Info available soon</span></p>
-          </div>
+  <section id="ind-sponsor" class="hk-sec tint">
+    <div class="wrap">
+      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2>
+      <p class="ind-sub"><b>By invitation only.</b> Participation is subject to available places and confirmation.</p>
+      <div class="ind-pkgs">
+        <div class="pkg">
+          <p class="pkg-k">01</p><h3>Visitor</h3>
+          <ul><li>Attendance by invitation only</li></ul>
+          <p class="pkg-fee">Fee: on request</p>
+          <a class="hk-btn pkg-btn ghost" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
         </div>
-        <p class="ind-why">Be part of the day when</p>
+        <div class="pkg">
+          <p class="pkg-k">02</p><h3>Sponsor</h3>
+          <ul><li>Company catalogue and access to B2B events</li><li>Share your company: presentation or deck in the catalogue</li><li>Access to events and materials</li><li>10 invitation passes</li></ul>
+          <p class="pkg-fee">Fee: on request</p>
+          <a class="hk-btn pkg-btn" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a>
+        </div>
+        <div class="pkg lead">
+          <p class="pkg-k">03</p><h3>Leader</h3>
+          <ul><li>Joining the Israel–Tamil Nadu Chamber of Commerce</li><li>Main logo placements</li><li>A dedicated session</li><li>Dinner with Leaders &amp; Organizers</li></ul>
+          <p class="pkg-fee">Fee: on request</p>
+          <a class="hk-btn pkg-btn" href="mailto:mark@promitei.com?subject=Leader%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Leader%0A%0AMessage%3A%0A">Become a Leader</a>
+        </div>
+      </div>
+      <div class="ind-wh">
+        <p class="ind-why">Witness history</p>
         <ul class="hk-ticks2">
           <li>the <b>Israel–Tamil Nadu Chamber of Commerce</b> is opened</li>
           <li>the foundation stone of the <b>first AI, Data and Cyber Innovation Centre in Tamil Nadu</b> is laid</li>
           <li>leaders from Israel and India meet in <b>plenary discussions</b> on technology, innovation and partnership</li>
         </ul>
-        <div class="ind-ask">
-          <p>Apply as a sponsor with the button, or write to <a href="mailto:mark@promitei.com">mark@promitei.com</a></p>
-          <a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Become%20a%20sponsor%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0AInterested%20in%20%28sponsorship%20/%20company%20participation%29%3A%0A%0AMessage%3A%0A">Become a sponsor</a>
-        </div>
+        <p class="ind-meta">Questions about packages? Write to <a href="mailto:mark@promitei.com?subject=Industry%20Day%20packages">mark@promitei.com</a></p>
       </div>
     </div>
   </section>
 
-  <section class="hk-sec tint">
+  <section class="hk-sec">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Israel–India</p><h2 class="hk-h">Building on Bengaluru Tech Summit 2026</h2></div>
       <div>
@@ -939,7 +960,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section id="ind-venue" class="hk-sec">
+  <section id="ind-venue" class="hk-sec tint">
     <div class="wrap hk-2col">
       <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Venue</p><h2 class="hk-h">Hosted at SREC SPARK</h2></div>
       <div class="ind-venue">
@@ -956,7 +977,7 @@ footer b{color:var(--on-navy)}
     </div>
   </section>
 
-  <section id="ind-orgs" class="hk-sec tint">
+  <section id="ind-orgs" class="hk-sec">
     <div class="wrap">
       <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Organisers</p><h2 class="hk-h">Organised by</h2>
       <div class="hk-logos"><figure class="hk-lg"><img src="assets/srec.svg" alt="Sri Ramakrishna Engineering College" style="height:56px"></figure><figure class="hk-lg"><img src="assets/srec-spark-logo.png" alt="SREC SPARK" style="height:64px"></figure><figure class="hk-lg"><img src="assets/fl_techguard.png" alt="TechGuard Labs Foundation" style="height:52px"></figure><figure class="hk-lg"><img src="assets/fl_promitei.png" alt="Promitei" style="height:58px"></figure><figure class="hk-lg"><img src="assets/fl_snr.png" alt="SNR Sons Charitable Trust" style="height:62px"></figure></div>
@@ -966,8 +987,8 @@ footer b{color:var(--on-navy)}
 
   <section class="hk-cta">
     <div class="wrap hk-cta-in">
-      <p><b>INDUSTRY DAY · 2 FEBRUARY 2027</b><br><span>Registration link coming soon · inquiries: mark@promitei.com</span></p>
-      <a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Industry%20Day%202%20February%202027">Contact us</a>
+      <p><b>WITNESS HISTORY</b><br><span>Industry Day · 2 February 2027 · by invitation only</span></p>
+      <div class="ind-cta-btns"><a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a></div>
     </div>
   </section>
 </div>

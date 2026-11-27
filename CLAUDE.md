@@ -30,11 +30,14 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 - Hackathon contact: hackathon@promitei.com. Industry Day inquiries: mark@promitei.com.
 - Industry Day 2 Feb at SREC SPARK (Sri Ramakrishna Engineering College, Vattamalaipalayam, Coimbatore 641022): opening of the Israel–Tamil Nadu Chamber of Commerce; foundation stone of the first AI, Data and Cyber Innovation Centre in Tamil Nadu; workshops and networking; plenary discussions. Organised by SREC, TechGuard Labs Foundation, Promitei, SNR Sons Charitable Trust, MASHAV, Consulate General of Israel to South India, Israel Economic and Trade Mission (Bengaluru).
 - Innovation Centre: "TechGuard Cyber Innovation Centre", subtitle "The first AI, Data and Cyber Innovation Centre in Tamil Nadu". Initiative of TechGuard Labs Foundation (a joint Israel–India foundation), on the SREC campus, Coimbatore. Partners shown: SNR Sons Charitable Trust, SREC, Ariel University, ERA IT Consulting & Audit, Promitei, Biopharmax. Renders are labelled as architectural concept visualisations.
+- Industry Day is by invitation only; participation is subject to available places and confirmation; it is not free (fees "on request", no amounts published). Main goal of the page: sponsors. Key message: "Witness history".
+- Packages (Mark, 27 Nov 2026): Visitor: attendance by invitation only. Sponsor: company catalogue and access to B2B events; share the company (presentation/deck in the catalogue); access to events and materials; 10 invitation passes. Leader: joining the Israel–Tamil Nadu Chamber of Commerce; main logo placements; a dedicated session; dinner with Leaders & Organizers. Not stated whether Leader includes Sponsor benefits.
+- Invitation requests will go through a Google Form Mark creates; until then "Request an invitation" buttons are `aria-disabled`. Sponsor/Leader buttons open an email to mark@promitei.com with a template.
 - Israel–Tamil Nadu Chamber of Commerce: only confirmed fact is "a new platform for business cooperation between Israel and Tamil Nadu", launched on 2 Feb. The section text is general by agreement.
 - Conference content comes from the SRCW brochure (dates, plenary sessions with Prof. Izhak Michaelevski, Prof. Amit Dvir, Dr. Nadia Iermakov, fees, advisory board).
 
 ## Open items
-- Industry Day: registration link, speakers, participants and sponsors (Biopharmax India confirmed), sponsorship packages and company participation fees (draft tiers proposed, not yet approved; legal entity for invoicing to be decided).
+- Industry Day: Google Form link for invitation requests; package fees; whether Leader includes Sponsor benefits; speakers, participants and sponsors (Biopharmax India confirmed); legal entity for invoicing.
 - Chamber of Commerce: founding members, membership, how to join, dedicated contact.
 - Hackathon: prize amounts, mentors and jury list, rules and FAQ answers marked "Info available soon".
 - Google Form confirmation message still says mark@promitei.com (change in the form settings).
