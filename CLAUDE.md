@@ -6,6 +6,7 @@ Hosting: GitHub Pages from `main`, repository root. Every push to `main` goes li
 ## Structure
 - `index.html` — the whole site in one file: CSS in `<style>`, small router script at the end, inline SVG artwork.
 - `assets/` — images and logos (flyer logos are `fl_*.png`, English Ariel logo is `ariel_en.png`). Innovation Centre renders are `cic-*.jpg` (cut from the CIC deck with the Biopharmax watermark band cropped off); `era.png` is the ERA IT Consulting logo from the same deck. Interior stills `cic-int-*.jpg` are frames from the CIC flythrough video (WhatsApp video, 18 Nov 2026, 480p), cropped above the on-screen captions and Biopharmax logo; the video itself is not in the repo.
+- Browser-tab icon: the compact IIIW27 mark, three sharp bars (blue Israel `#3094FF`, orange India `#FC9732`, green Innovation `#12C493`, 45° cut top-right) on a navy rounded square. `assets/favicon.svg` (master), `favicon-32.png`, `apple-touch-icon.png` (180 px), rendered from the SVG.
 - The CIC deck (`Cyber_Innovation_Center_PPT.pdf`) is NOT stored in the repo: the repo is public and the deck contains the budget, cost breakdown and Biopharmax markup. Never publish budget, costs, schedule or floor programme from it.
 - Views are switched by the URL hash (plain `#name` only):
   - `#` (empty) — start screen with three parallel banners
