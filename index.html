@@ -566,42 +566,14 @@ footer b{color:var(--on-navy)}
 .hk-btn.ind-main{background:#FC9732;color:#0C1A2D;animation:indpulse 2.2s ease-out infinite}
 .hk-btn.ind-main:hover{background:#FFB25C}
 @keyframes indpulse{0%{box-shadow:0 0 0 0 rgba(252,151,50,.7)}70%{box-shadow:0 0 0 14px rgba(252,151,50,0)}100%{box-shadow:0 0 0 0 rgba(252,151,50,0)}}
-.hk-btn.ind-inv{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8);animation:none}
-.hk-btn.ind-inv:hover{background:#fff;color:#0C1A2D}
+.ind-att-cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;margin-top:30px}
+.ind-att-cta p{font-size:15.5px;color:#26323F}
 .ind-cta-btns{display:flex;flex-wrap:wrap;gap:12px}
-.hk-btn.ind-cta-inv{background:transparent;color:#0C1A2D;border:2px solid #0C1A2D;animation:none}
-.hk-btn.ind-cta-inv:hover{background:#0C1A2D;color:#fff}
 .ind-hero .hk2-open{max-width:46ch;line-height:1.45}
 .ind-chips button{font:inherit;text-align:left;cursor:pointer}
 .ind-chips button,.ind-chips span{background:none!important;border:0!important;border-radius:0!important;border-left:2px solid #FFB25C!important;padding:2px 0 2px 14px!important;color:#F3E6D6;font-size:14px}
 .ind-chips b{display:block;color:#fff;font-size:17px;font-stretch:115%}
 .ind-chips button:hover b{color:#FFB25C}
-.ind-sub{margin-top:12px;font-size:17px;color:#26323F}
-.ind-pkgs{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:40px;max-width:1000px}
-.pkg-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 28px;margin-top:30px;padding:14px 0 14px 22px;border-left:3px solid #C9761B;max-width:1000px}
-.pkg-row-t{display:flex;align-items:baseline;gap:14px;min-width:190px}
-.pkg-row .pkg-k{font-size:28px}
-.pkg-row h3{margin-top:0;font-size:clamp(22px,2vw,26px);font-weight:800;font-stretch:125%;text-transform:uppercase;letter-spacing:.02em;color:#0C1A2D}
-.pkg-row-d{flex:1;min-width:200px;font-size:16px;color:#26323F}
-.pkg-row .pkg-fee,.pkg-row .pkg-btn{margin-top:0}
-.pkg{display:flex;flex-direction:column;padding-left:22px;border-left:3px solid #C9761B}
-.pkg.lead{border-left-width:6px;border-left-color:#FC9732}
-.pkg-k{font-weight:300;font-stretch:125%;font-size:34px;line-height:1;color:#C9761B}
-.pkg h3{margin-top:8px;font-size:clamp(24px,2.4vw,30px);font-weight:800;font-stretch:125%;text-transform:uppercase;letter-spacing:.02em;color:#0C1A2D}
-.pkg ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px;flex:1;align-content:start}
-.pkg li{position:relative;padding-left:26px;font-size:16px;line-height:1.45;color:#26323F}
-.pkg li::before{content:"";position:absolute;left:2px;top:6px;width:11px;height:6px;border-left:2.5px solid #C9761B;border-bottom:2.5px solid #C9761B;transform:rotate(-45deg)}
-.pkg-note{margin-top:6px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C9761B}
-.pkg li.pkg-plus{padding-left:0;font-weight:700;color:#0C1A2D}
-.pkg li.pkg-plus::before{display:none}
-.pkg-fee{margin-top:18px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#9A5B0B}
-.pkg-btn{margin-top:14px;align-self:flex-start;white-space:normal;text-align:left;background:#0C1A2D;color:#fff;animation:none;font-size:15px;padding:11px 20px}
-.pkg-btn:hover{background:#13294A}
-.pkg.lead .pkg-btn{background:#FC9732;color:#0C1A2D}
-.pkg.lead .pkg-btn:hover{background:#FFB25C}
-.pkg-btn.ghost{background:transparent;color:#0C1A2D;border:1.5px solid #0C1A2D}
-.pkg-btn.ghost:hover{background:#0C1A2D;color:#fff}
-@media (max-width:760px){.ind-pkgs{grid-template-columns:1fr;gap:30px}.pkg-row{flex-direction:column;align-items:flex-start}}
 .ind-wh{margin-top:44px;padding-top:28px;border-top:1px solid #D5DDE3;max-width:760px}
 .ind-wh .ind-why{margin-top:0}
 
@@ -1095,15 +1067,14 @@ footer b{color:var(--on-navy)}
       <p class="hk2-lead">A day bringing together Israeli and Tamil Nadu industry, government, academia and start-ups: a new chamber of commerce, a new innovation centre, workshops and plenary discussions.</p>
       <div class="hk2-chips ind-chips"><button type="button" data-go="ind-chamber"><b>Opening</b>Israel–Tamil Nadu Chamber of Commerce</button><button type="button" data-go="ind-cic"><b>Foundation stone</b>TechGuard Cyber Innovation Centre</button><span><b>Workshops</b>B2B networking</span><span><b>Plenary</b>Israel and India leaders</span></div>
       <div class="cta-row">
-                <a class="hk-btn ind-main" href="https://docs.google.com/forms/d/e/1FAIpQLSfgc6_eIJuok1_le3eIeTxZDj36E8dEQKzukxC7R7bYas4Npw/viewform" target="_blank" rel="noopener">Become a sponsor</a>
-        <a class="hk-btn ind-inv" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a>
+        <a class="hk-btn ind-main" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a>
         <p class="hk2-open"><b>By invitation only.</b> Participation subject to available places and confirmation. Invitation requests by <b>14 January 2027</b>.</p>
       </div>
     </div>
   </div>
 
   <nav class="hk-subnav" aria-label="On this page"><div class="wrap">
-    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-who">Organisers &amp; Guests</button><button data-go="ind-sponsor">Sponsorship</button><button data-go="ind-venue">Venue</button>
+    <button data-go="ind-about">About</button><button data-go="ind-prog">Programme</button><button data-go="ind-chamber">Chamber of Commerce</button><button data-go="ind-cic">Innovation Centre</button><button data-go="ind-who">Organisers &amp; Guests</button><button data-go="ind-attend">How to attend</button><button data-go="ind-venue">Venue</button>
   </div></nav>
 
   <section id="ind-about" class="hk-sec">
@@ -1210,42 +1181,29 @@ footer b{color:var(--on-navy)}
         <div class="org"><div class="org-lg"><img src="assets/biopharmax.png" alt="Biopharmax India" style="height:46px"></div><div><h3>Biopharmax India</h3><p>Design and turnkey construction of pharmaceutical and biotech manufacturing facilities. Designer of the TechGuard Cyber Innovation Centre.</p></div></div>
       </div>
       <p class="ind-meta" style="margin-top:30px">More speakers and participants: <span class="hk-soon">Info available soon</span></p>
-      <p class="ind-meta">Want your company here? <button type="button" class="ind-link" data-go="ind-sponsor">See sponsorship and participation</button></p>
     </div>
   </section>
 
-  <section id="ind-sponsor" class="hk-sec tint">
-    <div class="wrap">
-      <p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Get involved</p><h2 class="hk-h">Sponsorship and participation</h2>
-      <p class="ind-sub"><b>By invitation only.</b> Participation is subject to available places and confirmation.</p>
-      <div class="pkg-row">
-        <div class="pkg-row-t"><p class="pkg-k">01</p><h3>Visitor</h3></div>
-        <p class="pkg-row-d">By invitation</p>
-        <a class="hk-btn pkg-btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a>
-      </div>
-      <div class="ind-pkgs">
-        <div class="pkg">
-          <p class="pkg-k">02</p><h3>Sponsor</h3>
-          <ul><li>Business Breakfast</li><li>Access to the special networking sessions</li><li>Company profile in the official Industry Day catalogue for all guests</li><li>Access to all Industry Day main and closed events: Chamber of Commerce opening, AI, Data and Cyber Innovation Centre foundation stone ceremony, plenary discussions, workshops</li><li>Event materials after the day</li><li>5 invitation passes</li></ul>
-          <p class="pkg-fee">Fee: on request</p>
-          <a class="hk-btn pkg-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfgc6_eIJuok1_le3eIeTxZDj36E8dEQKzukxC7R7bYas4Npw/viewform" target="_blank" rel="noopener">Become a sponsor</a>
+  <section id="ind-attend" class="hk-sec tint">
+    <div class="wrap hk-2col">
+      <div><p class="hk-kick"><span class="hk-dots" aria-hidden="true"><i style="background:#3094FF"></i><i style="background:#FFFFFF"></i><i style="background:#FF9933"></i><i style="background:#138808"></i></span> Participation</p><h2 class="hk-h">How to attend</h2></div>
+      <div>
+        <p class="ind-lead">Industry Day is <b>by invitation only</b>. Invitations are subject to the availability of places and to confirmation by the organisers.</p>
+        <div class="ind-pillars">
+          <div><h3>01 Request</h3><p>Fill in the invitation request form by <b>14 January 2027</b>.</p></div>
+          <div><h3>02 Review</h3><p>The organisers review all requests. A request may be declined without stating a reason.</p></div>
+          <div><h3>03 Confirmation</h3><p>Selected guests receive a confirmation by email. Bring the same ID document to the venue.</p></div>
         </div>
-        <div class="pkg lead">
-          <p class="pkg-k">03</p><h3>Member</h3>
-          <p class="pkg-note">Limited number of Member places</p>
-          <ul><li class="pkg-plus">Everything in Sponsor, plus:</li><li>Membership in the Israel–Tamil Nadu Chamber of Commerce</li><li>Signing the Chamber’s founding charter on stage at the opening on 2 February</li><li>Main logo placements: stage backdrop, Industry Day page and catalogue cover</li><li>A keynote slot in the plenary programme</li><li>A voice in shaping the Chamber’s annual programme of events and initiatives</li><li>VIP dinner with Leaders and Organizers</li></ul>
-          <p class="pkg-fee">Fee: on request</p>
-          <a class="hk-btn pkg-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfgc6_eIJuok1_le3eIeTxZDj36E8dEQKzukxC7R7bYas4Npw/viewform" target="_blank" rel="noopener">Become a Member</a>
+        <div class="ind-att-cta"><a class="hk-btn ind-main" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a><p>Requests by <b>14 January 2027</b></p></div>
+        <div class="ind-wh">
+          <p class="ind-why">Witness history</p>
+          <ul class="hk-ticks2">
+            <li>the <b>Israel–Tamil Nadu Chamber of Commerce</b> is opened</li>
+            <li>the foundation stone of the <b>first AI, Data and Cyber Innovation Centre in Tamil Nadu</b> is laid</li>
+            <li>leaders from Israel and India meet in <b>plenary discussions</b> on technology, innovation and partnership</li>
+          </ul>
+          <p class="ind-meta">Questions? Write to <a href="mailto:mark@promitei.com?subject=Industry%20Day%202%20February%202027">mark@promitei.com</a></p>
         </div>
-      </div>
-      <div class="ind-wh">
-        <p class="ind-why">Witness history</p>
-        <ul class="hk-ticks2">
-          <li>the <b>Israel–Tamil Nadu Chamber of Commerce</b> is opened</li>
-          <li>the foundation stone of the <b>first AI, Data and Cyber Innovation Centre in Tamil Nadu</b> is laid</li>
-          <li>leaders from Israel and India meet in <b>plenary discussions</b> on technology, innovation and partnership</li>
-        </ul>
-        <p class="ind-meta">Questions about packages? Write to <a href="mailto:mark@promitei.com?subject=Industry%20Day%20packages">mark@promitei.com</a></p>
       </div>
     </div>
   </section>
@@ -1272,7 +1230,7 @@ footer b{color:var(--on-navy)}
   <section class="hk-cta">
     <div class="wrap hk-cta-in">
       <p><b>WITNESS HISTORY</b><br><span>Industry Day · 2 February 2027 · by invitation only · requests by 14 January 2027</span></p>
-      <div class="ind-cta-btns"><a class="hk-btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfgc6_eIJuok1_le3eIeTxZDj36E8dEQKzukxC7R7bYas4Npw/viewform" target="_blank" rel="noopener">Become a sponsor</a><a class="hk-btn ind-cta-inv" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a></div>
+      <div class="ind-cta-btns"><a class="hk-btn dark" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a></div>
     </div>
   </section>
 </div>
