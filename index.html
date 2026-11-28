@@ -559,7 +559,11 @@ footer b{color:var(--on-navy)}
 .hk-btn.ind-main{background:#FC9732;color:#0C1A2D;animation:indpulse 2.2s ease-out infinite}
 .hk-btn.ind-main:hover{background:#FFB25C}
 @keyframes indpulse{0%{box-shadow:0 0 0 0 rgba(252,151,50,.7)}70%{box-shadow:0 0 0 14px rgba(252,151,50,0)}100%{box-shadow:0 0 0 0 rgba(252,151,50,0)}}
-.hk-btn.ind-inv{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.55);animation:none;opacity:.85;cursor:default}
+.hk-btn.ind-inv{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.8);animation:none}
+.hk-btn.ind-inv:hover{background:#fff;color:#0C1A2D}
+.ind-cta-btns{display:flex;flex-wrap:wrap;gap:12px}
+.hk-btn.ind-cta-inv{background:transparent;color:#0C1A2D;border:2px solid #0C1A2D;animation:none}
+.hk-btn.ind-cta-inv:hover{background:#0C1A2D;color:#fff}
 .ind-hero .hk2-open{max-width:46ch;line-height:1.45}
 .ind-chips button{font:inherit;text-align:left;cursor:pointer}
 .ind-chips button,.ind-chips span{background:none!important;border:0!important;border-radius:0!important;border-left:2px solid #FFB25C!important;padding:2px 0 2px 14px!important;color:#F3E6D6;font-size:14px}
@@ -588,8 +592,8 @@ footer b{color:var(--on-navy)}
 .pkg-btn:hover{background:#13294A}
 .pkg.lead .pkg-btn{background:#FC9732;color:#0C1A2D}
 .pkg.lead .pkg-btn:hover{background:#FFB25C}
-.pkg-btn.ghost{background:transparent;color:#4A5868;border:1.5px solid #B9C4CE;cursor:default}
-.pkg-btn.ghost:hover{background:transparent}
+.pkg-btn.ghost{background:transparent;color:#0C1A2D;border:1.5px solid #0C1A2D}
+.pkg-btn.ghost:hover{background:#0C1A2D;color:#fff}
 @media (max-width:760px){.ind-pkgs{grid-template-columns:1fr;gap:30px}.pkg-row{flex-direction:column;align-items:flex-start}}
 .ind-wh{margin-top:44px;padding-top:28px;border-top:1px solid #D5DDE3;max-width:760px}
 .ind-wh .ind-why{margin-top:0}
@@ -1080,8 +1084,8 @@ footer b{color:var(--on-navy)}
       <div class="hk2-chips ind-chips"><button type="button" data-go="ind-chamber"><b>Opening</b>Israel–Tamil Nadu Chamber of Commerce</button><button type="button" data-go="ind-cic"><b>Foundation stone</b>TechGuard Cyber Innovation Centre</button><span><b>Workshops</b>B2B networking</span><span><b>Plenary</b>Israel and India leaders</span></div>
       <div class="cta-row">
                 <a class="hk-btn ind-main" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a>
-        <a class="hk-btn ind-inv" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
-        <p class="hk2-open"><b>By invitation only.</b> Participation subject to available places and confirmation. Invitation requests open soon.</p>
+        <a class="hk-btn ind-inv" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a>
+        <p class="hk2-open"><b>By invitation only.</b> Participation subject to available places and confirmation.</p>
       </div>
     </div>
   </div>
@@ -1205,7 +1209,7 @@ footer b{color:var(--on-navy)}
       <div class="pkg-row">
         <div class="pkg-row-t"><p class="pkg-k">01</p><h3>Visitor</h3></div>
         <p class="pkg-row-d">By invitation</p>
-        <a class="hk-btn pkg-btn ghost" href="#industry-day" aria-disabled="true" role="link">Request an invitation</a>
+        <a class="hk-btn pkg-btn ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a>
       </div>
       <div class="ind-pkgs">
         <div class="pkg">
@@ -1256,7 +1260,7 @@ footer b{color:var(--on-navy)}
   <section class="hk-cta">
     <div class="wrap hk-cta-in">
       <p><b>WITNESS HISTORY</b><br><span>Industry Day · 2 February 2027 · by invitation only</span></p>
-      <div class="ind-cta-btns"><a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a></div>
+      <div class="ind-cta-btns"><a class="hk-btn dark" href="mailto:mark@promitei.com?subject=Sponsor%20package%20%E2%80%93%20Industry%20Day%2C%202%20February%202027&amp;body=Company%3A%0AWebsite%3A%0AContact%20person%3A%0APosition%3A%0AEmail%3A%0APhone%3A%0A%0APackage%3A%20Sponsor%0A%0AMessage%3A%0A">Become a sponsor</a><a class="hk-btn ind-cta-inv" href="https://docs.google.com/forms/d/e/1FAIpQLSfvIqpw32zAWfYhezo7_4ch6j8QBM7wnzYxZ2v9VE6vx2xxbQ/viewform" target="_blank" rel="noopener">Request an invitation</a></div>
     </div>
   </section>
 </div>
